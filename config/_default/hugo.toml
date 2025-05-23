@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 # baseURL = "https://demo.gethugothemes.com/andromeda/site/"
 # Title of your website (required).
-title = "IB Sports Academy - Best Basketball Academy in India"
+title = " India's #1 Basketball Training Academy | IB Sports Academy"
 # Your theme name
 theme = "andromeda-light-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List

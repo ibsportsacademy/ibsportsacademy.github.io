@@ -1,7 +1,7 @@
 ---
 # banner
 banner:
-  title: "IB Sports Academy is the most intuitive way to prototype Designs"
+  title: "India’s #1 Basketball Training Academy <br /> Transform Your Game with NBA Level Coaching"
   button: "Join Now!"
   button_link: "#"
   image: "images2/banner-app2.png"
@@ -25,28 +25,32 @@ brands_carousel:
 # features
 features:
   enable: true
-  subtitle: "Special Features"
-  title: "Elements to <br> get you started"
-  description: "Lorem ipsum dolor sit amet, consecteturre adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
+  subtitle: "where passion meets purpose"
+  title: "🏀 Hoops of Hope"
+  description: "For India’s rising hoopsters, our courts are more than just a play zone — they’re open-air classrooms where discipline meets dreams. <br />
+    Every bounce of the ball echoes with purpose, every swish of the net fuels ambition, and every call from a coach carries the wisdom. <br />
+    This is where passion takes shape, skills are sharpened, and futures are forged — one drill, one game, one breakthrough at a time. <br />
+    Are you ready to chase greatness? <br />
+    **Step onto the court | Embrace the grind | Unlock the player within**"
   features_blocks:
     - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+      title: "🎯 Our Mission"
+      content: "We aim to **elevate the standard of basketball** in India across all age groups and train athletes to perform on **national and international platforms**."
     - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+      title: "💪 Why Basketball?"
+      content: "Basketball develops motor coordination, flexibility, endurance, speed, and agility. It promotes **healthy weight, cardio-respiratory fitness, and self-esteem in athletes**."
     - icon: "las la-tachometer-alt"
-      title: "Secured &amp; upto date"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+      title: " 🎓 Our Philosophy"
+      content: "We believe in “game speed” training — replicating real-match tempo during drills to encourage natural decisions and movements. Our coaching is tailored to each player's unique **growth journey**."
     - icon: "las la-link"
-      title: "Instant Link Shareing"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+      title: "✅ Why Choose IB"
+      content: "We don’t just build players, **we shape game-changers**. With sharp skills, high-speed drills, and a whole lot of heart, our athletes grow into the kind of teammates every team dreams of."
     - icon: "las la-lock"
-      title: "Updated Security"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
-    - icon: "las la-magnet"
-      title: "Magnetic Turning"
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus"
+      title: "Will you be next?"
+      content: "**Got game?** Let’s level it up. <br />
+        Train hard, play smart, dream big. <br />
+        All powered by **coaches who live the game**. <br />
+        **Join Us | Enroll Now | The Court’s Calling! 📲**"
 
 # intro_video
 intro_video:
