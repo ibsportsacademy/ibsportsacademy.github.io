@@ -1,7 +1,7 @@
 ---
 # banner
 banner:
-  title: "India’s #1 Basketball Training Academy <br /> Transform Your Game with NBA Level Coaching"
+  title: "Transform Your Game with NBA Level Coaching"
   button: "Join Now!"
   button_link: "#"
   image: "images2/banner-app2.png"
@@ -27,9 +27,9 @@ features:
   enable: true
   subtitle: "where passion meets purpose"
   title: "🏀 Hoops of Hope"
-  description: "For India’s rising hoopsters, our courts are more than just a play zone — they’re open-air classrooms where discipline meets dreams. <br />
-    Every bounce of the ball echoes with purpose, every swish of the net fuels ambition, and every call from a coach carries the wisdom. <br />
-    This is where passion takes shape, skills are sharpened, and futures are forged — one drill, one game, one breakthrough at a time. <br />
+  description: "For India’s rising hoopsters, our courts are more than just play zones — they’re open-air classrooms where discipline meets dreams. <br />
+    Every bounce echoes with purpose, every swish fuels ambition, and every call from a coach carries wisdom. <br />
+    This is where passion takes shape, skills sharpen, and futures are forged — one drill, one game, one breakthrough at a time. <br />
     Are you ready to chase greatness? <br />
     **Step onto the court | Embrace the grind | Unlock the player within**"
   features_blocks:
@@ -61,17 +61,97 @@ intro_video:
   video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
   video_thumbnail: "images/video-popup.jpg"
 
+# our office
+our_office:
+  enable: true
+  subtitle: "Our Locations"
+  title: "Made with Love around Delhi & Gurugram With Many Locations"
+  description: "From neighborhood courts to top-tier facilities, IB Sports Academy is growing across Delhi & Gurugram — bringing pro-level coaching closer to your home. <br />
+    Multiple centers. One mission — to build ballers."
+  office_locations:
+    - city: "ITL Public <br /> School"
+      country_flag: "images2/locations/itl.webp"
+      address_line_one: "Sector 9 Dwarka"
+      address_line_two: "New Delhi, Delhi 110077"
+    - city: "Bal Bharti Public School"
+      country_flag: "images2/locations/balbharti.webp"
+      address_line_one: "Sector 12 Dwarka"
+      address_line_two: "New Delhi, Delhi 110078"
+    - city: "Delhi International School Edge"
+      country_flag: "images2/locations/dis.webp"
+      address_line_one: "Sector 18A, Dwarka"
+      address_line_two: "New Delhi, Delhi 110075"
+    - city: "BGS International Public School"
+      country_flag: "images2/locations/bgs.webp"
+      address_line_one: "Sector 5, Dwarka"
+      address_line_two: "New Delhi, Delhi 110075"
+    - city: "The Indian Heights School"
+      country_flag: "images2/locations/tihs.webp"
+      address_line_one: "Sector 23, Dwarka"
+      address_line_two: "New Delhi, Delhi, 110075"
+    - city: "Delhi College Of Arts & Commerce"
+      country_flag: "images2/locations/dcac.webp"
+      address_line_one: "University of Delhi Netaji Nagar"
+      address_line_two: " New Delhi, Delhi, 110023"
+    - city: "GD Goenka Public School"
+      country_flag: "images2/locations/gdgoenka.webp"
+      address_line_one: "Pocket, 7, Sector 22, Rohini"
+      address_line_two: "New Delhi, Delhi, 110085"
+    - city: "Delhi Cantonmnt Region"
+      country_flag: "images2/locations/delhicantonment.webp"
+      address_line_one: "Delhi Cantt, Gopinath Bazar"
+      address_line_two: "New Delhi, Delhi, 110010"
+    - city: "Rotary Public School"
+      country_flag: "images2/locations/rotary.webp"
+      address_line_one: "Sector 22"
+      address_line_two: "Gurugram, Haryana 122015"
+    - city: "Gyaananda School"
+      country_flag: "images2/locations/gyaananda.webp"
+      address_line_one: "Sector 109"
+      address_line_two: "Gurugram, Haryana 122017"
+    - city: "Adani Oyster Grande"
+      country_flag: "images2/locations/oyster.webp"
+      address_line_one: "Sector 102"
+      address_line_two: "Gurugram, Haryana 122006"
+    - city: "Chintels <br /> Paradiso"
+      country_flag: "images2/locations/chintels.webp"
+      address_line_one: "Dwarka Expy, Sector 109"
+      address_line_two: "Gurugram, Haryana 122017"
 
 # how_it_works
 how_it_works:   
   enable: true
   block:
-  - subtitle: "Primary Speciality"
-    title: "You Will Not miss Your All misunderstandings"
-    description: "Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the."
+  - subtitle: "Training the Body | Shaping the Mind | Inspiring the Spirit"
+    title: "🏀 What We Teach On and Off the Court"
+    description: "At IB Sports Academy, we’re committed to developing complete players — physically, mentally, and tactically. <br />
+      Here’s what every athlete learns through our training programs:
+
+      - Core Skills: Shooting, dribbling, rebounding, and passing fundamentals
+
+      - Positional Play: Master offensive and defensive movements on the court
+
+      - Fitness & Conditioning: Boost strength, agility, and endurance through tailored workouts
+
+      - Situational Coaching: Real-time feedback and guidance during drills and scrimmages
+
+      - Game Intelligence: Understand strategies, rules, and smart decision-making
+
+      - Team Spirit: Build habits of teamwork, fair play, and leadership
+
+      - Love for the Game: Learn, grow, and have fun every step of the way"
     image: "images/features-01.png"
 
-  - subtitle: "Secondary Speciality"
+  - subtitle: "Show us your game online — and play with us for free!"
+    title: "🏀 Earn a Free Class!"
+    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to unlock a free trial session at IB Sports Academy! <br />
+      Let’s shoot, share, and shine together! 🔥 <br />
+      Whether it’s your first shot or your hundredth dunk, we want to see it. <br />
+      Join the IB family online — and step onto the court for real. <br />
+      Limited spots. Big vibes. Don’t miss out. 💥"
+    image: "images/features-02.png"
+
+  - subtitle: "Programme"
     title: "Say hello to no-code The Advance Creation"
     description: "From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code."
     image: "images/features-02.png"
