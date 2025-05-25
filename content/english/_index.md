@@ -2,7 +2,7 @@
 # banner
 banner:
   title: "Transform Your Game with NBA Level Coaching"
-  button: "Join Now!"
+  button: "Book Your Free Trial!"
   button_link: "#"
   image: "images2/banner-app2.png"
 
@@ -127,35 +127,77 @@ how_it_works:
     description: "At IB Sports Academy, we’re committed to developing complete players — physically, mentally, and tactically. <br />
       Here’s what every athlete learns through our training programs:
 
-      - Core Skills: Shooting, dribbling, rebounding, and passing fundamentals
+      - **Core Skills**: Shooting, dribbling, rebounding, and passing fundamentals
 
-      - Positional Play: Master offensive and defensive movements on the court
+      - **Positional Play**: Master offensive and defensive movements on the court
 
-      - Fitness & Conditioning: Boost strength, agility, and endurance through tailored workouts
+      - **Fitness & Conditioning**: Boost strength, agility, and endurance through tailored workouts
 
-      - Situational Coaching: Real-time feedback and guidance during drills and scrimmages
+      - **Situational Coaching**: Real-time feedback and guidance during drills and scrimmages
 
-      - Game Intelligence: Understand strategies, rules, and smart decision-making
+      - **Game Intelligence**: Understand strategies, rules, and smart decision-making
 
-      - Team Spirit: Build habits of teamwork, fair play, and leadership
+      - **Team Spirit**: Build habits of teamwork, fair play, and leadership
 
-      - Love for the Game: Learn, grow, and have fun every step of the way"
+      - **Love for the Game**: Learn, grow, and have fun every step of the way"
     image: "images/features-01.png"
 
   - subtitle: "Show us your game online — and play with us for free!"
     title: "🏀 Earn a Free Class!"
-    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to unlock a free trial session at IB Sports Academy! <br />
+    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to **unlock a free trial session at IB Sports Academy!** <br />
       Let’s shoot, share, and shine together! 🔥 <br />
-      Whether it’s your first shot or your hundredth dunk, we want to see it. <br />
+      Whether it’s your **first shot or your hundredth dunk**, we want to see it. <br />
       Join the IB family online — and step onto the court for real. <br />
-      Limited spots. Big vibes. Don’t miss out. 💥"
+      **Limited spots. Big vibes. Don’t miss out. 💥**"
     image: "images/features-02.png"
 
-  - subtitle: "Programme"
-    title: "Say hello to no-code The Advance Creation"
-    description: "From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code."
+  - subtitle: "Programs built for ballers at every level. Learn. Grind. Rise."
+    title: "🏀 Train Like You Mean It"
+    description: "From first-time dribblers to future pros, we’ve built training that balances discipline, development, and serious fun. Whether you’re aiming for your school team or dreaming big, there’s a program waiting for you. <br />
+
+      Why Our Programs Hit Different:
+
+      - **🧠 Skill-First Curriculum** — Built to level up game IQ, movement, and confidence.
+
+      - **🏋️ Age-Appropriate Training** — We meet athletes where they are — physically and mentally.
+
+      - **👟 Certified, Passion-Driven Coaches** — Not just teachers, but real hoop mentors.
+
+      - **🗓️ Flexible Schedules** — Weekend, after-school, and seasonal options to fit your life.
+
+      - **🏆 Game-Focused Drills** — Less cone work, more real-play situations.
+
+      - **🎯 Pathway to Competitive Play** — Get tournament-ready or go one-on-one with a coach who gets your goals."
     image: "images/features-02.png"
 
+  - subtitle: "Stats speak louder than the hype"
+    title: "🏀 Proof We Don’t Miss"
+    description: "Here’s what we’ve been cooking on and off the court:
+
+    - **3,200+ Ballers Built** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    From first-timers to future MVPs — the grind starts here.
+
+    - **30+ Coaches Who Eat, Sleep, & Breathe Hoops** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    Real ones. Certified. Court-tested.
+
+    - **15 Locations & Counting** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    If there’s a court, there’s a chance. We’ll meet you there.
+
+    - **1,200+ Baskets Dunked (Probably More Tbh)** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    A few backboards might have been harmed. 🫣
+
+    - **1,000+ High-Fives Per Week** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    Teamwork. Vibes. No ego, all energy. 🙌
+
+    - **Next Stat: You Join the Fam** <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    You’ve read the numbers. Now come make your mark. 👟🏀"
+    image: "images/features-02.png"
 
 # testimonials
 testimonials:

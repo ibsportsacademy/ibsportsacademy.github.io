@@ -156,6 +156,25 @@ img {
   background: $color-primary !important;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color: #FE6019 !important;
+  opacity: 10%;
+  transition: all .2s ease-in-out;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 70%;
+  transition: all .2s ease-in-out;
+}
+
 // aos background animation
 .has-bg-anim {
   &::before {

@@ -12,7 +12,7 @@ logo_webp = true
 logo_text = "IB Sports Academy"
 
 # footer information
-footer_info = "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat."
+footer_info = "Driven by passion, powered by coaching — we help every kid find their game, their grit, and their greatness."
 
 # contact form action
 contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
@@ -28,30 +28,30 @@ mainSections= ["blog"]
 
 # contact information
 [contact_info]
-address = "2118 Thornridge Cir. Syracuse, Connecticut 35624"
-phone = ["+704-555-0127", "+205-857-2321", "+002-569-6969"]
-email = ["info@andromeda.io", "smith@anderson.io", "john@anderson.io"]
+address = "Sector 9, Dwarka, New Delhi, Delhi, India"
+phone = ["8860500059", "8860500060"]
+email = ["academyibsports@gmail.com"]
 
 # Preloader 
 # module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
 [preloader]
 enable = true
-preloader = "images/favicon.png" # use jpg, png, svg or gif format.
+preloader = "images2/favicon.png" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
 enable = true
-label = "Buy Premium"
-link = "https://gethugothemes.com/products/andromeda/"
+label = "Join Now!"
+link = "#"
 
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Hugo", "GetHugoThemes", "Themefisher"]
-description = "Software and SAAS Landing Hugo Theme"
-author = "Gethugothemes"
-image = "images/og-image.jpg" # this image will be used as fallback if a page has no image of its own
+keywords = ["IB Sports Academy", "Ishwar Bhati", "Basketball", "Basketball Coach", "Delhi", "India", "Basketball Academy Delhi", "Youth Basketball Coaching", "Basketball for kids", "Best Basketball Coaching Delhi", "Best basketball Academy", "#1 Basketball Academy"]
+description = "Transform Your Game with NBA Level Coaching"
+author = "Ishwar Bhati"
+image = "images2/banner-app.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 # matomo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/matomo-analytics
@@ -103,7 +103,7 @@ button = "I Accept"
 # call-to-action
 [cta]
 enable = true
-title = "Helping teams in the world with focus"
-content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-button = "Buy Premium"
-button_link = "https://gethugothemes.com/products/andromeda/"
+title = "Building Ballers | Fueling Dreams"
+content = "At IB Sports Academy, we turn raw energy into real skill, and big dreams into bigger futures. <br /> From the first dribble to national tournaments, we coach hustle, heart, and the mindset of a champion. <br /> For kids who live to play. For parents who want more than just playtime."
+button = "Ready to rise? Let’s ball."
+button_link = "#"

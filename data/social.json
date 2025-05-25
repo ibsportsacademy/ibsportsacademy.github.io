@@ -1,24 +1,29 @@
 {
   "main": [
     {
-      "title": "facebook",
-      "icon": "lab la-facebook-f",
-      "link": "!#"
+      "title": "instagram",
+      "icon": "lab la-instagram",
+      "link": "https://www.instagram.com/ibsportsacademy"
     },
     {
-      "title": "twitter",
-      "icon": "lab la-twitter",
-      "link": "!#"
+      "title": "facebook",
+      "icon": "lab la-facebook-f",
+      "link": "https://facebook.com/ibsportsacademy/"
+    },
+    {
+      "title": "youtube",
+      "icon": "lab la-youtube",
+      "link": "https://www.youtube.com/c/IBSportsAcademy"
     },
     {
       "title": "linkedin",
       "icon": "lab la-linkedin-in",
-      "link": "!#"
+      "link": "https://www.linkedin.com/company/ib-sports-academy"
     },
     {
-      "title": "pinterest",
-      "icon": "lab la-pinterest",
-      "link": "!#"
+      "title": "twitter",
+      "icon": "lab la-twitter",
+      "link": "https://x.com/ibsportsacademy"
     }
   ]
 }
