@@ -142,15 +142,6 @@ how_it_works:
       - **Love for the Game**: Learn, grow, and have fun every step of the way"
     image: "images/features-01.png"
 
-  - subtitle: "Show us your game online — and play with us for free!"
-    title: "🏀 Earn a Free Class!"
-    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to **unlock a free trial session at IB Sports Academy!** <br />
-      Let’s shoot, share, and shine together! 🔥 <br />
-      Whether it’s your **first shot or your hundredth dunk**, we want to see it. <br />
-      Join the IB family online — and step onto the court for real. <br />
-      **Limited spots. Big vibes. Don’t miss out. 💥**"
-    image: "images/features-02.png"
-
   - subtitle: "Programs built for ballers at every level. Learn. Grind. Rise."
     title: "🏀 Train Like You Mean It"
     description: "From first-time dribblers to future pros, we’ve built training that balances discipline, development, and serious fun. Whether you’re aiming for your school team or dreaming big, there’s a program waiting for you. <br />
@@ -197,6 +188,15 @@ how_it_works:
     - **Next Stat: You Join the Fam** <br />
     &nbsp;&nbsp;&nbsp;&nbsp;
     You’ve read the numbers. Now come make your mark. 👟🏀"
+    image: "images/features-02.png"
+
+  - subtitle: "Show us your game online — and play with us for free!"
+    title: "🏀 Earn a Free Class!"
+    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to **unlock a free trial session at IB Sports Academy!** <br />
+      Let’s shoot, share, and shine together! 🔥 <br />
+      Whether it’s your **first shot or your hundredth dunk**, we want to see it. <br />
+      Join the IB family online — and step onto the court for real. <br />
+      **Limited spots. Big vibes. Don’t miss out. 💥**"
     image: "images/features-02.png"
 
 # testimonials

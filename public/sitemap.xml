@@ -43,6 +43,8 @@
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
+    <loc>//localhost:1313/collaborate/</loc>
+  </url><url>
     <loc>//localhost:1313/contact/</loc>
   </url><url>
     <loc>//localhost:1313/author/derick-barker/</loc>
