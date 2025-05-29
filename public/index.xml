@@ -80,13 +80,6 @@
       <description>&lt;p&gt;Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti nobis repellat excepturi id.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Collaborate for Impact with IB Sports Academy</title>
       <link>//localhost:1313/collaborate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,6 +99,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/author/derick-barker/</guid>
       <description>&lt;p&gt;Facilis architecto quis maxime nam at, optio harum a velit nulla repellat ad culpa dolorem ab ducimus, porro enim fugit incidunt expedita. Caut repudiandae a assumenda tempora!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meet The Team</title>
+      <link>//localhost:1313/about/meet-the-team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/meet-the-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Who Is Ishwar Bhati?</title>
+      <link>//localhost:1313/about/ishwar-bhati/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/ishwar-bhati/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;tags-ishwar-bhati-head-coach-ib-sports-academy-basketball-india-youth-empowerment&#34;&gt;title: &amp;ldquo;About Coach Ishwar Bhati&amp;rdquo;&#xA;date: 2025-05-27&#xA;author: &amp;ldquo;IB Sports Academy&amp;rdquo;&#xA;cover: &amp;ldquo;/images/coach-ishwar-bhati-profile.jpg&amp;rdquo;&#xA;summary: &amp;ldquo;Meet Coach Ishwar Bhati, the visionary founder and head coach of IB Sports Academy, dedicated to empowering youth and transforming Indian basketball.&amp;rdquo;&#xA;tags: [&amp;ldquo;Ishwar Bhati&amp;rdquo;, &amp;ldquo;Head Coach&amp;rdquo;, &amp;ldquo;IB Sports Academy&amp;rdquo;, &amp;ldquo;Basketball India&amp;rdquo;, &amp;ldquo;Youth Empowerment&amp;rdquo;]&lt;/h2&gt;&#xA;&lt;h1 id=&#34;about-coach-ishwar-bhati&#34;&gt;About Coach Ishwar Bhati&lt;/h1&gt;&#xA;&lt;h2 id=&#34;founder--head-coach-ib-sports-academy&#34;&gt;Founder &amp;amp; Head Coach, IB Sports Academy&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;inspiring-the-next-generation-of-indian-basketball&#34;&gt;Inspiring the Next Generation of Indian Basketball&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Coach Ishwar Bhati&lt;/strong&gt; is a trailblazer in Indian basketball coaching and the driving force behind IB Sports Academy. With over 15 years of experience, he has dedicated his life to empowering young athletes and transforming the landscape of grassroots basketball in India.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 [en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content"
 weight = 1
 copyright = "Copyright © 2025 IB Sports Academy - All Rights Reserved."
 # copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"

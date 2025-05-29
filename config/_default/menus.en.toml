@@ -8,9 +8,26 @@ weight = 1
 
 [[main]]
 name = "About"
-url = "about/"
 weight = 2
+hasChildren = true
 
+  [[main]]
+  parent = "About"
+  name = "Our Story"
+  url = "about/"
+  weight = 1
+
+  [[main]]
+  parent = "About"
+  name = "Ishwar Bhati"
+  url = "about/ishwar-bhati/"
+  weight = 2
+
+  [[main]]
+  parent = "About"
+  name = "Meet The Team"
+  url = "about/meet-the-team/"
+  weight = 3
 
 [[main]]
 name = "Blog"
@@ -32,7 +49,6 @@ hasChildren = true
   name = "Blog Details"
   url = "blog/post-1/"
   weight = 1
-
 
   [[main]]
   parent = "Pages"

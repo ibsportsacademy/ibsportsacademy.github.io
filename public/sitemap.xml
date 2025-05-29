@@ -37,8 +37,6 @@
   </url><url>
     <loc>//localhost:1313/author/abdullah-al-shifat/</loc>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
-  </url><url>
     <loc>//localhost:1313/author/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
@@ -49,6 +47,12 @@
   </url><url>
     <loc>//localhost:1313/author/derick-barker/</loc>
   </url><url>
+    <loc>//localhost:1313/about/meet-the-team/</loc>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
+  </url><url>
     <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/about/ishwar-bhati/</loc>
   </url>
 </urlset>
