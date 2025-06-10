@@ -22112,11 +22112,6 @@ iframe.wait-autoplay {
         attachVideoPlayListeners(videoGrid);
 
         
-        if (window.AOS) {
-          AOS.refreshHard();
-        }
-
-        
         
         
         if (currentPage >= totalPages) {
@@ -22214,6 +22209,11 @@ iframe.wait-autoplay {
       loadMoreBtn.textContent = 'Load More';
 
       const data = await fetchStaticVideoPage(currentPage);
+
+      
+      if (window.AOS) {
+        AOS.refreshHard();
+      }
 
       if (data && data.length > 0) {
         renderVideos(data);

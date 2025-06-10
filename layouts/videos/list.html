@@ -128,11 +128,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         attachVideoPlayListeners(videoGrid);
 
-        // To fix Animate On Scroll after lazy loading
-        if (window.AOS) {
-          AOS.refreshHard();
-        }
-
         // This assumes you initially load data into allVideosData if you want to paginate client-side
         // For server-side (Hugo generated) pagination, this client-side `allVideosData` isn't strictly necessary.
         // We'll fetch pages directly based on currentPage.
@@ -231,6 +226,11 @@
       loadMoreBtn.textContent = 'Load More';
 
       const data = await fetchStaticVideoPage(currentPage);
+
+      // To fix Animate On Scroll after lazy loading
+      if (window.AOS) {
+        AOS.refreshHard();
+      }
 
       if (data && data.length > 0) {
         renderVideos(data);
