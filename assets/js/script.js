@@ -195,9 +195,10 @@ window.onload = () => {
   
       // Click overlay to close popup
       overlay.addEventListener('click', hidePopup);
-  } else {
-      console.error('Required elements not found.');
-  }
+  } 
+  // else {
+  //     console.error('Required elements not found.');
+  // }
   
   
   

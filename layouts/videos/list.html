@@ -40,6 +40,7 @@
                         type="button"
                         title="Play Video Button"
                         class="video-play-btn"
+                        aria-label="Play video of {{ $title }}"
                         data-src="https://www.youtube.com/embed/{{ $id }}?autoplay=0&enablejsapi=1">
                         <i class="las la-play"></i>
                       </button>
@@ -127,6 +128,11 @@
     document.addEventListener('DOMContentLoaded', () => {
         attachVideoPlayListeners(videoGrid);
 
+        // To fix Animate On Scroll after lazy loading
+        if (window.AOS) {
+          AOS.refreshHard();
+        }
+
         // This assumes you initially load data into allVideosData if you want to paginate client-side
         // For server-side (Hugo generated) pagination, this client-side `allVideosData` isn't strictly necessary.
         // We'll fetch pages directly based on currentPage.
@@ -167,6 +173,7 @@
                   type="button"
                   title="Play Video Button"
                   class="video-play-btn"
+                  aria-label="Play video of ${title}"
                   data-src="https://www.youtube.com/embed/${videoId}?autoplay=0&enablejsapi=1">
                   <i class="las la-play"></i>
                 </button>

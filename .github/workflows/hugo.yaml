@@ -10,6 +10,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  schedule:
+    - cron: '30 6,15,22 * * *'  # 🔁 Runs every day at 04:00, 12:00, 21:00 IST (i.e. UTC+05:30)
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read

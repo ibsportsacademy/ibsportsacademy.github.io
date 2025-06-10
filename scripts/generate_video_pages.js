@@ -31,7 +31,7 @@ for (let i = 1; i <= totalPages; i++) {
   const frontMatter = `---
 headTitle: "Watch Training Videos from India's #1 Basketball Academy - Page ${i} | IB Sports Academy"
 title: "Watch Training Videos from India's #1 Basketball Academy - Page ${i} | IB Sports Academy"
-description: "Watch elite basketball training videos from IB Sports Academy. Learn NBA-level drills, youth coaching tips, and real game action from India's top basketball academy | Delhi's top basketball academy."
+description: "Page ${i} of IB Sports Academy's elite basketball training videos. Learn NBA-level drills, youth coaching tips, and real game action from India's top basketball academy | Delhi's best basketball academy."
 layout: "videos/page"
 page_number: ${i}
 draft: false
