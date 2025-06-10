@@ -1,0 +1,410 @@
+[
+  {
+    "kind": "youtube#searchResult",
+    "etag": "QcoVcdZveLuOfi4XdESbTeRDej4",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "eyHrletdIY8"
+    },
+    "snippet": {
+      "publishedAt": "2023-11-10T05:25:43Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Cultural slam #dunk at #IBSportsAcademy with basketball coaches from France #french #coaches #learn",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/eyHrletdIY8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/eyHrletdIY8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/eyHrletdIY8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-11-10T05:25:43Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "GMt_2C0s5hsymTp1Y8fRHVk1mTs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "BF4pj6QwUo4"
+    },
+    "snippet": {
+      "publishedAt": "2023-09-07T19:05:47Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "When you&#39;re close to being on time for #basketball #class #coach #basketballshorts  #caughtoncamera",
+      "description": "When you're this close to being on time for #basketball class but fate has other plans! Coach's eagle eyes never miss a beat!",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/BF4pj6QwUo4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/BF4pj6QwUo4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/BF4pj6QwUo4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-09-07T19:05:47Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "L1JdMizMOdeMhwT8Qnc6SeAHowk",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "qyAtE1R49fo"
+    },
+    "snippet": {
+      "publishedAt": "2023-09-01T16:42:42Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Who needs a #ladder when you’ve got #friends who can lift your spirits &amp; the #ball ! #challenge😅🏀",
+      "description": "Who needs a ladder when you've got friends who can lift your spirits - and the ball! High-flying adventures on the court!",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/qyAtE1R49fo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/qyAtE1R49fo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/qyAtE1R49fo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-09-01T16:42:42Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "xWXz6RMBcyVzJYELywvwhwIkazY",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "gGC4XSV44GM"
+    },
+    "snippet": {
+      "publishedAt": "2023-08-30T09:53:02Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Lunar surface with glimpse of #basketball, @Chandrayaan3 detects sulphur and oxygen on #moon",
+      "description": "Exciting news: Chandrayaan-3 detects sulfur and oxygen on the moon, sparking speculation about potential life. IB Sports ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/gGC4XSV44GM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/gGC4XSV44GM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/gGC4XSV44GM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-08-30T09:53:02Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "mToHugfbxByZAjEzEQPJjR-QOGA",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "6b0hZ2dRlJM"
+    },
+    "snippet": {
+      "publishedAt": "2023-08-20T17:21:16Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Dribble, Dunk, Delight!🏀 #animated #players #magic #basketball #reels #action #dribble #hoops #play",
+      "description": "Dribble, Dunk, Delight!  Watch in awe as our talented students transform into animated players, bringing the magic of basketball ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/6b0hZ2dRlJM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/6b0hZ2dRlJM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/6b0hZ2dRlJM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-08-20T17:21:16Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "749FuxOEQbSPnUa8mN5l_42Blro",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "wtjKcSh33QQ"
+    },
+    "snippet": {
+      "publishedAt": "2023-08-20T17:14:18Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Elevate your game🏀 #IBSportsAcademy #training #basketball #Champions #Top10 #best #delhi #india",
+      "description": "Elevate your game at #IBSportsAcademyTraining! Witness players sculpting their skills with precision, fueled by dedication and ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/wtjKcSh33QQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/wtjKcSh33QQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/wtjKcSh33QQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-08-20T17:14:18Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "QPe2dhKftGoR5Noe2gPBYYNbjfs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "GDAjbt4FZL4"
+    },
+    "snippet": {
+      "publishedAt": "2023-08-20T16:56:56Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Dribbling through lifes challenges #Life #Basketball #court #ibsportsacademy #india ​⁠@NBA @inbl",
+      "description": "Dribbling through life's challenges with the Life of Basketball Academy @IBSportsAcademy Check out our latest video ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/GDAjbt4FZL4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/GDAjbt4FZL4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/GDAjbt4FZL4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-08-20T16:56:56Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "WdyrqCEq-e-8gZnDFFpyk1o_eiw",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "VMg27HEfS8Y"
+    },
+    "snippet": {
+      "publishedAt": "2023-07-11T18:32:13Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#basketball #ibsportsacademy #basketballcoach #basketballdrills #nba #nbaindia #games #best #academy",
+      "description": "Level up your basketball game with the top-notch dribbling skills training at IB Sports Academy! Join us today and unleash your ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/VMg27HEfS8Y/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/VMg27HEfS8Y/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/VMg27HEfS8Y/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-07-11T18:32:13Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "jSqWwRsfNDji_9ptsTX1a0m6B24",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "TYXdb3i3BAk"
+    },
+    "snippet": {
+      "publishedAt": "2023-06-26T17:04:46Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Fun and Play | Basketball | Amazing Basketball Coach | Fun Dribble Moves | Pass | IB Sports Academy",
+      "description": "Get ready for some basketball fun and excitement at IB Sports Academy! Our amazing coach is teaching us the coolest ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/TYXdb3i3BAk/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/TYXdb3i3BAk/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/TYXdb3i3BAk/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-06-26T17:04:46Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "qf6cXGgjYkhrXOKCxc0Vknu6YfQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "H-2UfTjSMr4"
+    },
+    "snippet": {
+      "publishedAt": "2023-06-26T16:32:17Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Promoting #Wellness &amp; Spreading #serenity on International #Yoga day at #ibsportsacademy #india",
+      "description": "Spreading serenity and promoting wellness, the students of IB Sports Academy came together to celebrate International Yoga Day ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/H-2UfTjSMr4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/H-2UfTjSMr4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/H-2UfTjSMr4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-06-26T16:32:17Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "923b5pkvtNcaZY-Xv7mw2Q5RVR4",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "wQabC3T_Emg"
+    },
+    "snippet": {
+      "publishedAt": "2023-06-26T16:23:38Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Witnessing incredible dedication and teamwork at #ibsportsacademy #best #basketball #india #top10",
+      "description": "Witnessing incredible dedication and teamwork at IB Sports Academy. These talented students are pushing their limits, practicing ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/wQabC3T_Emg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/wQabC3T_Emg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/wQabC3T_Emg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-06-26T16:23:38Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Kfg_Hvzg-mIkaBQWoBo6AnOXpeE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "Nir3pkocgPA"
+    },
+    "snippet": {
+      "publishedAt": "2023-05-28T16:51:25Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Inter-IB Basketball Tournament | IB Sports Academy | Basketball Academy in Dwarka | New Delhi, India",
+      "description": "IBSportsAcademy proudly hosted the Inter-IB Basketball Tournament from 12th to 14th at ITL PUBLIC SCHOOL . The event ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Nir3pkocgPA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Nir3pkocgPA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Nir3pkocgPA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-05-28T16:51:25Z"
+    }
+  }
+]

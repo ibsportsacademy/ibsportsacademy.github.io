@@ -1,0 +1,342 @@
+[
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Hhwl2rzc_vSm-vK4uHQouFd1QL0",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "ta-yZeW1BdI"
+    },
+    "snippet": {
+      "publishedAt": "2021-02-18T19:04:01Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Practice Session | Basketball Training | Boys team| IB Sports Academy | Basketball Academy in Dwarka",
+      "description": "\"Coming together is a beginning. Keeping together is progress. Working together is success.\" --Henry Ford Rigorous practice ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ta-yZeW1BdI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ta-yZeW1BdI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ta-yZeW1BdI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2021-02-18T19:04:01Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "t3wf8XaK5IVs21_2ws6zKNG_1uI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "6ODWZUbLvTc"
+    },
+    "snippet": {
+      "publishedAt": "2021-01-23T18:03:51Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Basketball Drill | Nba | Passing | Layup | Shooting | Fitness | Training | Academy in Dwarka",
+      "description": "\"The strength of the team is each individual member. The strength of each member is the team.\" Players in the Making ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/6ODWZUbLvTc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/6ODWZUbLvTc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/6ODWZUbLvTc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2021-01-23T18:03:51Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "ejIr8GoTa9mzO0SUakh1UPEcYy8",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "cmhX6TM1VCI"
+    },
+    "snippet": {
+      "publishedAt": "2021-01-23T17:37:58Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "TABATA WORKOUT | FITNESS SESSION | COACH ISHWAR BHATI | WEIGHT LOSS EXERCISES | FOUR MINUTE WORKOUT",
+      "description": "'All progress takes place outside the comfort zone.' Coach Ishwar Bhati highlighting the importance of High-intensity interval ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/cmhX6TM1VCI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/cmhX6TM1VCI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/cmhX6TM1VCI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2021-01-23T17:37:58Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "klm4RuWVGwZVkTDBRCEwcZvJYNI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "G9lR0lyaOJA"
+    },
+    "snippet": {
+      "publishedAt": "2021-01-09T18:55:21Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Close Encounters | Basketball l NBA| IB Sports Academy | Practice Match| FIBA | Academy In Dwarka",
+      "description": "Some people want it to happen, some wish it would happen, and others make it happen.” Basketball match: Gurugram Academy ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/G9lR0lyaOJA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/G9lR0lyaOJA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/G9lR0lyaOJA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2021-01-09T18:55:21Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "ejXUXRXn26elqKJYtHOz_0xZsMY",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "tBOqyyD7xbo"
+    },
+    "snippet": {
+      "publishedAt": "2020-12-02T10:53:13Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Basketball | Fitness Development Training | Atheletes | NBA | Ball Handling | Shoting | Defence |",
+      "description": "Improve yourself at Achievers basketball Academy Dwarka, New Delhi . Certified Coach Complete Body Workout Overall ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/tBOqyyD7xbo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/tBOqyyD7xbo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/tBOqyyD7xbo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-12-02T10:53:13Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "9Ax2o9atlxXnwS1a6qZf33KZRCQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "w53EzdbuiCQ"
+    },
+    "snippet": {
+      "publishedAt": "2018-12-27T17:16:34Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Prince | National Basketball Player | Ib sports academy | Nba",
+      "description": "teaching #learning #learnwithkidsacademy #teachandpreach #academysports #academystories #coaches #ateacher2020 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/w53EzdbuiCQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/w53EzdbuiCQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/w53EzdbuiCQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-12-27T17:16:34Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "-FdRo0B7SOCboqfd-NmwcmUdvBk",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "4Z_jNORkgjM"
+    },
+    "snippet": {
+      "publishedAt": "2018-12-27T17:13:27Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Jasleen | National basketball players | IB sports academy | Nba",
+      "description": "teaching #learning #learnwithkidsacademy #teachandpreach #academysports #academystories #coaches #ateacher2020 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/4Z_jNORkgjM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/4Z_jNORkgjM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/4Z_jNORkgjM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-12-27T17:13:27Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "1rG7ipP2HGg3lfgGwhUWvkO94ko",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "5tQskE2OOEQ"
+    },
+    "snippet": {
+      "publishedAt": "2018-12-21T18:41:11Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Basketball warm up drill | Ib Sports Academy | Nba",
+      "description": "teaching #learning #learnwithkidsacademy #teachandpreach #academysports #academystories #coaches #ateacher2020 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/5tQskE2OOEQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/5tQskE2OOEQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/5tQskE2OOEQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-12-21T18:41:11Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "8SFngLQfvU-2HCTndNQ0jln535E",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "1kas0r22LmI"
+    },
+    "snippet": {
+      "publishedAt": "2018-12-21T16:53:54Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Basketball drills | Balance and dribble | Ib Sports Academy | Nba",
+      "description": "teaching #learning #learnwithkidsacademy #teachandpreach #academysports #academystories #coaches #ateacher2020 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/1kas0r22LmI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/1kas0r22LmI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/1kas0r22LmI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-12-21T16:53:54Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "LxhinjzI-0U9hj26QBb482wUNfI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "HaMzBLtLij4"
+    },
+    "snippet": {
+      "publishedAt": "2018-07-26T09:42:07Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "IB Sports Academy | Basketball academy| Drills| Sports|Fitness| Health|Workout|Basketball",
+      "description": "Basketball Academy at Dwarka, New Delhi... Player development training and basketball training for all age group classes are ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/HaMzBLtLij4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/HaMzBLtLij4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/HaMzBLtLij4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-07-26T09:42:07Z"
+    }
+  }
+]

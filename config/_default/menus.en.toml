@@ -40,7 +40,12 @@ url = "collaborate/"
 weight = 4
 
 [[main]]
+name = "Videos"
+url = "videos/"
 weight = 5
+
+[[main]]
+weight = 6
 name = "Pages"
 hasChildren = true
 
@@ -59,7 +64,7 @@ hasChildren = true
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
 
 
 

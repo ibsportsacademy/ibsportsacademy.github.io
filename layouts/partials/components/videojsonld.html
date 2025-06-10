@@ -1,0 +1,25 @@
+{{- $title := .title -}}
+{{- $description := .description -}}
+{{- $id := .id -}}
+{{- $date := .date -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ $title | plainify }},
+  "description": {{ $description | plainify }},
+  "thumbnailUrl": "https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg",
+  "uploadDate": {{ $date | plainify }},
+  "contentUrl": "https://www.youtube.com/watch?v={{ $id }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ $id }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "IB Sports Academy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ibsportsacademy.com/images2/logo.png"
+    }
+  }
+}
+</script>

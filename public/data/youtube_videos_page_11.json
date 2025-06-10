@@ -1,0 +1,410 @@
+[
+  {
+    "kind": "youtube#searchResult",
+    "etag": "CFj5T83eFquYRGZMkwRUNlxUhnw",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "w5i-jt2XnAU"
+    },
+    "snippet": {
+      "publishedAt": "2023-02-19T15:38:11Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Why Play Basketball?🏀From dribbling to shooting, we cover it all #sports #basketball #shorts #player",
+      "description": "Why to Play Basketball?   Team IB Sports Academy shares the top reasons for choosing basketball, including its health benefits, ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/w5i-jt2XnAU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/w5i-jt2XnAU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/w5i-jt2XnAU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-02-19T15:38:11Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "eiRUbYrYBUEA1-0NMvwAfYNdRW0",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "d31cPJAoKVA"
+    },
+    "snippet": {
+      "publishedAt": "2023-02-17T15:47:23Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Basketball #athlete Shoutout to IB Sports Academy #australia #sydney #basketballgame #nba #hoops",
+      "description": "Sharing gratitude to @CamWilder for giving a shoutout to @ibsportsacademy! Your shoutout means so much to us and is a ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/d31cPJAoKVA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/d31cPJAoKVA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/d31cPJAoKVA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-02-17T15:47:23Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "jLcHYFcpy1o__Il1bTbAkyNsvCE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "RIY8SJdZojc"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-26T05:35:58Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#INBL #basketball #basketballgame #matches #indiragandhi #stadium #playerdevelopment @FIBA @ILB",
+      "description": "Our @ibsportsacademy students had an amazing time at the INBL Basketball matches from January 2-6! They had the opportunity ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/RIY8SJdZojc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/RIY8SJdZojc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/RIY8SJdZojc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-26T05:35:58Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "AIZv1TzMF0qLr_gyes5486avIKc",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "bqMFxwyFh50"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-22T14:25:41Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Vashisth of @IBSportsAcademy #player #students #testimonials #admiration #academy #basketball #nba",
+      "description": "I've failed over and over and over again in my life and that is why I succeed. - Michael Jordan   #dunk #basketball   #sports ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/bqMFxwyFh50/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/bqMFxwyFh50/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/bqMFxwyFh50/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-22T14:25:41Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "ObiWxDSrvJNL4URU_G_YNYFkkww",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "HIoRJOLlXGU"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-22T07:06:54Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "&#39;Age is no barrier&#39; #growthmindset #basketball #stephencurry #basketballtraining #basketballplayer",
+      "description": "Age is no barrier. It's a limitation you put on your mind – Jackie Joyner-Kersee !!! Student of @ibsportsacademy @kartik wants to ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/HIoRJOLlXGU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/HIoRJOLlXGU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/HIoRJOLlXGU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-22T07:06:54Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "p1RFxRLOEHWiT0swQ9GInvKMrNQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "is0N2w8R8j8"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-22T05:49:10Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#basketball #appreciation  #student #workout #fitnessmotivation #admiration #learn #sharing #words",
+      "description": "Testimonials : Student of IB SPORTS ACADEMY, Ananya studying in grade 6 sharing her admiration for the Academy. We are ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/is0N2w8R8j8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/is0N2w8R8j8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/is0N2w8R8j8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-22T05:49:10Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "BI84PFZx79kH5ygRou0V7RmUjjk",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "1RO-dVHyzOM"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-19T17:37:59Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#training #basketball #basketballgame #basketballcoach #evening #practice #junior #girls #strength",
+      "description": "basketball #hoops #dunk #nba #collegebasketball #basketballtraining #basketballtutorial #highschoolbasketball ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/1RO-dVHyzOM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/1RO-dVHyzOM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/1RO-dVHyzOM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-19T17:37:59Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "_5Vl90H1qRVSpbeDFD9QHk4frbI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "nd5YSy9BH6s"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-19T17:33:12Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#ravikumardahiya #wrestling #athlete #olympic #silver #ibsportsacademy #basketball #basketballgame",
+      "description": "Introducing #RaviKumarDahiya, Olympic medalist wrestler! Ravi has proven time and again that he is one of the most versatile ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/nd5YSy9BH6s/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/nd5YSy9BH6s/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/nd5YSy9BH6s/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-19T17:33:12Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "WCGazKTsu_DB7cGV89c9sypNzyo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "y3e5NhuZkKc"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-07T18:13:27Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#basketball #games #indoor #kids #junior #batch #americanschool #ibsportsacademy #students #coaching",
+      "description": "basketball #hoops #dunk #nba #collegebasketball #basketballtraining #basketballtutorial #highschoolbasketball ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/y3e5NhuZkKc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/y3e5NhuZkKc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/y3e5NhuZkKc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-07T18:13:27Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "5JQQVA9f_EBf8Pj-eOS5fqSvGy0",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "UfAEfOTJLc8"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-06T04:55:20Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "#ibsportsacademy in Top 10 Basketball Academy in India #basketball #games #basketballtraining #coach",
+      "description": "Yet another Milestone! As Kreedon.com ranks IB SPORTS ACADEMY among the \"TOP10 Best Basketball Academy in India\".",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/UfAEfOTJLc8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/UfAEfOTJLc8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/UfAEfOTJLc8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-06T04:55:20Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "OMTnp8nVoBsW-rqY9hEyliy-L6Y",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "i7efEOWmXUU"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-03T17:09:45Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "Defence Technique #basketball #defence #skills #game #academy #coaching #training  #ibsportsacademy",
+      "description": "\"It doesn't matter if you fall down, it's whether you get back up.\" - Michael Jordan #basketball #nbaindia #fitindia #kheloindia #khel ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/i7efEOWmXUU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/i7efEOWmXUU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/i7efEOWmXUU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-03T17:09:45Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "dQqqJyvEvbiJINeG_ujtTJsX-AQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "jJwRQ2Lc77E"
+    },
+    "snippet": {
+      "publishedAt": "2023-01-03T15:22:36Z",
+      "channelId": "UC1lF5cBHpVq2RgCCUMHExig",
+      "title": "IB Sports Academy #basketballacademy #logo #brand #basketballgame #basketball #joinme  #games #india",
+      "description": "IB Sports Academy brand logo \"As the leaves change color, your personal brand should not be static\" #brand #sports #basketball ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/jJwRQ2Lc77E/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/jJwRQ2Lc77E/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/jJwRQ2Lc77E/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "IB Sports Academy",
+      "liveBroadcastContent": "none",
+      "publishTime": "2023-01-03T15:22:36Z"
+    }
+  }
+]

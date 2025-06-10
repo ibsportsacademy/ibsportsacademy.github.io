@@ -1,0 +1,241 @@
+{{ define "main" }}
+
+{{ $currentPageNum := 1 }}
+{{ $videosPerPage := (site.Data.youtube_index.videosPerPage | default 12) }}
+
+{{/* Load the first page of videos from data file */}}
+{{ $dataPath := printf "youtube_videos_page_%d.json" $currentPageNum }}
+{{ $videos := site.Data.youtube_videos_page_1 }}
+
+{{ if not $videos }}
+  <p class="text-center text-red-500">No videos found. Data might not be generated yet or API call failed.</p>
+{{ else }}
+  <section class="video-popup has-bg-color overflow-hidden">
+    <div class="container-xxl position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="block">
+
+            <div class="section-title text-center" data-aos="fade-up">
+              <p class="text-uppercase">Featured Videos</p>
+              <h2 class="title">Elite Basketball Training Videos from IB Sports Academy</h2>
+              <p>Click any video below to watch highlights, behind-the-scenes, and more.</p>
+
+              <a class="subscribe-btn btn btn-primary" href="https://www.youtube.com/channel/UC1lF5cBHpVq2RgCCUMHExig?sub_confirmation=1" target="_blank" alt="Subscribe to our YouTube channel for more drills and training tips">Subscribe to our Youtube channel</a>
+            </div>
+
+            <div class="row justify-content-center" id="video-grid">
+              {{ range $index, $video := $videos }}
+                {{ if eq $video.id.kind "youtube#video" }}
+                  {{ $id := $video.id.videoId }}
+                  {{ $title := $video.snippet.title }}
+                  {{ $thumbnail := $video.snippet.thumbnails.high }}
+
+                  {{ $thumb := $thumbnail.url }}
+
+                  <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-block video-block-videos position-relative"
+                         data-src="https://www.youtube.com/embed/{{ $id }}?autoplay=1&enablejsapi=1">
+                      <button
+                        type="button"
+                        title="Play Video Button"
+                        class="video-play-btn"
+                        data-src="https://www.youtube.com/embed/{{ $id }}?autoplay=0&enablejsapi=1">
+                        <i class="las la-play"></i>
+                      </button>
+                      <img
+                        src="{{ $thumb }}"
+                        alt="{{ $title }}"
+                        class="video-thumb w-full object-cover">
+                    </div>
+                    <p class="video-title text-center mt-2">
+                      {{ $title }}
+                      <br />
+                      Watch on <a class="youtube-link" href="https://www.youtube.com/watch?v={{ $id }}&utm_source=website&utm_medium=video_gallery&utm_campaign=ibsportsacademy" target="_blank" rel="noopener">YouTube!</a>
+                    </p>
+                  </div>
+
+                  {{ partial "components/videojsonld.html" (dict
+                    "title" $video.snippet.title
+                    "description" $video.snippet.description
+                    "id" $video.id.videoId
+                    "date" $video.snippet.publishedAt
+                  ) }}
+                {{ end }}
+              {{ end }}
+            </div>
+
+            <div class="text-center mt-6">
+              <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="video-popup-modal" id="videoPopup">
+    <div class="video-popup-content" id="videoContent">
+      <button class="video-close-btn" id="videoCloseBtn">×</button>
+      <iframe id="videoIframe" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // ... (Your existing popup JS) ...
+    const popup = document.getElementById('videoPopup');
+    const iframe = document.getElementById('videoIframe');
+    const content = document.getElementById('videoContent');
+    const closeBtn = document.getElementById('videoCloseBtn');
+    const videoGrid = document.getElementById('video-grid');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+    function openVideoPopup(videoUrl) {
+      iframe.src = videoUrl;
+      popup.classList.add('active');
+    }
+
+    function attachVideoPlayListeners(container) {
+        container.querySelectorAll('.video-block-videos:not(.listener-added)').forEach(videoBlock => {
+            videoBlock.addEventListener('click', () => {
+                const videoUrl = videoBlock.getAttribute('data-src');
+                openVideoPopup(videoUrl);
+            });
+            videoBlock.classList.add('listener-added');
+        });
+    }
+
+    closeBtn.addEventListener('click', () => {
+      popup.classList.remove('active');
+      iframe.src = '';
+    });
+
+    popup.addEventListener('click', (e) => {
+      if (!content.contains(e.target)) {
+        popup.classList.remove('active');
+        iframe.src = '';
+      }
+    });
+
+    // --- Load More Functionality ---
+    let currentPage = 1;
+    const totalPages = {{ site.Data.youtube_index.totalPages | default 1 }}; // Get total pages from the index file
+    const videosPerPage = {{ site.Data.youtube_index.videosPerPage | default 12 }}; // Get videos per page from the index file
+    let allVideosData = []; // To store all videos for client-side pagination if desired later
+
+    // Load initial data (already in DOM, but ensure JS model is populated)
+    document.addEventListener('DOMContentLoaded', () => {
+        attachVideoPlayListeners(videoGrid);
+
+        // This assumes you initially load data into allVideosData if you want to paginate client-side
+        // For server-side (Hugo generated) pagination, this client-side `allVideosData` isn't strictly necessary.
+        // We'll fetch pages directly based on currentPage.
+        if (currentPage >= totalPages) {
+          loadMoreBtn.style.display = 'none'; // Hide if no more pages
+        }
+    });
+
+    async function fetchStaticVideoPage(pageNumber) {
+      const pageUrl = `/data/youtube_videos_page_${pageNumber}.json`; // Assuming data/ is served at /data/
+      try {
+        const response = await fetch(pageUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+      } catch (error) {
+        console.error("Error fetching static video page:", error);
+        return null;
+      }
+    }
+
+    function renderVideos(videos) {
+      videos.forEach(video => {
+        if (video.id.kind === "youtube#video") {
+          const videoId = video.id.videoId;
+          const title = video.snippet.title;
+          const description = video.snippet.description || "";
+          const publishedAt = video.snippet.publishedAt || "";
+          const thumbnailUrl = video.snippet.thumbnails.high.url;
+
+          const videoHtml = `
+            <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="video-block video-block-videos position-relative"
+                   data-src="https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1">
+                <button
+                  type="button"
+                  title="Play Video Button"
+                  class="video-play-btn"
+                  data-src="https://www.youtube.com/embed/${videoId}?autoplay=0&enablejsapi=1">
+                  <i class="las la-play"></i>
+                </button>
+                <img
+                  src="${thumbnailUrl}"
+                  alt="${title}"
+                  class="video-thumb w-full object-cover">
+              </div>
+              <p class="video-title text-center mt-2 px-2 text-sm text-gray-700 font-medium line-clamp-2">
+                ${title}
+                <br />
+                Watch on <a class="youtube-link" href="https://www.youtube.com/watch?v=${videoId}&utm_source=website&utm_medium=video_gallery&utm_campaign=ibsportsacademy" target="_blank" rel="noopener">YouTube!</a>
+              </p>
+            </div>
+          `;
+          videoGrid.insertAdjacentHTML('beforeend', videoHtml);
+
+          // Create JSON-LD schema and inject into head
+          const videoSchema = {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": title,
+            "description": description,
+            "thumbnailUrl": thumbnailUrl,
+            "uploadDate": publishedAt,
+            "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
+            "embedUrl": `https://www.youtube.com/embed/${videoId}`,
+            "publisher": {
+              "@type": "Organization",
+              "name": "IB Sports Academy",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ibsportsacademy.com/images2/logo.png"
+              }
+            }
+          };
+
+          const script = document.createElement("script");
+          script.type = "application/ld+json";
+          script.text = JSON.stringify(videoSchema);
+          document.body.appendChild(script)
+        }
+      });
+      attachVideoPlayListeners(videoGrid); // Reattach listeners for new elements
+    }
+
+    loadMoreBtn.addEventListener('click', async () => {
+      currentPage++; // Increment page number for the next fetch
+      if (currentPage > totalPages) {
+        loadMoreBtn.textContent = 'No More Videos'; // No more pages
+        loadMoreBtn.disabled = true;
+        return;
+      }
+
+      loadMoreBtn.textContent = 'Load More';
+
+      const data = await fetchStaticVideoPage(currentPage);
+
+      if (data && data.length > 0) {
+        renderVideos(data);
+        if (currentPage >= totalPages) {
+          loadMoreBtn.style.display = 'none'; // Hide if this was the last page
+        }
+      } else {
+        loadMoreBtn.textContent = 'No More Videos';
+        loadMoreBtn.disabled = true;
+      }
+    });
+
+  </script>
+{{ end }}
+{{ end }}

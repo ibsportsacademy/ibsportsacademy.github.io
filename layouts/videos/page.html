@@ -1,0 +1,154 @@
+{{ define "main" }}
+
+{{ $pageNumber := .Params.page_number }}
+{{ $filename := printf "youtube_videos_page_%d" $pageNumber }}
+{{ $videos := index site.Data $filename }}
+
+{{ if not $videos }}
+  <p class="text-center text-red-500">No videos found. Data might not be generated yet or API call failed.</p>
+{{ else }}
+  <section class="video-popup has-bg-color overflow-hidden">
+    <div class="container-xxl position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="block">
+
+            <div class="section-title text-center" data-aos="fade-up">
+              <p class="text-uppercase">Featured Videos - Page {{ $pageNumber }}</p>
+              <h2 class="title">Elite Basketball Training Videos from IB Sports Academy</h2>
+              <p>Click any video below to watch highlights, behind-the-scenes, and more.</p>
+
+              <a class="subscribe-btn btn btn-primary" href="https://www.youtube.com/channel/UC1lF5cBHpVq2RgCCUMHExig?sub_confirmation=1" target="_blank" alt="Subscribe to our YouTube channel for more drills and training tips">Subscribe to our Youtube channel</a>
+            </div>
+
+            <div class="row justify-content-center" id="video-grid">
+              {{ range $index, $video := $videos }}
+                {{ if eq $video.id.kind "youtube#video" }}
+                  {{ $id := $video.id.videoId }}
+                  {{ $title := $video.snippet.title }}
+                  {{ $thumbnail := $video.snippet.thumbnails.high }}
+
+                  {{ $thumb := $thumbnail.url }}
+
+                  <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-block video-block-videos position-relative"
+                         data-src="https://www.youtube.com/embed/{{ $id }}?autoplay=1&enablejsapi=1">
+                      <button
+                        type="button"
+                        title="Play Video Button"
+                        class="video-play-btn"
+                        data-src="https://www.youtube.com/embed/{{ $id }}?autoplay=0&enablejsapi=1">
+                        <i class="las la-play"></i>
+                      </button>
+                      <img
+                        src="{{ $thumb }}"
+                        alt="{{ $title }}"
+                        class="video-thumb w-full object-cover">
+                    </div>
+                    <p class="video-title text-center mt-2 px-2 text-sm text-gray-700 font-medium line-clamp-2">
+                      {{ $title }}
+                      <br />
+                      Watch on <a class="youtube-link" href="https://www.youtube.com/watch?v={{ $id }}&utm_source=website&utm_medium=video_gallery&utm_campaign=ibsportsacademy" target="_blank" rel="noopener">YouTube!</a>
+                    </p>
+                  </div>
+
+                  {{ partial "components/videojsonld.html" (dict
+                    "title" $video.snippet.title 
+                    "description" $video.snippet.description
+                    "id" $video.id.videoId
+                    "date" $video.snippet.publishedAt
+                  ) }}
+                {{ end }}
+              {{ end }}
+            </div>
+
+            <div class="text-center">
+              <button id="previousPageBtn" class="btn btn-primary">Previous Page</button>
+              <button id="nextPageBtn" class="btn btn-primary">Next Page</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="video-popup-modal" id="videoPopup">
+    <div class="video-popup-content" id="videoContent">
+      <button class="video-close-btn" id="videoCloseBtn">×</button>
+      <iframe id="videoIframe" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // ... (Your existing popup JS) ...
+    const popup = document.getElementById('videoPopup');
+    const iframe = document.getElementById('videoIframe');
+    const content = document.getElementById('videoContent');
+    const closeBtn = document.getElementById('videoCloseBtn');
+    const videoGrid = document.getElementById('video-grid');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+    function openVideoPopup(videoUrl) {
+      iframe.src = videoUrl;
+      popup.classList.add('active');
+    }
+
+    function attachVideoPlayListeners(container) {
+        container.querySelectorAll('.video-block-videos:not(.listener-added)').forEach(videoBlock => {
+            videoBlock.addEventListener('click', () => {
+                const videoUrl = videoBlock.getAttribute('data-src');
+                openVideoPopup(videoUrl);
+            });
+            videoBlock.classList.add('listener-added');
+        });
+    }
+
+    closeBtn.addEventListener('click', () => {
+      popup.classList.remove('active');
+      iframe.src = '';
+    });
+
+    popup.addEventListener('click', (e) => {
+      if (!content.contains(e.target)) {
+        popup.classList.remove('active');
+        iframe.src = '';
+      }
+    });
+
+    let currentPage = {{ $pageNumber }};
+    const totalPages = {{ site.Data.youtube_index.totalPages | default 1 }}; // Get total pages from the index file
+
+    // Load initial data (already in DOM, but ensure JS model is populated)
+    document.addEventListener('DOMContentLoaded', () => {
+        attachVideoPlayListeners(videoGrid);
+
+        // We'll fetch pages directly based on currentPage.
+        if (currentPage <= 1) {
+          previousPageBtn.disabled = true; // Hide if no more pages
+        } else {
+          previousPageBtn.disabled = false;
+        }
+        if (currentPage >= totalPages) {
+          nextPageBtn.disabled = true; // Hide if no more pages
+        } else {
+          nextPageBtn.disabled = false; // Hide if no more pages
+        }
+		// Handle Previous Page
+		previousPageBtn.addEventListener('click', () => {
+			if (currentPage > 1) {
+			  const prevPage = currentPage - 1;
+			  window.location.href = `/videos/${prevPage}`;
+			}
+		});
+
+		// Handle Next Page (if applicable)
+		nextPageBtn.addEventListener('click', () => {
+		const nextPage = currentPage + 1;
+		window.location.href = `/videos/${nextPage}`;
+		});
+
+    });
+
+  </script>
+{{ end }}
+{{ end }}

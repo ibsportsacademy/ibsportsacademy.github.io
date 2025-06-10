@@ -48,7 +48,7 @@ link = "#"
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["IB Sports Academy", "Ishwar Bhati", "Basketball", "Basketball Coach", "Delhi", "India", "Basketball Academy Delhi", "Youth Basketball Coaching", "Basketball for kids", "Best Basketball Coaching Delhi", "Best basketball Academy", "#1 Basketball Academy"]
+keywords = ["IB Sports Academy", "Ishwar Bhati", "Basketball", "Basketball Coach", "Delhi", "India", "Basketball Academy Delhi", "Youth Basketball Coaching", "Basketball for kids", "Best Basketball Coaching Delhi", "Best basketball Academy", "#1 Basketball Academy", "Youtube", "India's top basketball academy", "Delhi's top basketball academy", "Delhi's best basketball", "Delhi's best basketball academy", "Delhi best basketball", "basketball near me", "basketball academy near me", "best basketball academy near me", "basketball drills how to", "basketball layup how to"]
 description = "Transform Your Game with NBA Level Coaching"
 author = "Ishwar Bhati"
 image = "images2/banner-app.png" # this image will be used as fallback if a page has no image of its own

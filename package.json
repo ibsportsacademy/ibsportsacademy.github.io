@@ -1,0 +1,13 @@
+{
+  "name": "hugo-youtube-feeder",
+  "version": "1.0.0",
+  "description": "Script to fetch YouTube data for Hugo static site.",
+  "main": "scripts/update_youtube_data.js",
+  "scripts": {
+    "update-data": "node scripts/update_youtube_data.js",
+    "generate-pages": "node scripts/generate_video_pages.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
