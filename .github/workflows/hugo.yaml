@@ -34,7 +34,7 @@ jobs:
     env:
       HUGO_VERSION: 0.147.2
       HUGO_ENVIRONMENT: production
-      HUGO_PARAMS_IB_YOUTUBE_API_KEY: ${{ secrets.IB_YOUTUBE_API_KEY }}
+      IB_YOUTUBE_API_KEY: ${{ secrets.IB_YOUTUBE_API_KEY }}
       TZ: America/Los_Angeles
     steps:
       - name: Install Hugo CLI

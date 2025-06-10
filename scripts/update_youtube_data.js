@@ -7,7 +7,7 @@ const CHANNEL_ID = 'UC1lF5cBHpVq2RgCCUMHExig'; // Your channel ID
 const VIDEOS_PER_PAGE = 12; // How many videos you want per static page
 
 if (!API_KEY) {
-    console.error('YOUTUBE_API_KEY environment variable not set.');
+    console.error('IB_YOUTUBE_API_KEY environment variable not set.');
     process.exit(1);
 }
 
