@@ -156,17 +156,17 @@
   <meta name="twitter:creator" content="@{{ . }}" />
 {{ end }}
 
-{{ if .IsPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": {{ $title | jsonify }},
-  "url": "{{ .Permalink }}",
-  "description": {{ $description | plainify | jsonify }},
+  "name": {{ $title | plainify }},
+  "url": {{ .Permalink | safeHTML }},
+  "description": {{ $description | plainify }},
   "publisher": {
     "@type": "Organization",
     "name": "IB Sports Academy",
+    "url": "https://ibsportsacademy.com",
     "logo": {
       "@type": "ImageObject",
       "url": "https://ibsportsacademy.com/images2/logo.png"
@@ -174,7 +174,6 @@
   }
 }
 </script>
-{{ end }}
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="robots" content="index, follow">

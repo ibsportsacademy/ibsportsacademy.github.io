@@ -20727,7 +20727,7 @@ iframe.wait-autoplay {
 .macy-item img:hover {
   transform: scale(1.2); }
 
-.photo-gallery {
+.photo-gallery, .video-gallery {
   padding: 2rem 0; }
 
 .gallery-section-title {
@@ -20741,3 +20741,8 @@ iframe.wait-autoplay {
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.5rem;
   width: fit-content; }
+
+.gslide-description {
+  text-align: center; }
+  .gslide-description .gslide-title {
+    font-size: 1.2rem; }

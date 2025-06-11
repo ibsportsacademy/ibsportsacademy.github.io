@@ -1,55 +1,62 @@
 {{ define "main" }}
+  {{ $gallery := site.Data.gallery }}
 
-{{ $gallery := site.Data.gallery }}
-
-<section class="photo-gallery container">
-  <div class="section-title text-center block" data-aos="fade-up">
-    <p class="text-uppercase">Photo Gallery</p>
-    <h2 class="title">Moments from IB Sports Academy Events & Training</h2>
-    <p>Explore behind-the-scenes photos, athlete highlights, and memories from India's top basketball academy.</p>
-
-    {{ range $sectionName, $images := $gallery }}
-    <div class="gallery-section">
-      <h2 class="gallery-section-title">{{ replace $sectionName "-" " " | title }}</h2>
-      <div id="macy-{{ $sectionName | urlize }}" class="macy-grid">
-        {{ range $images }}
-          <div class="macy-item">
-            <a href="{{ .url }}" class="glightbox" data-gallery="{{ $sectionName }}"title="{{ .alt }}">
-              <img src="{{ .url }}" alt="{{ .alt }}" loading="lazy">
-            </a>
-
-            <script type="application/ld+json">
-              {{ .schema | jsonify }}
-            </script>
-          </div>
-        {{ end }}
-      </div>
+  <section class="photo-gallery container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <p class="text-uppercase">Photo Gallery</p>
+      <h1 class="h2 title">Moments from IB Sports Academy Events & Training</h1>
+      <p>Explore behind-the-scenes photos, athlete highlights, and memories from India's top basketball academy.</p>
     </div>
-    {{ end }}
-  </div>
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const lightbox = GLightbox({ selector: '.glightbox' });
+    <div id="image-grid">
+      {{ range $sectionName, $images := $gallery }}
+      <div class="gallery-section" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="gallery-section-title">{{ replace $sectionName "-" " " | title }}</h2>
+        <div id="macy-{{ $sectionName | urlize }}" class="macy-grid">
+          {{ range $images }}
+            <div class="macy-item" data-aos="fade-up" data-aos-delay="200">
+              <a href="{{ .url }}"
+                 class="glightbox"
+                 title="{{ .alt | title }}"
+                 data-title="{{ .alt | title }}"
+                 data-gallery="{{ $sectionName }}"
+                 data-type="image"
+              >
+                <img src="{{ .url }}" alt="{{ .alt | title }}" loading="lazy">
+              </a>
 
-    // Select all gallery containers dynamically
-    document.querySelectorAll(".macy-grid").forEach((gridEl) => {
-      Macy({
-        container: "#" + gridEl.id,
-        trueOrder: false,
-        waitForImages: true,
-        margin: 16,
-        columns: 3,
-        breakAt: {
-          1200: 3,
-          940: 2,
-          520: 1,
-        }
+              <script type="application/ld+json">
+                {{- .schema -}}
+              </script>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const lightbox = GLightbox({ selector: '.glightbox' });
+
+      // Select all gallery containers dynamically
+      document.querySelectorAll(".macy-grid").forEach((gridEl) => {
+        Macy({
+          container: "#" + gridEl.id,
+          trueOrder: false,
+          waitForImages: true,
+          margin: 16,
+          columns: 3,
+          breakAt: {
+            1200: 3,
+            940: 2,
+            520: 1,
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
 {{ end }}
