@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+{{ $gallery := site.Data.gallery }}
+
+<section class="photo-gallery container">
+  <div class="section-title text-center block" data-aos="fade-up">
+    <p class="text-uppercase">Photo Gallery</p>
+    <h2 class="title">Moments from IB Sports Academy Events & Training</h2>
+    <p>Explore behind-the-scenes photos, athlete highlights, and memories from India's top basketball academy.</p>
+
+    {{ range $sectionName, $images := $gallery }}
+    <div class="gallery-section">
+      <h2 class="gallery-section-title">{{ replace $sectionName "-" " " | title }}</h2>
+      <div id="macy-{{ $sectionName | urlize }}" class="macy-grid">
+        {{ range $images }}
+          <div class="macy-item">
+            <a href="{{ .url }}" class="glightbox" data-gallery="{{ $sectionName }}"title="{{ .alt }}">
+              <img src="{{ .url }}" alt="{{ .alt }}" loading="lazy">
+            </a>
+
+            <script type="application/ld+json">
+              {{ .schema | jsonify }}
+            </script>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    // Select all gallery containers dynamically
+    document.querySelectorAll(".macy-grid").forEach((gridEl) => {
+      Macy({
+        container: "#" + gridEl.id,
+        trueOrder: false,
+        waitForImages: true,
+        margin: 16,
+        columns: 3,
+        breakAt: {
+          1200: 3,
+          940: 2,
+          520: 1,
+        }
+      });
+    });
+  });
+</script>
+
+{{ end }}

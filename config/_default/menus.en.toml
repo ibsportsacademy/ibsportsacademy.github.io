@@ -35,8 +35,8 @@ url = "blog/"
 weight = 3
 
 [[main]]
-name = "Collaborate"
-url = "collaborate/"
+name = "Gallery"
+url = "gallery/"
 weight = 4
 
 [[main]]
@@ -45,7 +45,12 @@ url = "videos/"
 weight = 5
 
 [[main]]
+name = "Collaborate"
+url = "collaborate/"
 weight = 6
+
+[[main]]
+weight = 7
 name = "Pages"
 hasChildren = true
 
@@ -64,7 +69,7 @@ hasChildren = true
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 8
 
 
 
