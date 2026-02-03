@@ -31,7 +31,7 @@ hasChildren = true
 
 [[main]]
 name = "Blog"
-url = "blog/"
+url = "https://blog.ibsportsacademy.com/"
 weight = 3
 
 [[main]]
@@ -56,8 +56,8 @@ hasChildren = true
 
   [[main]]
   parent = "Pages"
-  name = "Blog Details"
-  url = "blog/post-1/"
+  name = "Privacy Policy"
+  url = "privacy-policy/"
   weight = 1
 
   [[main]]
@@ -66,14 +66,16 @@ hasChildren = true
   url = "terms-and-conditions/"
   weight = 2
 
+  [[main]]
+  parent = "Pages"
+  name = "Disclaimer"
+  url = "disclaimer/"
+  weight = 3
+
 [[main]]
 name = "Contact"
 url = "contact/"
 weight = 8
-
-
-
-
 
 
 # footer menu
@@ -84,7 +86,7 @@ weight = 1
 
 [[footer]]
 name = "Blog"
-url = "blog/"
+url = "https://blog.ibsportsacademy.com/"
 weight = 2
 
 [[footer]]

@@ -718,6 +718,67 @@
 }
 
 // testimonials
+.testimonials {
+  /* Google Trust Badge Styling */
+  .google-trust-badge {
+    display: inline-block;
+    background: #ffffff;
+    padding: 8px 10px 8px 20px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    border: 1px solid #e1e4e8;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .google-trust-badge:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1) !important;
+    background: #fafafa;
+  }
+
+  .badge-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .rating-score {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #202124;
+    margin-right: 5px;
+  }
+
+  .rating-stars {
+    color: #fbbc05;
+    font-size: 1.1rem;
+    display: inline-block;
+  }
+
+  .review-count {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #5f6368;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .badge-cta {
+    border-left: 1px solid #eee;
+    padding: 5px 15px 5px 20px;
+    margin-left: 5px;
+    color: #fe6019; /* Matching your brand orange */
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .google-trust-badge:hover .badge-cta {
+    color: #e65a00;
+  }
+}
 .testimonial-carousel {
   position: relative;
   z-index: 1;
@@ -787,6 +848,11 @@
       p {
         font-size: 0.875rem;
         margin-top: 5px;
+      }
+
+      .rating {
+        font-size: 1rem;
+        margin-bottom: 0 !important;
       }
     }
   }
