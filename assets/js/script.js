@@ -78,7 +78,7 @@ window.onload = () => {
         spaceBetween: 0,
       },
       991: {
-        slidesPerView: 5,
+        slidesPerView: 7,
         spaceBetween: 0,
       },
     },
