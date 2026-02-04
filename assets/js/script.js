@@ -92,7 +92,7 @@ window.onload = () => {
   // coach-carousel
   new Swiper(".coach-carousel", {
     spaceBetween: 0,
-    speed: 1000,
+    speed: 2000,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -106,6 +106,14 @@ window.onload = () => {
     watchSlidesProgress: true,
     autoHeight: true,
     effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 150,
+      scale: 0.85,
+      modifier: 1,
+      slideShadows: true,
+    },
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -126,6 +134,7 @@ window.onload = () => {
     },
     pagination: {
       el: '.swiper-pagination',
+      dynamicBullets: true,
       clickable: true,
     },
     on: {
