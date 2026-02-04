@@ -96,11 +96,11 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
-[cookies]
-enable = true
-expire_days = 2
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
+# [cookies]
+# enable = true
+# expire_days = 2
+# content = "This site uses cookies. By continuing to use this website, you agree to their use."
+# button = "I Accept"
 
 # call-to-action
 [cta]

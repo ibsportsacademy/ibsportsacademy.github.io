@@ -1,0 +1,14 @@
+items:
+  - title: Essential Website Functions
+    description: Required for the website to work properly and cannot be disabled.
+    is_functional: true
+
+  - title: Analytics (Google Analytics)
+    description: Helps us understand website traffic and improve user experience.
+    is_functional: false
+    script_file: ga.js
+
+  - title: Advertising (Google AdSense)
+    description: Used to show ads and may personalize advertising content.
+    is_functional: false
+    script_file: adsense.js
