@@ -1,44 +1,200 @@
 ---
 title: "Terms & Conditions"
-date: "2023-01-14"
+date: "2026-02-04"
+lastmod: "2026-02-04"
 layout: "terms-and-conditions"
 draft: false
 
-description: "By Using The Service Or Clicking “I Agree”, The User Is Agreeing To Be Bound By This Agreement. If You Are Agreeing To This Agreement On Behalf Of Or For The Benefit Of A Company, Then The User Represents And Warrants That It Has The Necessary Authority To Agree To This Agreement On The Company’s"
+description: "Terms governing the use of the IB Sports Academy website, services, advertising, and user responsibilities."
 ---
 
-### 1. Definitions
+Welcome to **https://ibsportsacademy.com** (“Website”). These Terms & Conditions (“Terms”) govern your access to and use of the Website, including all content, features, services, and information provided by **IB Sports Academy**.
 
-We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+By accessing or using the Website, you agree to be legally bound by these Terms and our Privacy Policy. If you do not agree, please discontinue use of the Website.
 
-### 2. General Terms
+> These Terms should be read together with our [Privacy Policy](/privacy-policy/), which explains how we collect, use, and protect personal data.
 
-#### Service Provided AS IS:
+---
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+### 1. Acceptance of Terms
 
-#### Interoperation with Slack:
+By using this Website, you confirm that you are legally capable of entering into a binding agreement.  
+If you are under the age of 18, you may use the Website only with the consent and supervision of a parent or legal guardian.
 
-The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
+---
 
-#### Company Liability:
+### 2. Permitted Use of Website
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of others.
 
-### 4. Rules of Use
+You must not:
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude's online user guide and all applicable laws and regulations.
+- Violate applicable laws or regulations (India or otherwise)
+- Harass, abuse, defame, or harm others
+- Transmit unlawful, obscene, or offensive material
+- Attempt unauthorized access to systems, servers, or databases
+- Introduce viruses, trojans, worms, or other malicious code
 
-#### You must not:
+We reserve the right to restrict or terminate access for violations of these Terms.
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+---
 
-### 5. Intellectual Property Rights
+### 3. Intellectual Property Rights
 
-Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+All content on this Website, including text, graphics, logos, images, videos, audio, software, and design (“Content”), is the property of **IB Sports Academy** or its licensors and is protected by Indian and international intellectual property laws.
+
+You may:
+
+- View content for personal, non-commercial use
+- Print or download limited pages for personal reference
+
+You may not reproduce, distribute, modify, republish, or commercially exploit any Content without prior written permission.
+
+---
+
+### 4. Coaching Services & Offline Transactions
+
+IB Sports Academy offers sports coaching and training programs.
+
+- All inquiries, registrations, payments, and refunds are handled **offline** through official communication channels (including WhatsApp).
+- Website content does **not** constitute a binding service contract.
+- Additional waivers, agreements, or policies may apply to specific programs.
+
+Participation in physical training programs may require separate waivers, medical declarations, and consent forms provided offline. These documents govern training-related risks and responsibilities in addition to these Terms.
+
+Service-related interactions are subject to our Privacy Policy and applicable laws.
+
+---
+
+### 5. User-Generated Content
+
+If you submit reviews, testimonials, images, videos, or other content (“User-Generated Content”), you grant IB Sports Academy a **worldwide, royalty-free, perpetual, irrevocable license** to use, reproduce, modify, publish, and display such content for marketing, promotional, or editorial purposes.
+
+You represent that:
+
+- You own or control all rights to the content
+- The content does not violate third-party rights or laws
+
+---
+
+### 6. Advertising, Google AdSense & Third-Party Content
+
+This Website may display advertisements and sponsored content served by third-party advertising networks, including **Google AdSense**.
+
+These advertisements may:
+
+- Use cookies, web beacons, or similar technologies
+- Be personalized based on user interests or browsing behavior
+
+**IB Sports Academy does not endorse, guarantee, or assume responsibility** for any products, services, or claims made by advertisers.  
+Any interaction or transaction with advertisers is solely between you and the advertiser.
+
+Advertising data practices are governed by our Privacy Policy and applicable data protection laws.
+
+---
+
+### 7. Cookies & User Consent
+
+This Website uses cookies and similar technologies to:
+
+- Improve user experience
+- Analyze traffic and usage
+- Serve personalized advertisements (including via Google AdSense)
+
+By continuing to use the Website, you **consent** to the use of cookies in accordance with our Privacy Policy.  
+Users may manage or disable cookies through browser settings where permitted by law.
+
+---
+
+### 8. Children’s Use
+
+While training programs may involve minors, any personal information of participants under 18 is collected only with parent or guardian consent.
+
+We do not knowingly collect personal data from children under 13.  
+Parents or guardians who believe their child has provided personal data should contact us.
+
+---
+
+### 9. Disclaimers
+
+All content on the Website is provided for **general informational purposes only**.
+
+We make no warranties regarding accuracy, completeness, reliability, or availability of Website content.  
+Your use of the Website is at your own risk.
+
+---
+
+### 10. Limitation of Liability
+
+To the fullest extent permitted by law, IB Sports Academy shall not be liable for any damages arising from:
+
+- Use or inability to use the Website
+- Viruses or harmful components
+- Loss of data, revenue, profits, or business
+- Indirect, incidental, consequential, or punitive damages
+
+This applies whether the claim arises in contract, tort, negligence, or otherwise, even if foreseeable.
+
+---
+
+### 11. External Links
+
+The Website may contain links to third-party websites or services.
+
+We do not control and are not responsible for their content, policies, or practices.  
+Accessing third-party links is at your own risk.
+
+---
+
+### 12. Indemnification
+
+You agree to defend, indemnify, and hold harmless IB Sports Academy, its affiliates, staff, and partners from any claims, liabilities, damages, or expenses arising from:
+
+- Your use of the Website
+- Your violation of these Terms
+- Your infringement of any rights or laws
+
+---
+
+### 13. Governing Law & Jurisdiction
+
+These Terms shall be governed by and interpreted in accordance with the laws of **Delhi, India**, without regard to conflict-of-law principles.
+
+Courts located in **Delhi, India** shall have exclusive jurisdiction, without limiting our right to pursue remedies in other jurisdictions where permitted by law.
+
+---
+
+### 14. Force Majeure
+
+IB Sports Academy shall not be liable for failure to perform obligations due to events beyond reasonable control, including natural disasters, government actions, internet disruptions, or unforeseen circumstances.
+
+---
+
+### 15. Severability
+
+If any provision of these Terms is held invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+
+---
+
+### 16. Changes to Terms
+
+We reserve the right to update or modify these Terms at any time.
+
+Changes are effective upon posting.  
+Continued use of the Website constitutes acceptance of revised Terms.
+
+---
+
+### 17. Accessibility & Language
+
+Translated versions of this Website are provided for convenience only.  
+In case of conflict, the English version shall prevail.
+
+---
+
+### 18. Contact Information
+
+**IB Sports Academy**  
+📧 academyibsports@gmail.com  
+📞 +91-8860500060  
+🌐 https://ibsportsacademy.com

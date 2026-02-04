@@ -1,44 +1,217 @@
 ---
 title: "Privacy Policy"
-date: "2023-01-14"
-layout: "privacy-policy"
+date: "2026-02-04"
+lastmod: "2026-02-04"
+layout: "terms-and-conditions"
 draft: false
 
-description: "By Using The Service Or Clicking “I Agree”, The User Is Agreeing To Be Bound By This Agreement. If You Are Agreeing To This Agreement On Behalf Of Or For The Benefit Of A Company, Then The User Represents And Warrants That It Has The Necessary Authority To Agree To This Agreement On The Company’s"
+description: "Privacy practices explaining how IB Sports Academy collects, uses, and protects user information."
 ---
 
-### 1. Definitions
+At **IB Sports Academy**, accessible from **https://ibsportsacademy.com**, we are committed to protecting the privacy of our visitors, students, and users. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Website or engage with our services.
 
-We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+By using this Website, you acknowledge this Privacy Policy. Where legally required, consent is obtained through cookie banners or opt-in mechanisms.
 
-### 2. General Terms
+---
 
-#### Service Provided AS IS:
+### 1. Information We Collect
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+#### a. Personal Information (Voluntarily Provided)
 
-#### Interoperation with Slack:
+We may collect personal information that you voluntarily provide to us, including but not limited to:
 
-The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
+- Name  
+- Email address  
+- Phone number  
+- Location  
+- Registration, billing, or enrollment details  
+- Any information you submit through forms, emails, or communications  
 
-#### Company Liability:
+This information may be collected when you:
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+- Submit inquiry or contact forms  
+- Register for training programs, camps, or events  
+- Subscribe to newsletters or marketing communications  
+- Participate in academy activities or services  
+- Make payments or purchases (where applicable)
 
-### 4. Rules of Use
+---
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude's online user guide and all applicable laws and regulations.
+#### b. Non-Personal Information (Automatically Collected)
 
-#### You must not:
+When you visit our Website, we may automatically collect certain non-personal information, such as:
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+- Browser type and version  
+- IP address  
+- Device type, operating system, and technical identifiers  
+- Referring and exit pages  
+- Pages viewed and interactions  
+- Time spent on pages  
+- Clickstream and usage data  
 
-### 5. Intellectual Property Rights
+This data is used for analytics, performance monitoring, security, and improving user experience.
 
-Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+---
+
+### 2. How We Use Your Information
+
+We use the collected information for the following purposes:
+
+- To provide, operate, and manage our services and training programs  
+- To respond to inquiries, registrations, and communications  
+- To improve website performance, usability, and content  
+- To send newsletters, updates, and marketing communications **only where consent has been provided**  
+- To display relevant advertisements through third-party services such as **Google AdSense**  
+- To maintain website security, prevent fraud, and detect misuse  
+- To comply with applicable legal, regulatory, and contractual obligations  
+
+### 3. Data Sharing and Disclosure
+
+We may share personal information with:
+
+- Service providers and technology partners who assist in operating our website, analytics, advertising, communication, or security  
+- Coaches, staff, or program coordinators where necessary for training or enrollment purposes  
+- Legal authorities if required by law, court order, or to protect legal rights  
+- Advertising and analytics partners (such as Google) in accordance with their policies  
+
+We do **not sell** personal data to third parties.
+
+---
+
+### 4. Cookies and Tracking Technologies
+
+We use cookies, pixels, web beacons, and similar tracking technologies to:
+
+- Remember user preferences and settings  
+- Analyze website traffic and performance  
+- Understand user interactions and behavior  
+- Deliver personalized and non-personalized advertising  
+
+#### Google AdSense Cookies
+
+Google AdSense uses advertising cookies (including DoubleClick cookies) to serve ads based on users’ visits to this and other websites. These cookies enable the display of ads relevant to your interests.
+
+You may opt out of personalized advertising by visiting **Google Ads Settings** or control cookies through your browser settings. Disabling cookies may limit certain website features and advertising relevance.
+
+---
+
+### 5. Third-Party Services
+
+We may use third-party services that collect, process, or store data in accordance with their own privacy policies, including:
+
+- **Google Analytics** – website usage and performance analytics  
+- **YouTube** – embedded video content  
+- **Google AdSense** – advertising services  
+
+These third parties may use cookies or similar technologies. IB Sports Academy does **not control** and is **not responsible** for third-party privacy practices. We encourage users to review the privacy policies of these services.
+
+---
+
+### 6. Advertising & Consent (Google AdSense)
+
+This Website displays advertisements served by third-party advertising networks, including **Google AdSense**.
+
+- Ads may be personalized or non-personalized depending on user consent, location, and browser settings  
+- IB Sports Academy does **not endorse** advertised products or services  
+- Any interaction or transaction with advertisers is solely between you and the advertiser  
+
+Where required by law (including GDPR and applicable Indian regulations), ads will be shown **only after appropriate consent is obtained**.
+
+---
+
+### 7. Data Security
+
+We implement reasonable technical and organizational safeguards designed to protect personal data from unauthorized access, misuse, alteration, or disclosure. However, no method of internet transmission or electronic storage is completely secure, and we cannot guarantee absolute security.
+
+We retain personal data only for as long as necessary for the purposes outlined in this policy or as required by law.
+For example, inquiry data may be retained for administrative and communication purposes, while enrollment records may be retained for legal and operational requirements.
+
+---
+
+### 8. Your Privacy Rights
+
+Depending on your location and applicable laws, you may have the right to:
+
+- Access personal data we hold about you  
+- Correct inaccurate or incomplete data  
+- Request deletion of personal data  
+- Restrict or object to data processing  
+- Withdraw consent at any time (where processing is based on consent)  
+- Request data portability  
+- Opt out of personalized advertising  
+
+To exercise your rights, contact us using the details below.
+
+We process personal data in accordance with applicable Indian data protection laws, including the Digital Personal Data Protection Act, 2023 (DPDP Act), where applicable.
+
+---
+
+### 9. GDPR (EEA, UK & Switzerland Users)
+
+If you are located in the European Economic Area (EEA), the UK, or Switzerland:
+
+#### Legal Bases for Processing
+
+We process personal data based on:
+
+- Consent  
+- Contractual necessity  
+- Legitimate interests  
+- Legal obligations  
+
+#### International Transfers
+
+Your data may be transferred outside your country of residence. Where required, appropriate safeguards (such as contractual protections) are used.
+
+You have the right to lodge a complaint with your local data protection authority.
+
+---
+
+### 10. CCPA (California Residents)
+
+If you are a California resident, you may have the right to:
+
+- Know what personal information we collect and use  
+- Request deletion of personal information  
+- Opt out of certain data sharing for advertising purposes  
+- Non-discrimination for exercising your privacy rights  
+
+IB Sports Academy does **not sell personal information** in the traditional sense.
+
+---
+
+### 11. Children’s Privacy
+
+This Website is intended for users aged **13 and above**. We do not knowingly collect personal data from children under 13. If such data is discovered, it will be deleted promptly. Parents or guardians may contact us to request removal.
+
+---
+
+### 12. Updates to This Policy
+
+We may update this Privacy Policy periodically to reflect legal, operational, or regulatory changes. Updates will be posted on this page with a revised effective date. Continued use of the Website constitutes acceptance of the updated policy.
+
+---
+
+### 13. Contact Us
+
+If you have any questions about this Privacy Policy or your privacy rights, please contact:
+
+**IB Sports Academy**  
+📧 academyibsports@gmail.com  
+📞 +91-8860500060  
+🌐 https://ibsportsacademy.com
+
+IB Sports Academy acts as the **Data Controller** for personal information collected through this Website.
+
+Grievance Officer (India Data Protection):
+For data protection concerns, you may contact our designated grievance contact at:
+📧 academyibsports@gmail.com
+
+---
+
+### Related Policies
+
+Please also review our [Terms & Conditions](/terms-and-conditions/) which govern the use of this Website.  
+For general legal limitations and risk disclosures, refer to our [Disclaimer](/disclaimer/).
+
+---
