@@ -1,0 +1,199 @@
+{{ define "main" }}
+{{ partial "components/page-header.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+
+      <!-- IMAGE -->
+      <div class="col-lg-5 col-md-8 text-center mb-5 mb-lg-0" data-aos="fade-up">
+        <div class="pe-0 pe-lg-5">
+          {{ partial "image.html" (dict "Src" .Params.contact_image "Alt" "contact image" "Size" "575x") }}
+        </div>
+      </div>
+
+      <!-- CONTACT ACTION SIDE -->
+      <div class="col-lg-5 col-md-10" data-aos="fade-up">
+
+        <h3 class="mb-2">Let’s Talk Basketball</h3>
+        <p class="text-muted mb-3">
+          <b>Ready to step onto the court?</b> Whether you're looking to join a batch, book a trial session, or explore our training programs, we’re here to help you get started.
+        </p>
+
+        <p class="small text-muted mb-3">
+          For players, parents, beginners, and future champions.
+        </p>        
+
+        <p class="small text-success mb-4">
+          <b>⚡ Most messages are answered within a few hours.</b>
+        </p>
+
+        <a href="https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
+          class="btn btn-success w-100 mb-3">
+          <i class="lab la-whatsapp"></i> Chat on WhatsApp
+        </a>
+
+        <a href="tel:+918860500060" class="btn btn-primary w-100 mb-3">
+          <i class="las la-phone-volume"></i> Call Us Now
+        </a>
+
+        <a href="mailto:academyibsports@gmail.com" class="btn btn-outline-primary w-100">
+          <i class="las la-envelope"></i> Send Email
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row text-center mt-5 g-4">
+      <!-- LOCATION -->
+      <div class="col-lg-4">
+        <div class="h-100 p-4 border rounded shadow-sm">
+          <h4 class="mb-3">📍 Main Training Location</h4>
+          <p class="small text-muted">
+            Our primary training center is in Dwarka, New Delhi. We also conduct sessions at multiple partner locations.
+          </p>
+          <p class="mb-2">IB Sports Academy<br>Dwarka, New Delhi, India</p>
+          <a href="https://www.google.com/maps?cid=6348905391918028598" target="_blank" class="btn btn-outline-primary btn-sm">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    
+      <!-- HOURS -->
+      <div class="col-lg-4">
+        <div class="h-100 p-4 border rounded shadow-sm">
+          <h4 class="mb-3">🕒 Training Hours</h4>
+          <p class="mb-1">Mon – Sat: 3:00 PM – 9:00 PM</p>
+          <p>Sunday: Closed</p>
+          <p class="mt-2 small text-muted">
+            Drop by during training hours and see the action live.
+          </p>
+        </div>
+      </div>
+    
+      <!-- DIGITAL CARD -->
+      <div class="col-lg-4">
+        <div class="h-100 p-4 border rounded shadow-sm">
+          <h4 class="mb-3">💳 Digital Business Card</h4>
+          <p class="small">
+            View our complete digital profile with contact details, social links, and academy information.
+          </p>
+          <a href="https://hihello.me/p/0b3b1f87-b6d6-4f99-a674-d8a1915cacaf" target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Digital Profile
+          </a>
+        </div>
+      </div>
+    
+    </div>    
+
+  </div>
+
+  {{ with .Params.testimonials }}
+    {{ if .enable }}
+      <div class="pt-0 pb-0 mt-5 testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title text-center" data-aos="fade-up">
+                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+                <h2 class="title">{{ .title | markdownify }}</h2>
+                <p>{{ .description | markdownify }}</p>
+
+                <!-- Google Business Profile Maps Reviews Link -->
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <a href="{{ .google_maps_url }}" target="_blank" class="google-trust-badge shadow-sm">
+                        <div class="badge-inner">
+                          <div class="google-logo-wrapper">
+                            <svg viewBox="0 0 48 48" width="30" height="30">
+                              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                            </svg>
+                          </div>
+                          <div class="badge-text">
+                            <div class="rating-info">
+                              <span class="rating-score">{{ .rating_overall | markdownify }}</span>
+                              <div class="rating-stars mb-2">
+                                <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+                              </div>
+                            </div>
+                            <p class="review-count">{{ .rating_description | markdownify }}</p>
+                          </div>
+                          <div class="badge-cta">
+                            <span>Read More!</span>
+                            <i class="las la-external-link-alt"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center no-gutters">
+            <div
+              class="col-xl-4 col-md-3"
+              data-aos="fade-up"
+              data-aos-delay="50">
+              {{ partial "image.html" (dict "Src" .image_left "Alt" "testimonials" "Size" "1200x q90") }}
+            </div>
+
+            <div
+              class="col-xl-4 col-lg-5 col-md-8 col-sm-10"
+              data-aos="fade-up">
+              <div class="testimonial-carousel swiper-container">
+                <div class="swiper-wrapper mb-3">
+                  {{ range .testimonials_quotes }}
+                    <div class="swiper-slide">
+                      <div class="block">
+                        <i class="quote-icon las la-quote-left"></i>
+                        <p class="quote-text">{{ .quote }}</p>
+                        <span class="author">
+                          {{ partial "image.html" (dict "Src" .image "Alt" "customer image" "Class" "rounded-circle" "Size" "90x") }}
+                          <h5>{{ .name | markdownify }}</h5>
+                          <p>{{ .designation | markdownify }}</p>
+                          {{ with .rating }}
+                            <div class="rating text-warning mb-2">
+                              {{ range seq . }}
+                                <i class="las la-star"></i>
+                              {{ end }}
+                            </div>
+                          {{ end }}
+                        </span>
+                      </div>
+                    </div>
+                  {{ end }}
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <svg
+                  class="testimonial-carousel-bg text-primary"
+                  viewBox="0 0 462 458"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M36.9901 53.2939C8.66553 90.8729-.680565 197.569.0380893 247.72 3.02596 456.228 136.937 460.573 283.124 457.125 406.681 454.211 459.969 401.82 461.426 261.777 462.591 149.742 432.9 78.8779 413.134 60.3019 326.242-21.359 89.5954-16.4987 36.9901 53.2939z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-4 col-md-3"
+              data-aos="fade-up"
+              data-aos-delay="150">
+              {{ partial "image.html" (dict "Src" .image_right "Alt" "testimonials" "Size" "1200x q90") }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}

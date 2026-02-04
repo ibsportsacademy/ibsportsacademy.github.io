@@ -42,8 +42,7 @@ preloader = "images2/favicon.png" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Join Now!"
-link = "https://wa.me/8860500060"
-
+link = "https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
@@ -108,4 +107,4 @@ enable = true
 title = "Building Ballers | Fueling Dreams"
 content = "At IB Sports Academy, we turn raw energy into real skill, and big dreams into bigger futures. <br /> From the first dribble to national tournaments, we coach hustle, heart, and the mindset of a champion. <br /> For kids who live to play. For parents who want more than just playtime."
 button = "Ready to rise? Let’s ball."
-button_link = "https://wa.me/8860500060"
+button_link = "https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
