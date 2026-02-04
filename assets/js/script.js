@@ -64,6 +64,7 @@ window.onload = () => {
     autoplay: {
       delay: 3000,
     },
+    centeredSlides: true,   // Center the active slide
     breakpoints: {
       0: {
         slidesPerView: 2,
@@ -82,7 +83,63 @@ window.onload = () => {
         spaceBetween: 0,
       },
     },
+    on: {
+      init: function () { updateSlides(this); },
+      slideChange: function () { updateSlides(this); },
+    },
   });
+
+  // coach-carousel
+  new Swiper(".coach-carousel", {
+    spaceBetween: 0,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    centeredSlides: true,   // Center the active slide
+    navigation: {          // enable arrows
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    watchSlidesProgress: true,
+    autoHeight: true,
+    effect: 'coverflow',
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      init: function () { updateSlides(this); },
+      slideChange: function () { updateSlides(this); },
+    }
+  });
+
+  function updateSlides(swiper) {
+    swiper.slides.forEach((slide) => {
+      slide.classList.remove('active-slide');
+    });
+    swiper.slides[swiper.activeIndex].classList.add('active-slide');
+  }
 
   // featuresCarousel fix
   new Swiper(".features-carousel", {

@@ -142,7 +142,7 @@
     </section>
   {{ end }}
 
-  {{ with .Params.brands_carousel }}
+  {{ with .Params.locations_carousel }}
     {{ if .enable }}
       <section class="overflow-hidden">
         <div class="container">
@@ -150,10 +150,11 @@
             <div class="col-md-12" data-aos="fade-left">
               <div class="brand-carousel swiper-container">
                 <div class="swiper-wrapper">
-                  {{ range .brand_images }}
-                    <div class="swiper-slide">
+                  {{ range .location_images }}
+                  {{ $filename := . | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
+                  <div class="swiper-slide">
                       <div class="brand-item">
-                        {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
+                        {{ partial "image.html" (dict "Src" . "Alt" (printf "%s - Location" $filename)) }}
                       </div>
                     </div>
                   {{ end }}

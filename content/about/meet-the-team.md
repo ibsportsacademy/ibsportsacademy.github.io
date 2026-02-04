@@ -1,7 +1,16 @@
 ---
 title: "Meet The Team"
-layout: "about"
+layout: "meet_the_team"
 draft: false
+
+# coaches
+coaches_carousel:
+  enable: true
+  subtitle: "Trusted by Champions"
+  title: "Meet our Coaches"
+  coach_images:
+    - "images2/coaches/bhim-singh.webp"
+    - "images2/coaches/chiranjeev-kumar.webp"
 
 # who_we_are
 who_we_are:
@@ -47,13 +56,6 @@ about_video:
   description: "Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistcy throughout the."
   video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
   video_thumbnail: "images/about/video-popup-2.jpg"
-
-# brands
-brands_carousel:
-  enable: true
-  subtitle: "Our Clients"
-  title: "Trusted by Thousands Companies"
-  section: "/" # brand images comming form _index.md
 
 # our team
 our_team:

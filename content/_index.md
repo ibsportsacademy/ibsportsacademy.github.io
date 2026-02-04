@@ -6,10 +6,10 @@ banner:
   button_link: "https://wa.me/8860500060"
   image: "images2/banner-app2.png"
 
-# brands
-brands_carousel:
+# locations
+locations_carousel:
   enable: true
-  brand_images:
+  location_images:
     - "images2/locations/tihs.webp"
     - "images2/locations/rotary.webp"
     - "images2/locations/oyster.webp"

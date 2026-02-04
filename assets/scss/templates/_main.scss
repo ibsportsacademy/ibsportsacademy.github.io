@@ -398,8 +398,68 @@
       width: auto;
     }
   }
+
+  .active-slide .brand-item {
+    filter: none;      /* Color image */
+    transform: scale(1);  /* Make center slide bigger */
+    opacity: 1;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
+// coach-carousel
+.coach-carousel {
+  border: 1px solid #e9e9e9;
+  border-left: 0;
+  border-right: 0;
+  padding: 1.25rem 0;
+  margin-top: 3.125rem;
+
+  .coach-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+    transition: 0.3s ease;
+    filter: grayscale(1);
+    transform: scale(0.9);
+    margin: 0 1.25rem;
+    opacity: 0.5;
+
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(0.95);
+      opacity: 1;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .active-slide .coach-item {
+    filter: none;      /* Color image */
+    transform: scale(1);  /* Make center slide bigger */
+    opacity: 1;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    opacity: 0.7;
+    transform: scale(1);
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+}
 // features
 .features {
   .features-carousel {
