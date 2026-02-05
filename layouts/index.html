@@ -279,7 +279,7 @@
 
   {{ with .Params.our_office }}
     {{ if .enable }}
-      <section class="section-sm mb-4">
+      <section class="locations section-sm mb-4">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8 col-md-10">
@@ -313,7 +313,7 @@
 
   {{ with .Params.how_it_works }}
     {{ if .enable }}
-      <section class="section-sm">
+      <section class="how-it-works section-sm">
         <div class="container">
           {{ $.Scratch.Set "counter" 0 }}
           {{ range .block }}
@@ -333,18 +333,16 @@
                 class="col-lg-6 mt-3 mt-lg-0"
                 data-aos="fade-up"
                 data-aos-delay="100">
-                <div class="ps-0 ps-lg-3">
+                <div class="ps-0 ps-lg-3 img-block">
                   {{ if fileExists (add `assets/` .image) }}
                     {{ $img:= resources.Get .image }}
-                    {{ $img:= $img.Resize "575x" }}
+                    {{ $filename := $img | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
                     <img
                       loading="lazy"
                       decoding="async"
                       class="img-fluid"
-                      width="{{ $img.Width }}"
-                      height="{{ $img.Height }}"
                       src="{{ $img.RelPermalink }}"
-                      alt="Video Thumbnail"
+                      alt="{{ $filename }}"
                       onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
                   {{ end }}
                 </div>
@@ -355,8 +353,6 @@
       </section>
     {{ end }}
   {{ end }}
-
-
 
   {{ with .Params.testimonials }}
     {{ if .enable }}

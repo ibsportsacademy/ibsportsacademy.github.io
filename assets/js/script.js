@@ -67,15 +67,15 @@ window.onload = () => {
     centeredSlides: true,   // Center the active slide
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 0,
       },
       640: {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 0,
       },
       767: {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 0,
       },
       991: {

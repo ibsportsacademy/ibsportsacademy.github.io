@@ -22,7 +22,7 @@
 
         <p class="small text-muted mb-3">
           For players, parents, beginners, and future champions.
-        </p>        
+        </p>
 
         <p class="small text-success mb-4">
           <b>⚡ Most messages are answered within a few hours.</b>
@@ -44,25 +44,34 @@
       </div>
     </div>
 
-    <div class="row text-center mt-5 g-4">
+    <div class="features contact row text-center mt-1 g-4">
       <!-- LOCATION -->
-      <div class="col-lg-4">
-        <div class="h-100 p-4 border rounded shadow-sm">
-          <h4 class="mb-3">📍 Main Training Location</h4>
+      <div class="col-lg-4 col-md-6">
+        <div class="features-card">
+          <div class="icon text-primary mb-1">
+            <i class="las la-map-marker-alt"></i>
+          </div>
+          <h3 class="title h5">Our Locations</h3>
           <p class="small text-muted">
-            Our primary training center is in Dwarka, New Delhi. We also conduct sessions at multiple partner locations.
+            Our primary training center is in Dwarka, New Delhi. <br> We also conduct sessions at multiple partner locations.
           </p>
-          <p class="mb-2">IB Sports Academy<br>Dwarka, New Delhi, India</p>
+          <p class="mb-2">Dwarka, New Delhi, India</p>
           <a href="https://www.google.com/maps?cid=6348905391918028598" target="_blank" class="btn btn-outline-primary btn-sm">
             Open in Google Maps
+          </a>
+          <a href="/locations" class="btn btn-outline-primary btn-sm">
+            More Locations
           </a>
         </div>
       </div>
     
       <!-- HOURS -->
-      <div class="col-lg-4">
-        <div class="h-100 p-4 border rounded shadow-sm">
-          <h4 class="mb-3">🕒 Training Hours</h4>
+      <div class="col-lg-4 col-md-6">
+        <div class="features-card">
+          <div class="icon text-primary mb-1">
+            <i class="las la-clock"></i>
+          </div>
+          <h3 class="title h5">Training Hours</h3>
           <p class="mb-1">Mon – Sat: 3:00 PM – 9:00 PM</p>
           <p>Sunday: Closed</p>
           <p class="mt-2 small text-muted">
@@ -72,25 +81,27 @@
       </div>
     
       <!-- DIGITAL CARD -->
-      <div class="col-lg-4">
-        <div class="h-100 p-4 border rounded shadow-sm">
-          <h4 class="mb-3">💳 Digital Business Card</h4>
+      <div class="col-lg-4 col-md-6">
+        <div class="features-card">
+          <div class="icon text-primary mb-3">
+            <i class="las la-id-card"></i>
+          </div>
+          <h3 class="title h5">Digital Business Card</h3>
           <p class="small">
             View our complete digital profile with contact details, social links, and academy information.
           </p>
-          <a href="https://hihello.me/p/0b3b1f87-b6d6-4f99-a674-d8a1915cacaf" target="_blank" class="btn btn-primary btn-sm mt-2">
+          <a href="https://hihello.me/p/0b3b1f87-b6d6-4f99-a674-d8a1915cacaf" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
             View Digital Profile
           </a>
         </div>
       </div>
-    
-    </div>    
+    </div>
 
   </div>
 
   {{ with .Params.testimonials }}
     {{ if .enable }}
-      <div class="pt-0 pb-0 mt-5 testimonials">
+      <div class="pt-5 pb-0 mt-5 testimonials">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">

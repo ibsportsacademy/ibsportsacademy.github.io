@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ partial "components/page-header.html" . }}
+
+    {{ with .Params.our_office }}
+    {{ if .enable }}
+    <section class="locations section-sm mb-4">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10">
+            <div class="section-title text-center mb-0" data-aos="fade-in">
+                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+                <h2 class="title">{{ .title | markdownify }}</h2>
+                <p>{{ .description | markdownify }}</p>
+            </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+            <div class="row">
+                {{ range .office_locations }}
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="office-loc-item">
+                    {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x") }}
+                    <h3>{{ .city | markdownify }}</h3>
+                    <p>{{ .address_line_one | markdownify }}</p>
+                    <p>{{ .address_line_two | markdownify }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    {{ end }}
+    {{ end }}
+
+{{ end }}

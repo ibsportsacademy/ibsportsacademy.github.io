@@ -141,7 +141,7 @@ how_it_works:
       - **Team Spirit**: Build habits of teamwork, fair play, and leadership
 
       - **Love for the Game**: Learn, grow, and have fun every step of the way"
-    image: "images/features-01.png"
+    image: "images2/teach-on-court-coach-ib-sports-academy.png"
 
   - subtitle: "Programs built for ballers at every level. Learn. Grind. Rise."
     title: "🏀 Train Like You Mean It"
@@ -160,7 +160,7 @@ how_it_works:
       - **🏆 Game-Focused Drills** — Less cone work, more real-play situations.
 
       - **🎯 Pathway to Competitive Play** — Get tournament-ready or go one-on-one with a coach who gets your goals."
-    image: "images/features-02.png"
+    image: "images2/dribble-like-a-pro-ib-sports-academy.png"
 
   - subtitle: "Stats speak louder than the hype"
     title: "🏀 Proof We Don’t Miss"
@@ -189,7 +189,7 @@ how_it_works:
     - **Next Stat: You Join the Fam** <br />
     &nbsp;&nbsp;&nbsp;&nbsp;
     You’ve read the numbers. Now come make your mark. 👟🏀"
-    image: "images/features-02.png"
+    image: "images2/proof-we-dont-miss-ib-sports-academy.png"
 
   - subtitle: "Show us your game online — and play with us for free!"
     title: "🏀 Earn a Free Class!"
@@ -198,7 +198,7 @@ how_it_works:
       Whether it’s your **first shot or your hundredth dunk**, we want to see it. <br />
       Join the IB family online — and step onto the court for real. <br />
       **Limited spots. Big vibes. Don’t miss out. 💥**"
-    image: "images/features-02.png"
+    image: "images2/play-with-us-free-ib-sports-academy.png"
 
 # testimonials
 testimonials:

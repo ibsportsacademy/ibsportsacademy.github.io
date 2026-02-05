@@ -30,18 +30,18 @@ hasChildren = true
   weight = 3
 
 [[main]]
-name = "Blog"
-url = "https://blog.ibsportsacademy.com/"
-weight = 3
-
-[[main]]
 name = "Gallery"
 url = "gallery/"
-weight = 4
+weight = 3
 
 [[main]]
 name = "Videos"
 url = "videos/"
+weight = 4
+
+[[main]]
+name = "Locations"
+url = "locations/"
 weight = 5
 
 [[main]]
@@ -50,7 +50,12 @@ url = "collaborate/"
 weight = 6
 
 [[main]]
+name = "Blog"
+url = "https://blog.ibsportsacademy.com/"
 weight = 7
+
+[[main]]
+weight = 8
 name = "Pages"
 hasChildren = true
 
@@ -75,7 +80,7 @@ hasChildren = true
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 9
 
 
 # footer menu
