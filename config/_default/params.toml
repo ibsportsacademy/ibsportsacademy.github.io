@@ -14,6 +14,9 @@ logo_text = "IB Sports Academy"
 # footer information
 footer_info = "Driven by passion, powered by coaching | We help every kid find their game, their grit, and their greatness."
 
+# footer copyright
+copyright = "Copyright © 2026 IB Sports Academy - All Rights Reserved."
+
 # contact form action
 contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
 
