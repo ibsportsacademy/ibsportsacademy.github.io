@@ -43,7 +43,7 @@
 
   {{ with .Params.partnerships }}
     {{ if .enable }}
-      <section class="section-sm">
+      <section class="collaborate section-sm">
         <div class="container">
           {{ $.Scratch.Set "counter" 0 }}
           {{ range .block }}
@@ -67,15 +67,13 @@
                 <div class="ps-0 ps-lg-3">
                   {{ if fileExists (add `assets/` .image) }}
                     {{ $img:= resources.Get .image }}
-                    {{ $img:= $img.Resize "575x" }}
+                    {{ $filename := $img | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
                     <img
                       loading="lazy"
                       decoding="async"
                       class="img-fluid"
-                      width="{{ $img.Width }}"
-                      height="{{ $img.Height }}"
                       src="{{ $img.RelPermalink }}"
-                      alt="Video Thumbnail"
+                      alt="{{ $filename }}"
                       onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'" />
                   {{ end }}
                 </div>

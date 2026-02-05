@@ -41,7 +41,7 @@ partnerships:
       <br /><br />
 
       👉 Read how we work with brands: <ins>[Our Corporate Impact Stories](https://blog.ibsportsacademy.com/categories/events/)</ins>"
-    image: "images/features-01.png"
+    image: "images2/corporate-company-parents-match-yakult-ib-sports-academy.png"
 
   - subtitle: "Create Iconic Moments Through Sports"
     title: "🎬 Entertainment & Celebrity Collaborations"
@@ -61,7 +61,7 @@ partnerships:
       <br /><br />
 
       👉 Go behind the scenes: <ins>[Celebrity Collaborations That Inspired](https://blog.ibsportsacademy.com/tags/bollywood-collaboration/)</ins>"
-    image: "images/features-01.png"
+    image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chadha.png"
 
   - subtitle: "Driving Social Change Through Sports"
     title: "🫶 NGO & Social Sector Partnerships"
@@ -79,7 +79,7 @@ partnerships:
       <br /><br />
 
       👉 Explore success stories: <ins>[Community Impact Through Sports](https://blog.ibsportsacademy.com/categories/community-outreach/)</ins>"
-    image: "images/features-01.png"
+    image: "images2/ngo-social-cause-don-bosco-school-ib-sports-academy.png"
 
   - subtitle: "Fuel Dreams. Amplify Impact."
     title: "💰 Sponsorship Opportunities"
@@ -110,7 +110,7 @@ partnerships:
       <br /><br />
 
       👉 Interested in becoming a sponsor? <ins>[Get in Touch](mailto:academyibsports@gmail.com)</ins> to learn more."
-    image: "images/features-01.png"
+    image: "images2/international-sponsorship-opportunities-ib-sports-academy.png"
 
   - subtitle: "Where Purpose Meets Performance"
     title: "📊 Why Partner With Us"
