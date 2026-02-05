@@ -154,7 +154,7 @@
                   {{ $filename := . | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
                   <div class="swiper-slide">
                       <div class="brand-item">
-                        {{ partial "image.html" (dict "Src" . "Alt" (printf "%s - Location" $filename)) }}
+                        {{ partial "image.html" (dict "Src" . "Alt" (printf "%s - Location Carousel IB Sports Academy" $filename)) }}
                       </div>
                     </div>
                   {{ end }}
@@ -234,7 +234,8 @@
                     data-src="{{ .video_url }}">
                     <i class="las la-play"></i>
                   </button>
-                  {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" "Video Thumbnail" "Class" "video-thumb" "Size" "700x") }}
+                  {{ $filename := .video_thumbnail | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
+                  {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" (printf "%s - Video Thumbnail IB Sports Academy" $filename) "Class" "video-thumb" "Size" "700x") }}
                 </div>
               </div>
 
@@ -296,7 +297,8 @@
                 {{ range .office_locations }}
                   <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="office-loc-item">
-                      {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x") }}
+                      {{ $filename := .country_flag | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
+                      {{ partial "image.html" (dict "Src" .country_flag "Alt" (printf "%s - Location IB Sports Academy" $filename) "Size" "80x") }}
                       <h3>{{ .city | markdownify }}</h3>
                       <p>{{ .address_line_one | markdownify }}</p>
                       <p>{{ .address_line_two | markdownify }}</p>
@@ -406,7 +408,7 @@
               class="col-xl-4 col-md-3"
               data-aos="fade-up"
               data-aos-delay="50">
-              {{ partial "image.html" (dict "Src" .image_left "Alt" "testimonials" "Size" "1200x q90") }}
+              {{ partial "image.html" (dict "Src" .image_left "Alt" "India Number 1 3x3 Basketball Dhruv Barman testimonial - IB Sports Academy" "Size" "1200x q90") }}
             </div>
 
             <div
@@ -420,7 +422,7 @@
                         <i class="quote-icon las la-quote-left"></i>
                         <p class="quote-text">{{ .quote }}</p>
                         <span class="author">
-                          {{ partial "image.html" (dict "Src" .image "Alt" "customer image" "Class" "rounded-circle" "Size" "90x") }}
+                          {{ partial "image.html" (dict "Src" .image "Alt" "user testimonial - IB Sports Academy" "Class" "rounded-circle" "Size" "90x") }}
                           <h5>{{ .name | markdownify }}</h5>
                           <p>{{ .designation | markdownify }}</p>
                           {{ with .rating }}
@@ -454,7 +456,7 @@
               class="col-xl-4 col-md-3"
               data-aos="fade-up"
               data-aos-delay="150">
-              {{ partial "image.html" (dict "Src" .image_right "Alt" "testimonials" "Size" "1200x q90") }}
+              {{ partial "image.html" (dict "Src" .image_right "Alt" "Basketball India Captain Divya Singh testimonial - IB Sports Academy" "Size" "1200x q90") }}
             </div>
           </div>
         </div>

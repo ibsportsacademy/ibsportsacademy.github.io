@@ -14,7 +14,7 @@ who_we_are:
 
     We welcome corporates, celebrities, production houses, NGOs, and brand partners to join hands with us. Whether you're looking to engage your team, promote your brand, give back to society, or create unforgettable experiences—IB is ready to collaborate."
 
-  image: "images/about/01.jpg"
+  image: "images2/impact-partner-with-ib-sports-academy.png"
 
 # partnerships
 partnerships:
@@ -127,7 +127,7 @@ partnerships:
       - 🎯 Customizable engagement formats (CSR, marketing, content, training)
 
       - 👟 Run by passionate coaches, educators, and visionaries"
-    image: "images/features-01.png"
+    image: "images2/gold-medal-winners-why-partner-ib-sports-academy.png"
 
   - subtitle: "Your Vision, Our Playground"
     title: "🤝 Let’s Build Something Great"
@@ -138,7 +138,7 @@ partnerships:
       <br /><br />
       
       <ins>[📩 Reach out to us here](mailto:academyibsports@gmail.com)</ins> | Visit our <ins>[Instagram](https://www.instagram.com/ibsportsacademy)</ins> and <ins>[YouTube](https://www.youtube.com/@ibsportsacademy)</ins> to see us in action."
-    image: "images/features-01.png"
+    image: "images2/lets-build-basketball-together-ib-sports-academy.png"
 
 # what_we_do
 what_we_do:

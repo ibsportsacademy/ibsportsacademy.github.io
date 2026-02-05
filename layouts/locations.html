@@ -20,7 +20,8 @@
                 {{ range .office_locations }}
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="office-loc-item">
-                    {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x") }}
+                        {{ $filename := .country_flag | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
+                    {{ partial "image.html" (dict "Src" .country_flag "Alt" (printf "%s - Location IB Sports Academy" $filename) "Size" "80x") }}
                     <h3>{{ .city | markdownify }}</h3>
                     <p>{{ .address_line_one | markdownify }}</p>
                     <p>{{ .address_line_two | markdownify }}</p>
