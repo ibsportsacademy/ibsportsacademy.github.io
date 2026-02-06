@@ -51,11 +51,11 @@ who_we_are2:
     * ✈️ **Delegate to NBA China Games (2018)**
 
     * 🎬 **Technical Coach & Consultant for Bollywood for movies like 'Sitaare Zameen Par' (2025) - coaching Aamir Khan and on-screen youth athletes**"
-  image: "images2/profile_pic.png"
+  image: "images2/ishwar-bhati-achievements-ib-sports-academy.png"
 
 # what_we_do
 what_we_do:
-  enable: true
+  enable: false
   subtitle: "Our Works"
   title: "What We Do"
   block:
@@ -73,7 +73,7 @@ what_we_do:
 
 # our_mission
 our_mission:
-  enable: true
+  enable: false
   subtitle: "OUR MISSION"
   title: "🧠 Coaching Philosophy"
   description: "Coach Bhati’s approach is holistic and heart-first. For him, basketball is more than just sport - it’s a tool for transformation. His coaching blends physical discipline with emotional intelligence, aiming to raise not just elite athletes, but well-rounded human beings.
@@ -94,7 +94,7 @@ our_mission:
 
 # our_mission2
 our_mission2:
-  enable: true
+  enable: false
   subtitle: "OUR MISSION"
   title: "🏫 Impact Through IB Sports Academy"
   description: "IB Sports Academy is one of India’s fastest-growing grassroots basketball movements, built under Bhati’s vision and tireless leadership.
@@ -112,7 +112,7 @@ our_mission2:
 
 # our_mission3
 our_mission3:
-  enable: true
+  enable: false
   subtitle: "OUR MISSION"
   title: "🧭 Vision for the Future"
   description: "Coach Bhati’s mission is bold and clear:
@@ -129,7 +129,7 @@ our_mission3:
 
 # about_video
 about_video:
-  enable: true
+  enable: false
   subtitle: "A Short Video"
   title: "You Take Care Of The Payments, We Take Care Of The Rest."
   description: "Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistcy throughout the."
@@ -138,14 +138,14 @@ about_video:
 
 # brands
 brands_carousel:
-  enable: true
+  enable: false
   subtitle: "Our Clients"
   title: "Trusted by Thousands Companies"
   section: "/" # brand images comming form _index.md
 
 # our team
 our_team:
-  enable: true
+  enable: false
   subtitle: "Our members"
   title: "The People Behind"
   description: "We were freelance designers and developers, constantly finding <br> ourselves deep in vague feedback. This made every client and team"
@@ -162,7 +162,7 @@ our_team:
 
 # our office
 our_office:
-  enable: true
+  enable: false
   subtitle: "Our Offices"
   title: "Made with Love Of around the world With Many Offices"
   description: "We were freelance designers and developers, constantly finding <br> ourselves deep in vague feedback. This made every client and team"

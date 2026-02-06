@@ -78,9 +78,14 @@ hasChildren = true
   weight = 3
 
 [[main]]
+name = "IB Sports Foundation"
+url = "foundation/"
+weight = 9
+
+[[main]]
 name = "Contact"
 url = "contact/"
-weight = 9
+weight = 10
 
 
 # footer menu
