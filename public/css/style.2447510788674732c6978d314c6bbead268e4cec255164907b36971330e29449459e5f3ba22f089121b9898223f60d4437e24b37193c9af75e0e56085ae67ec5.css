@@ -19127,6 +19127,9 @@ header {
       @media (max-width: 400px) {
         .banner .has-circle .circle-10 {
           display: none; } }
+.no-wrap {
+  white-space: nowrap; }
+
 .page-header {
   position: relative; }
   .page-header .block {

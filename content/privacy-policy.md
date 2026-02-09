@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+meta_title: "Privacy Policy | IB Sports Academy"
 date: "2026-02-04"
 lastmod: "2026-02-04"
 layout: "terms-and-conditions"

@@ -1,5 +1,6 @@
 ---
 title: "Our Story"
+meta_title: "Our Story | IB Sports Academy"
 layout: "about"
 draft: false
 

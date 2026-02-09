@@ -1,5 +1,6 @@
 ---
-title: "Contact"
+title: "Contact • <span class=\"no-wrap\">IB Sports Academy</span>"
+meta_title: "Contact | Get in Touch with IB Sports Academy"
 layout: "contact"
 draft: false
 

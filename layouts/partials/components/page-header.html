@@ -5,7 +5,7 @@
         <div class="block">
           <div class="section-title text-center mb-0">
             <h1 class="title underline-none" data-aos="fade-up">
-              {{ .Title }}
+              {{ .Title | safeHTML }}
             </h1>
 <!--             <nav
               aria-label="breadcrumb"

@@ -1,5 +1,6 @@
 ---
 title: "Meet The Team"
+meta_title: "Meet The Team | IB Sports Academy"
 layout: "meet_the_team"
 draft: false
 

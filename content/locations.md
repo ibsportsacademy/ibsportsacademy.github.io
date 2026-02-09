@@ -1,12 +1,13 @@
 ---
-title: "Locations"
+title: "Our Locations • <span class=\"no-wrap\">IB Sports Academy</span>"
+meta_title: "Our Locations | Sports Programs Across Communities | IB Sports Academy"
 layout: "locations"
 draft: false
 
 # our office
 our_office:
   enable: true
-  subtitle: "Our Locations"
+  subtitle: "Where We Operate"
   title: "Made with Love around Delhi & Gurugram With Many Locations"
   description: "From neighborhood courts to top-tier facilities, IB Sports Academy is growing across Delhi & Gurugram — bringing pro-level coaching closer to your home. <br />
     Multiple centers. One mission — to build ballers."

@@ -1,6 +1,6 @@
 ---
-headTitle: "Partner with Us | Collaborate for Impact with IB Sports Academy"
-title: "Collaborate for Impact with IB Sports Academy"
+meta_title: "Partner with Us | Collaborate for Impact with IB Sports Academy"
+title: "Collaborate for Impact with <span class=\"no-wrap\">IB Sports Academy</span>"
 description: "Opportunities for Corporates, Celebrities, Movies, Production Houses, NGOs, and Brands to partner with IB Sports Academy to empower youth athletes through basketball."
 layout: "collaborate"
 draft: false

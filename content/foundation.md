@@ -1,5 +1,6 @@
 ---
-title: "Rise Through Hoops • IB Sports Foundation"
+title: "Rise Through Hoops • <span class=\"no-wrap\">IB Sports Foundation</span>"
+meta_title: "Rise Through Hoops | Equity & Access Through Sport | IB Sports Foundation"
 description: "Equity, Access, and Opportunity through sports. Empowering underserved youth with global mentorship and inclusive programs."
 layout: "foundation"
 draft: false

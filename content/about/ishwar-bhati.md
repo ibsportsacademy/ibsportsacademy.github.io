@@ -1,5 +1,6 @@
 ---
-title: "Who Is Ishwar Bhati?"
+title: "Who Is <span class=\"no-wrap\">Ishwar Bhati?</span>"
+meta_title: "Who Is Ishwar Bhati? | IB Sports Academy"
 layout: "ishwar_bhati"
 draft: false
 

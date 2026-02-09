@@ -1,5 +1,6 @@
 ---
 title: "Terms & Conditions"
+meta_title: "Terms & Conditions | IB Sports Academy"
 date: "2026-02-04"
 lastmod: "2026-02-04"
 layout: "terms-and-conditions"
