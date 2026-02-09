@@ -1,24 +1,24 @@
 ---
-title: "Right to Play with IB Sports Foundation"
-description: "Empowering underserved youth through the Right to Sports, global mentorship, and holistic development."
+title: "Rise Through Hoops • IB Sports Foundation"
+description: "Equity, Access, and Opportunity through sports. Empowering underserved youth with global mentorship and inclusive programs."
 layout: "foundation"
 draft: false
 
 # who_we_are
 who_we_are:
   enable: true
-  subtitle: "Sports for Development | Inclusion through Play"
-  title: "Every Child Deserves the Right to Play"
-  description: "At IB Sports Foundation, we believe sport is more than a game — it is a powerful tool for confidence, belonging, and life opportunity. Founded in 2022, our work is rooted in a simple truth: talent exists everywhere, but access does not. <br /><br />
+  subtitle: "Equity • Access • Opportunity"
+  title: "Every Child Can Rise Through Hoops"
+  description: "At IB Sports Foundation, we believe sport is more than a game, it is a powerful tool for confidence, belonging, and life opportunity. Founded in 2022, our work is rooted in a simple truth: talent exists everywhere, but access does not. <br /><br />
   
-  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> We provide the kits, the coaching, and the global mentorship to ensure a child’s starting point never defines their finish line."
+  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> Through the **Rise Through Hoops** initiative, we provide the kits, coaching, and global mentorship to ensure a child’s starting point never defines their finish line."
 
-  image: "images2/empower-children-right-to-play-ib-sports-foundation-academy.png"
+  image: "images2/empower-children-rise-through-hoops-ib-sports-foundation-academy.png"
 
 # dream_team
 dream_team:
   enable: true
-  subtitle: "Coaching | Access | Mentorship | Inclusion"
+  subtitle: "Coaching • Access • Mentorship • Inclusion"
   title: "🧡 How We Create Impact Through Sport"
   image: "images2/create-impact-inclusion-special-children-ib-sports-foundation-academy.png"
   description: "Working with **underprivileged communities, orphanages, and children with special needs**, we bridge the gap between potential and opportunity. Through structured sports programs, we don’t just build athletes — we build confidence, discipline, teamwork, leadership, and a sense of belonging that strengthens children in school, in life, and in their communities. <br /><br />
@@ -104,7 +104,7 @@ partnerships:
 our_office:
   enable: true
   subtitle: "Our Impact at a Glance"
-  title: "Real Lives | Real Stats"
+  title: "Real Lives • Real Stats"
   description: "Every number tells a story of access gained, confidence built, and opportunity opened through sport. Together, they strengthen life skills, physical literacy, global exposure, and social inclusion."
   office_locations:
     - city: "120+"
@@ -112,7 +112,7 @@ our_office:
       address_line_one: "**Children Supported**"
       address_line_two: "Access to Structured Sport Programs"
     - city: "3"
-      country_flag: "<i class=\"las la-hands-helping\"></i>"
+      country_flag: "<i class=\"las la-handshake\"></i>"
       address_line_one: "**Partner Homes & Inclusion Centers**"
       address_line_two: "Orphanages & Special Needs Programs"
     - city: "500+"
@@ -127,118 +127,21 @@ our_office:
 cta:
   enable: true
   title: "Help Us Expand Access to Sport for Every Child"
-  content: "IB Sports Foundation builds long-term sports programs that grow confidence, life skills, inclusion, and opportunity for children who need it most. <br />
+  content: "Rise Through Hoops builds long-term sports programs that develop confidence, life skills, inclusion, and opportunity for children who need it most. <br />
 
-  Our vision is to reach **1,000+ children** across underserved communities while expanding mentorship, global exposure, and inclusive programs. <br /><br />
+  Our vision is to reach **1,000+ children** across communities that lack access, while expanding mentorship, global exposure, and inclusive programs. <br /><br />
 
-  Whether you're an **individual, institution, coach, or partner**, your support helps turn potential into opportunity."
-  button: "Support a Child’s Journey"
-  button_link: "https://wa.me/918860500060?text=Hi+IB+Sports+Foundation%2C+I+found+your+website+and+am+inspired+by+your+impact.+I’m+interested+in+supporting+or+collaborating+and+would+love+more+details!"
+  Whether you're an **individual, institution, coach, or partner**, your support helps turn potential into opportunity. <br />
+
+  Together, we can ensure that **equity, opportunity, and the chance to rise through hoops are not privileges, but possibilities for every child.**"
+  button: "Support a Child’s Rise"
+  button_link: "http://wa.me/918860500060?text=Hi+IB+Sports+Foundation%2C+I+found+your+website+and+am+inspired+by+your+impact.+I%27m+interested+in+supporting+or+collaborating+and+would+love+more+details%21"
   button_secondary:
     enable: true
-    label: Contact Us Now
-    link: /contact
----
-
-## Every Child Deserves the Right to Play
-
-**IB Sports Foundation** is a not-for-profit initiative founded in 2022 built on a singular conviction:
-
-> **Talent is universal. Opportunity is not.**
->
-> **We provide the kits, the coaching, and the global mentorship to ensure a child’s starting point never defines their finish line.**
-
-We bridge the gap between potential and opportunity. By working with underprivileged communities, orphanages, and children with special needs, we ensure that a lack of resources never keeps a child off the court.
-
-Through structured sports programs, we don’t just build athletes, we build **confidence, discipline, teamwork, leadership, and a sense of belonging** that strengthens children in school, in life, and in their communities.
-
-**Our model combines consistent coaching, mentorship, access support, and inclusive programming to create sustained developmental impact.**
-
----
-
-## What We Do: Our Core Pillars
-
-### 🏀 Structured Coaching & Adoption Programs
-We adopt and support children from orphanages such as **Don Bosco Ashalayam**, providing consistent, professional coaching and opportunities to participate in competitions. Our programs run on a **long-term engagement model**, ensuring continuity, mentorship, and measurable growth.
-
-### 👟 Removing Barriers to Participation
-Financial limitations should never stop a child from playing. We provide:
-
-* **Professional sports gear:** Full basketball kits and high-quality shoes  
-* **Nutrition support:** Healthy meals and snacks during training sessions  
-* **Community support drives:** Distribution of essential resources to families in need  
-
-### 🎒 Life Skills & Education Engagement
-Every session intentionally builds communication, resilience, teamwork, discipline, and goal-setting — skills that translate directly into improved school engagement and positive social behavior. We also organize **Gymnastics competitions and multi-sport training** to broaden exposure and keep children positively engaged.
-
-### ♿ Inclusive Sports (The Sunday Center)
-Our **Sunday Center for Special Children** creates a safe and encouraging environment for children of all abilities. We were honored to host **Ranveer Saini**, Special Olympics Gold Medalist, inspiring participants and reinforcing inclusive sporting values.
-
-### 🌍 Global Mentorship & Coach Development
-We bring global best practices to grassroots sports by inviting international experts to train both children and local coaches.
-
-| Coach | Expertise & Background |
-| :--- | :--- |
-| **Hassan El Saddique** | USA (All Dream Sports) & Argentina |
-| **Naoufal Uariachi** | Morocco Men’s National Basketball Team |
-| **Malkom** | Uganda & Rwanda Div 1 |
-
-These interactions also strengthen local coach capacity, ensuring long-term program quality.
-
----
-
-## Why Sports?
-
-Sports provide a structured environment where children:
-
-* **Believe in themselves** and their potential  
-* **Work as a team** toward shared goals  
-* **Learn discipline** and responsibility  
-* **Build resilience** through challenges  
-* **Stay engaged** in school and positive environments  
-
----
-
-## Our Impact So Far
-
-Our impact combines structured engagement, access support, and inclusive programming to create measurable growth in confidence, participation, and life skills.
-
-### 📊 Key Highlights
-
-* **Long-term engagement** with multiple orphanages, including Don Bosco Ashalayam  
-* **Global mentorship** from coaches across USA, Morocco, Uganda, Rwanda, and Argentina  
-* **Equipment Access:** Full kits and equipment provided to all regular participants  
-* **Inclusive Action:** Weekly dedicated sports sessions for special needs children  
-* **Diverse Exposure:** Multi-sport events including basketball leagues and gymnastics clinics  
-
----
-
-### 💬 Beyond the Numbers
-
-Impact is not only measured in statistics, but in moments:
-
-* A child stepping onto a professional court for the first time  
-* A shy participant leading a team huddle  
-* A special needs child being cheered on by peers  
-* Young athletes learning that through sport, the world is within their reach  
-
-**These moments shape futures.**
-
----
-
-## Our Mission & Vision
-
-**Mission:** To use sports as a vehicle for improving education engagement, life skills, physical well-being, and social inclusion.
-
-**Vision:** A world where every child — regardless of background, ability, or circumstance — has access to sports as a pathway to growth, dignity, and opportunity.
-
----
-
-## Join the Movement
-
-We welcome partners, volunteers, and supporters who believe in the power of sports to transform lives.
-
-Together, we can ensure that **opportunity, dignity, and the right to play are not privileges — but possibilities for every child.**
-
-**[Contact Us to Get Involved](/contact)**
+    label: "Email Us"
+    link: "mailto:foundation.ibsports@gmail.com"
+  button_tertiary:
+    enable: true
+    label: "Get in Touch"
+    link: "/contact"
 ---

@@ -32,7 +32,7 @@ mainSections= ["blog"]
 # contact information
 [contact_info]
 address = "Sector 9, Dwarka, New Delhi, Delhi, India"
-phone = ["8860500059", "8860500060"]
+phone = ["8860500060"]
 email = ["academyibsports@gmail.com"]
 
 # Preloader 

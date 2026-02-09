@@ -1,4 +1,9 @@
-{{ with $cta := .Params.cta | default site.Params.cta }}
+{{ $cta := .Params.cta }}
+{{ if not $cta }}
+  {{ $cta = site.Params.cta }}
+{{ end }}
+
+{{ with $cta }}
   {{ if .enable }}
     <section class="call-to-action has-bg-color overflow-hidden">
       <div class="container-xxl position-relative">
@@ -13,10 +18,15 @@
                 >
                 {{ if $cta.button_secondary.enable }}
                 <a href="{{ $cta.button_secondary.link }}" class="btn btn-outline-primary mt-4">
-                  <i class="las la-phone-volume"></i> {{ $cta.button_secondary.label }}
+                  <i class="las la-envelope"></i> {{ $cta.button_secondary.label }}
                 </a>
-              {{ end }}
-              </div>
+                {{ end }}
+                {{ if $cta.button_tertiary.enable }}
+                <a href="{{ $cta.button_tertiary.link }}" class="btn btn-outline-info mt-4">
+                  <i class="las la-handshake"></i> {{ $cta.button_tertiary.label }}
+                </a>
+                {{ end }}
+            </div>
             </div>
 
             <div class="has-circle has-bg-anim" data-aos="fade-in">

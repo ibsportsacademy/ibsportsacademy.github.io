@@ -1060,6 +1060,9 @@
       }
     }
   }
+  .btn-outline-info {
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color) !important;
+  }
 }
 
 // blog style
