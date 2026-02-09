@@ -19432,6 +19432,11 @@ header {
     margin-top: 1.5rem;
     margin-bottom: 1.25rem; }
 
+.features .foundation-stats {
+  padding: 1rem 1rem !important; }
+  .features .foundation-stats .icon {
+    font-size: 50px; }
+
 .contact .features-card {
   height: 100%;
   padding: 3rem 0; }

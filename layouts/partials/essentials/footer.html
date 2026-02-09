@@ -1,4 +1,4 @@
-{{ with site.Params.cta }}
+{{ with $cta := .Params.cta | default site.Params.cta }}
   {{ if .enable }}
     <section class="call-to-action has-bg-color overflow-hidden">
       <div class="container-xxl position-relative">
@@ -9,8 +9,13 @@
                 <h2 class="title underline-none">{{ .title | markdownify }}</h2>
                 <p>{{ .content | markdownify }}</p>
                 <a href="{{ .button_link }}" class="btn btn-primary mt-4"
-                  >{{ .button }}</a
+                  ><i class="lab la-whatsapp"></i> {{ .button }}</a
                 >
+                {{ if $cta.button_secondary.enable }}
+                <a href="{{ $cta.button_secondary.link }}" class="btn btn-outline-primary mt-4">
+                  <i class="las la-phone-volume"></i> {{ $cta.button_secondary.label }}
+                </a>
+              {{ end }}
               </div>
             </div>
 

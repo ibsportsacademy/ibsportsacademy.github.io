@@ -100,7 +100,7 @@
       <description></description>
     </item>
     <item>
-      <title>contact</title>
+      <title>Contact</title>
       <link>//localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/contact/</guid>
@@ -115,10 +115,10 @@
     </item>
     <item>
       <title>IB Sports Foundation</title>
-      <link>//localhost:1313/foundation/</link>
+      <link>//localhost:1313/foundation2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/foundation/</guid>
-      <description></description>
+      <guid>//localhost:1313/foundation2/</guid>
+      <description>&lt;h2 id=&#34;every-child-deserves-the-right-to-play&#34;&gt;Every Child Deserves the Right to Play&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;IB Sports Foundation&lt;/strong&gt; is a not-for-profit initiative founded in 2022 built on a singular conviction:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Locations</title>
@@ -133,6 +133,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/meet-the-team/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Right to Play with IB Sports Foundation</title>
+      <link>//localhost:1313/foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/foundation/</guid>
+      <description>&lt;h2 id=&#34;every-child-deserves-the-right-to-play&#34;&gt;Every Child Deserves the Right to Play&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;IB Sports Foundation&lt;/strong&gt; is a not-for-profit initiative founded in 2022 built on a singular conviction:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Watch Training Videos from India&#39;s #1 Basketball Academy - Page 1 | IB Sports Academy</title>
