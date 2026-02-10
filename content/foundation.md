@@ -87,18 +87,22 @@ partnerships:
     image: "images2/inclusive-basketball-special-children-sports-ib-sports-foundation-academy.png"
 
   - subtitle: "Global Knowledge, Local Impact"
-    title: "🌍 Global Mentorship & Coach Development"
-    description: "We bring global best practices to grassroots sports by inviting international experts to train both children and local coaches, strengthening long-term program quality. <br />
+    title: "🌍 Global Mentorship & Elite Coaching"
+    description: "We bridge the gap between grassroots potential and global excellence by integrating international professional standards into our curriculum. Our visiting experts bring decades of experience from the world’s most competitive leagues to mentor our athletes and local coaching staff. <br /><br />
 
-      International Coach Engagement:
+      **Distinguished International Mentors:**
 
-      - **Hassan El Saddique** — USA (All Dream Sports) & Argentina
+      - **Guillaume Soares (France)** — Assistant Basketball Coach at **JAV Basket (JA Vichy)**. Hailing from Nice, he brings experience from the French professional leagues (Pro B & SOPCC), focusing on high-level tactical development.
 
-      - **Naoufal Uariachi** — Morocco Men’s National Basketball Team
+      - **Benjamin Bari (France)** — Professional Coach with deep roots in the French basketball system, specialized in technical skill acquisition and professional player pathways.
 
-      - **Malkom** — Uganda & Rwanda Div 1 <br />
+      - **Naoufal Uariachi (Morocco)** — Former Head Coach of the **Morocco Men’s National Team**; a FIBA-level strategist who led his nation through the **AfroBasket Qualifiers**.
 
-      These exchanges elevate training standards while building sustainable local coaching capacity."
+      - **Hassan El Saddique (USA/Argentina)** — Founder of **All Dream Sports**, specializing in youth scouting and international athletic development.
+
+      - **Malkom (Uganda/Rwanda)** — Veteran of **African Division 1 leagues**, providing a roadmap for competitive resilience and physical literacy. <br /><br />
+
+      These exchanges elevate our training standards, ensuring that every child in our program receives a world-class athletic foundation."
     image: "images2/international-sponsorship-opportunities-ib-sports-academy.png"
 
 # our office
