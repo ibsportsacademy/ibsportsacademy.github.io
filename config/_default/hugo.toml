@@ -11,6 +11,8 @@ timeZone = "Asia/Kolkata"
 pagination.pagerSize = 2 # see https://gohugo.io/templates/pagination/#configuration
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
+# robots.txt
+enableRobotsTXT = true
 
 # disable language
 disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
