@@ -129,6 +129,72 @@ our_office:
       address_line_one: "**International Coaches**"
       address_line_two: "Global Mentorship & Elite Exposure"
 
+# impact_stories
+impact_stories:
+  enable: true
+  subtitle: "Every Journey Deserves Support"
+  title: "Beyond the Court • <span class=\"no-wrap\">Into the Classroom</span>"
+  description: >
+    While sport is our primary vehicle for change, our commitment to a child’s
+    future extends beyond the court. Through our Educational Support pillar,
+    we ensure that financial hardship does not interrupt access to consistent,
+    quality schooling.
+
+  stories:
+    - name: "Meet Rishika"
+      subtitle: "Promoted To Class 6 • 1st Division"
+      image: "images2/rishika-education-support-ib-sports-foundation-academy.png"
+      image_alt: "Rishika supported by IB Sports Foundation education program"
+      description: >
+        Rishika comes from an underserved community where financial limitations
+        posed a risk to her continued schooling. Recognizing her determination, IB Sports Foundation stepped in to sponsor her education by covering academic fees and essential learning resources, **ensuring her learning remained uninterrupted**. <br /><br />
+
+        With consistent support, Rishika successfully completed her 5th-grade
+        examinations with a **77% aggregate**, securing a **1st Division**.
+        We continue to support her educational journey with a focus on stability,
+        continuity, and long-term opportunity.
+      stats:
+        - text: "Hindi - 79/100"
+          icon: "la-pen-nib"
+        - text: "English - 74/100"
+          icon: "la-language"
+        - text: "Maths - 79/100"
+          icon: "la-calculator"
+        - text: "Science - 76/100"
+          icon: "la-flask"
+      reverse: false
+
+    - name: "Meet Bithi"
+      subtitle: "Promoted To Class 5 • 1st Division"
+      image: "images2/bithi-education-support-ib-sports-foundation-academy.png"
+      image_alt: "Bithi supported by IB Sports Foundation education program"
+      description: >
+        Bithi, the daughter of a daily wage laborer, faced uncertainty in
+        continuing her education due to economic hardship. IB Sports Foundation stepped in to support her schooling, providing the financial stability needed for her to **remain focused on learning**. <br /><br />
+
+        Her efforts resulted in a **1st Division (70.5%)** in her 4th-grade
+        examinations, leading to her successful promotion to Class 5. Her journey
+        reflects how **timely educational support can protect and strengthen a child’s future**.
+      stats:
+        - text: "Hindi - 83/100"
+          icon: "la-pen-nib"
+        - text: "English - 71/100"
+          icon: "la-language"
+        - text: "Maths - 62/100"
+          icon: "la-calculator"
+        - text: "Science - 66/100"
+          icon: "la-flask"
+      reverse: true
+
+  support_a_child_cta:
+    title: "Change a Life Today"
+    subtitle: "Support education where it matters most"
+    icon: "<i class=\"las la-chalkboard-teacher\"></i>"
+    description: "These stories reflect **our long-term commitment** to ensuring that no child’s education is interrupted by financial hardship. <br />
+    Will you <span class=\"text-primary fw-semibold\">help us enable education for more children</span> like Rishika and Bithi?"
+    btn_text: "Sponsor a Child's Education"
+    btn_link: "http://wa.me/918860500060?text=Hi+IB+Sports+Foundation%2C+I+found+your+website+and+am+inspired+by+your+impact.+I%27m+interested+in+supporting+a+child%27s+education+and+would+love+more+details%21"
+
 cta:
   enable: true
   title: "Help Us Expand Access to Sport for Every Child"

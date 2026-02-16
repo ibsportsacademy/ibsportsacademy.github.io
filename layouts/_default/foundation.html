@@ -156,7 +156,7 @@
 
   {{ with .Params.our_office }}
   {{ if .enable }}
-    <section class="section-sm mb-2 features">
+    <section class="section-sm features">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-8 col-md-10">
@@ -189,188 +189,79 @@
     </section>
   {{ end }}
   {{ end }}
+
+  {{ with .Params.impact_stories }}
+  {{ if .enable }}
+  <section class="section-sm mb-2 foundation-impact-stories">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-8 col-md-10 mb-4">
+          <div class="section-title text-center mb-0" data-aos="fade-up">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+        </div>
+      </div>
   
-  {{ with .Params.our_mission }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x") }}
-
-
-                  <div class="has-circle">
-                    <span class="circle-4 ratio-20 fill"></span>
-                    <span class="circle-5 ratio-47"></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="circle-1 ratio-85 fill"></span>
-                  <span class="circle-2 ratio-37"></span>
-                  <span class="circle-3 ratio-20 fill"></span>
-                  <span class="circle-6 ratio-85 fill"></span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
+      {{ range .stories }}
+      <div class="row align-items-center mb-5 pb-lg-4 {{ if .reverse }}flex-row-reverse{{ end }}">
+        
+        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="{{ if .reverse }}fade-left{{ else }}fade-right{{ end }}">
+          <div class="block" style="transition: transform .5s ease;">
+            {{ partial "image.html" (dict "Src" .image "Alt" .image_alt  "Size" "1200x") }}
           </div>
         </div>
-      </section>
-    {{ end }}
-  {{ end }}
+  
+        <div class="col-lg-6 {{ if .reverse }}me-auto{{ else }}ms-auto{{ end }}" data-aos="fade-up" data-aos-delay="100">
+          <div class="ps-lg-3 pe-lg-3">
+            <span class="icon badge impact-badge bg-soft-primary text-primary fw-semibold px-3 py-2 mb-4 d-inline-block rounded-pill">
+              <!-- <span class="badge d-inline-flex align-items-center gap-2 px-4 py-2 mb-4 rounded-pill fw-semibold "> -->
 
-  {{ with .Params.about_video }}
-    {{ if .enable }}
-      <section class="video-popup video-popup-two has-bg-color">
-        <div class="container-xxl position-relative">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="block">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-5">
-                    <div class="section-title" data-aos="fade-up">
-                      <p class="text-uppercase">
-                        {{ .subtitle | markdownify }}
-                      </p>
-                      <h2 class="title">{{ .title | markdownify }}</h2>
-                      <p>{{ .description | markdownify }}</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-5">
-                    <div
-                      class="video-block"
-                      data-aos="fade-up"
-                      data-aos-delay="100">
-                      <button
-                        type="button"
-                        title="Play Video Button"
-                        class="video-play-btn"
-                        data-src="{{ .video_url }}">
-                        <i class="las la-play"></i>
-                      </button>
-                      {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" "Video Thumbnail" "Class" "video-thumb"
-                        "Size" "700x")
-                      }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="has-circle has-bg-anim" data-aos="fade-in">
-                <span class="circle-1 ratio-32"></span>
-                <span class="circle-2 ratio-20"></span>
-                <span class="circle-3 ratio-20"></span>
-                <span class="circle-4 ratio-20"></span>
-                <span class="circle-5 ratio-37"></span>
-                <span class="circle-6 ratio-20"></span>
-                <span class="circle-7 ratio-47"></span>
-                <span class="circle-8 ratio-37"></span>
-
-                <svg
-                  class="text-primary"
-                  style="opacity:.15"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 1401 613"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 580C35.1785 462.015 166.359 247.408 425.652 332.866C749.767 439.688 890.318 302.84 946.338 181.583C1002.36 60.3256 1149.41 -52.8479 1400 35.4968"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                  <path
-                    d="M1398 0.999977C1364.87 125.95 1233.88 353.224 974.955 262.722C651.302 149.594 510.953 294.52 455.013 422.935C399.073 551.35 252.231 671.203 2.00002 577.644"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                </svg>
-              </div>
+              <i class="las la-lg la-graduation-cap"></i> {{ .subtitle | markdownify }}
+            </span>
+            <h2>{{ .name | markdownify }}</h2>
+            <div>
+              {{ .description | markdownify }}
             </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.brands_carousel }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-            {{ with site.GetPage (string .Params.clients.section) }}
-              {{ with .Params.brands_carousel }}
-                <div class="col-md-12" data-aos="fade-left">
-                  <div class="brand-carousel swiper-container border-0 mt-0">
-                    <div class="swiper-wrapper">
-                      {{ range .brand_images }}
-                        <div class="swiper-slide">
-                          <div class="brand-item">
-                            {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
-                          </div>
-                        </div>
-                      {{ end }}
-                    </div>
-                  </div>
-                </div>
+            
+            <div class="d-flex flex-wrap gap-2 mt-3 mb-3">
+              {{ range .stats }}
+              <span class="icon badge border border-primary text-primary py-2 px-3 rounded-pill fw-normal shadow-sm">
+                <i class="las la-lg {{ .icon }} me-1"></i> {{ .text | markdownify }}
+              </span>
               {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_team }}
-    {{ if .enable }}
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
             </div>
           </div>
-          <div class="row justify-content-around">
-            {{ range .team }}
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="team-item text-center">
-                  <div class="team-image">
-                    {{ partial "image.html" (dict "Src" .image "Alt" "Video Thumbnail" "Class" "w-100 rounded-circle" "Size"
-                      "175x")
-                    }}
-                  </div>
-                  <h3>{{ .name | markdownify }}</h3>
-                  <p>{{ .designation | markdownify }}</p>
-                </div>
+        </div>
+      </div>
+      {{ end }}
+
+      {{ with .support_a_child_cta }}
+      <div class="row justify-content-center mt-5">
+        <div class="col-xl-10 col-lg-10 col-md-10 mb-4">
+          <div class="section-title text-center mb-0" data-aos="fade-up">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <div class="support-a-child">
+              <div class="icon text-primary mb-1">
+                {{ .icon | markdownify }}
               </div>
-            {{ end }}
+            </div>
+            <p>{{ .description | markdownify }}</p>
+            <div class="mt-4">
+              <a href="{{ .btn_link | safeURL}}" class="btn btn-primary">
+                <i class="las la-lg la-hand-holding-heart"></i> {{ .btn_text }}
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-    {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
 {{ end }}
