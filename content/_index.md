@@ -32,7 +32,7 @@ features:
     Every bounce echoes with purpose, every swish fuels ambition, and every call from a coach carries wisdom. <br />
     This is where passion takes shape, skills sharpen, and futures are forged — one drill, one game, one breakthrough at a time. <br />
     Are you ready to chase greatness? <br />
-    **Step onto the court | Embrace the grind | Unlock the player within**"
+    **Step onto the court • Embrace the grind • Unlock the player within**"
   features_blocks:
     - icon: "las la-lock"
       title: "🎯 Our Mission"
@@ -51,14 +51,14 @@ features:
       content: "**Got game?** Let’s level it up. <br />
         Train hard, play smart, dream big. <br />
         All powered by **coaches who live the game**. <br />
-        **Join Us | Enroll Now | The Court’s Calling! 📲**"
+        **Join Us • Enroll Now • The Court’s Calling! 📲**"
 
 # intro_video
 intro_video:
   enable: true
   subtitle: "Inside IB Sports Academy"
   title: "Where Athletes Are Made"
-  description: "A high-energy glimpse into life at IB Sports Academy <br> Elite Training | Pure Passion | Real Champions"
+  description: "A high-energy glimpse into life at IB Sports Academy <br> Elite Training • Pure Passion • Real Champions"
   video_url: "https://youtube.com/embed/7Tx9Yt1vrrI"
   video_thumbnail: "images2/video-popup.png"
 
@@ -123,7 +123,7 @@ our_office:
 how_it_works:   
   enable: true
   block:
-  - subtitle: "Training the Body | Shaping the Mind | Inspiring the Spirit"
+  - subtitle: "Training the Body • Shaping the Mind • Inspiring the Spirit"
     title: "🏀 What We Teach On and Off the Court"
     description: "At IB Sports Academy, we’re committed to developing complete players — physically, mentally, and tactically. <br />
       Here’s what every athlete learns through our training programs:

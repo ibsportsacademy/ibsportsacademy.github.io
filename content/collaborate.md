@@ -8,7 +8,7 @@ draft: false
 # who_we_are
 who_we_are:
   enable: true
-  subtitle: "Partner with purpose | Impact through sport"
+  subtitle: "Partner with purpose • Impact through sport"
   title: "Play a Role in Something Bigger"
   description: "At IB Sports Academy, we believe basketball is more than a sport — it's a powerful tool for transformation, discipline, and opportunity. Over the last 15+ years, we've trained thousands of young athletes across India, combining high-performance coaching with community-driven values. <br /> <br />
 
@@ -137,7 +137,7 @@ partnerships:
       Let’s come together to build stories that matter, inspire the next generation, and create lasting change — all through the power of sport.
       <br /><br />
       
-      <ins>[📩 Reach out to us here](mailto:academyibsports@gmail.com)</ins> | Visit our <ins>[Instagram](https://www.instagram.com/ibsportsacademy)</ins> and <ins>[YouTube](https://www.youtube.com/@ibsportsacademy)</ins> to see us in action."
+      <ins>[📩 Reach out to us here](mailto:academyibsports@gmail.com)</ins> • Visit our <ins>[Instagram](https://www.instagram.com/ibsportsacademy)</ins> and <ins>[YouTube](https://www.youtube.com/@ibsportsacademy)</ins> to see us in action."
     image: "images2/lets-build-basketball-together-ib-sports-academy.png"
 
 # what_we_do

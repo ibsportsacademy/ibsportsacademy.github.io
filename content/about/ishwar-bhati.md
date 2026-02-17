@@ -264,7 +264,7 @@ Coach Bhati and IB Sports Academy have been featured in national media and Bolly
 
 ## Connect with Coach Ishwar Bhati
 
-- **Instagram:** [@bhati_ishwar](https://instagram.com/bhati_ishwar) | [@ibsportsacademy](https://instagram.com/ibsportsacademy)
+- **Instagram:** [@bhati_ishwar](https://instagram.com/bhati_ishwar) • [@ibsportsacademy](https://instagram.com/ibsportsacademy)
 - **LinkedIn:** [Ishwar Bhati](https://in.linkedin.com/in/ishwar-bhati)
 - **X (Twitter):** [@bhatiishwar](https://x.com/bhatiishwar)
 - **Email:** [info@ibsportsacademy.com](mailto:info@ibsportsacademy.com)

@@ -43,7 +43,7 @@
 
   {{ with .Params.dream_team }}
     {{ if .enable }}
-      <section class="section dream-team overflow-hidden">
+      <section class="section-sm dream-team overflow-hidden">
         <div class="container">
           <div class="row">
             <div class="col-lg-12" data-aos="fade-up">
@@ -82,6 +82,55 @@
         </div>
       </section>
     {{ end }}
+  {{ end }}
+
+  {{ with .Params.hub_and_spoke }}
+  {{ if .enable }}
+  <section class="section-sm hub-spoke-model overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-11" data-aos="fade-up">
+          <div class="section-title text-center">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-3">
+          <div class="impact-diagram-wrapper text-center col-lg-10" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-none d-md-block">
+              {{ partial "image.html" (dict "Src" .image_desktop "Alt" .image_alt "Size" "3600x" "Class" "img-fluid") }}
+            </div>
+
+            <div class="d-block d-md-none">
+              {{ partial "image.html" (dict "Src" .image_mobile "Alt" .image_alt "Size" "2400x" "Class" "img-fluid") }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        {{ range $index, $element := .blocks }}
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $index 100 }}">
+          <div class="card h-100 p-4 shadow-sm impact-engine-card">
+            <div class="icon-wrap mb-4 d-inline-flex align-items-center justify-content-center">
+              <i class="{{ .icon }} la-2x"></i>
+            </div>
+
+            <h5 class="fw-bold mb-1">{{ .title }}</h5>
+            <p class="small text-primary fw-semibold mb-3 text-uppercase">{{ .subtitle }}</p>
+            <div class="text-muted small">
+              {{ .description | markdownify }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
   {{ with .Params.partnerships }}
@@ -203,16 +252,16 @@
           </div>
         </div>
       </div>
-  
+
       {{ range .stories }}
       <div class="row align-items-center mb-5 pb-lg-4 {{ if .reverse }}flex-row-reverse{{ end }}">
-        
+
         <div class="col-lg-5 mb-4 mb-lg-0" data-aos="{{ if .reverse }}fade-left{{ else }}fade-right{{ end }}">
           <div class="block" style="transition: transform .5s ease;">
             {{ partial "image.html" (dict "Src" .image "Alt" .image_alt  "Size" "1200x") }}
           </div>
         </div>
-  
+
         <div class="col-lg-6 {{ if .reverse }}me-auto{{ else }}ms-auto{{ end }}" data-aos="fade-up" data-aos-delay="100">
           <div class="ps-lg-3 pe-lg-3">
             <span class="icon badge impact-badge bg-soft-primary text-primary fw-semibold px-3 py-2 mb-4 d-inline-block rounded-pill">
@@ -224,7 +273,7 @@
             <div>
               {{ .description | markdownify }}
             </div>
-            
+
             <div class="d-flex flex-wrap gap-2 mt-3 mb-3">
               {{ range .stats }}
               <span class="icon badge border border-primary text-primary py-2 px-3 rounded-pill fw-normal shadow-sm">

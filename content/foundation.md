@@ -1,7 +1,7 @@
 ---
 title: "Rise Through Hoops • <span class=\"no-wrap\">IB Sports Foundation</span>"
 meta_title: "Rise Through Hoops | Equity & Access Through Sport | IB Sports Foundation"
-description: "Equity, Access, and Opportunity through sports. Empowering underserved youth with global mentorship and inclusive programs."
+description: "IB Sports Foundation expands equity and access through structured sports programs, professional coaching, safeguarding standards, and global mentorship for underserved and at-risk youth."
 layout: "foundation"
 draft: false
 
@@ -10,10 +10,9 @@ who_we_are:
   enable: true
   subtitle: "Equity • Access • Opportunity"
   title: "Every Child Can Rise Through Hoops"
-  description: "At IB Sports Foundation, we believe sport is more than a game, it is a powerful tool for confidence, belonging, and life opportunity. Founded in 2022, our work is rooted in a simple truth: talent exists everywhere, but access does not. <br /><br />
+  description: "At IB Sports Foundation, sport is more than a game, it is a powerful tool for confidence, belonging, and life opportunity. Founded in 2022, our work is rooted in a simple truth: talent exists everywhere, but access does not. <br /><br />
   
-  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> Through the **Rise Through Hoops** initiative, we provide the kits, coaching, and global mentorship to ensure a child’s starting point never defines their finish line."
-
+  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> Through the **Rise Through Hoops** initiative, we provide essential equipment, structured coaching, and global mentorship to ensure a child’s starting point never defines their finish line. Delivered through structured coaching, safeguarding standards, and long-term partnerships."
   image: "images2/empower-children-rise-through-hoops-ib-sports-foundation-academy.png"
 
 # dream_team
@@ -24,11 +23,74 @@ dream_team:
   image: "images2/create-impact-inclusion-special-children-ib-sports-foundation-academy.png"
   description: "Working with **underprivileged communities, orphanages, and children with special needs**, we bridge the gap between potential and opportunity. Through structured sports programs, we don’t just build athletes — we build confidence, discipline, teamwork, leadership, and a sense of belonging that strengthens children in school, in life, and in their communities. <br /><br />
   
-  Our model combines **consistent coaching, mentorship, access support, and inclusive programming** to create sustained developmental impact. <br /><br />
+  Our model combines **consistent coaching, mentorship, access support, and inclusive programming** to create sustained developmental and social impact. <br /><br />
 
   <span style=\"color: #FE6019;\">At its heart, IB Sports Foundation exists to use sport as a pathway to education engagement, life skills, inclusion, and long-term opportunity for children who would otherwise lack access.</span> <br />
   
   We believe **every child**, regardless of background or ability, **deserves the chance to grow, belong, and thrive through play.**"
+
+# hub_and_spoke
+hub_and_spoke:
+  enable: true
+  subtitle: "Built for Scale • Integrity • Long-Term Impact"
+  title: "<i class=\"text-primary las la-cog\"></i> IB Impact Engine • <span class=\"no-wrap\">Hub & Spoke Model</span>"
+  image_desktop: "images2/ib-impact-engine-hub-spoke-diagram.png"
+  image_mobile: "images2/ib-impact-engine-hub-spoke-diagram-mobile.png"
+  image_alt: "IB Impact Engine Diagram. Hub and Spoke Model - IB Sports Foundation | IB Sports Academy"
+  description: >
+    IB Sports Foundation operates a structured **Hub-and-Spoke Impact Engine**
+    designed to scale youth sports access through structured systems, institutional discipline, and long-term accountability. Governance, safeguarding, and standards are centralized at the core, while
+    technical systems, strategic partnerships, and impact capital enable expansion across communities. <br />
+
+    This architecture ensures every new program maintains **consistent quality,
+    ethical standards, and measurable impact**, regardless of geography or scale. <br /><br />
+
+    Every component of the IB Impact Engine operates under a **Zero-Tolerance Safeguarding Policy**. From international mentors to local volunteers, 100% of our team undergoes rigorous background verification and mandatory child protection training, ensuring sport remains a safe and trusted space for every child.
+
+  blocks:
+    - title: "The Hub — IB Sports Foundation"
+      subtitle: "Strategy • Governance • Impact"
+      icon: "las la-basketball-ball"
+      description: >
+        IB Sports Foundation serves as the **central governing body and system steward**.
+        It defines strategic direction, enforces safeguarding and operational standards,
+        manages institutional partnerships, and oversees impact measurement. <br /><br />
+
+        The Hub ensures every spoke operates within a **trusted, accountable,
+        and ethically governed framework**, enabling responsible and sustainable growth.
+
+    - title: "The Backbone — IB Sports Academy"
+      subtitle: "Coaching • Curriculum • Systems"
+      icon: "las la-tools"
+      description: >
+        IB Sports Academy functions as the **technical backbone of the ecosystem**,
+        delivering structured coaching methodologies and curriculum frameworks,
+        alongside continuous coach development systems. <br /><br />
+
+        This backbone ensures all programs maintain **professional consistency,
+        technical integrity, and globally aligned training standards** across communities.
+
+    - title: "The Accelerators — Strategic Partners"
+      subtitle: "Impact Capital • Scale"
+      icon: "las la-rocket"
+      description: >
+        Strategic partners and grantmakers provide the **catalytic inputs for growth**,
+        enabling the activation and expansion of new community spokes. <br /><br />
+
+        Their support strengthens infrastructure and program continuity,
+        while the Foundation retains **full governance, safeguarding,
+        and accountability**, ensuring measurable and scalable impact.
+
+    - title: "The Spokes — Communities & Children"
+      subtitle: "Access • Development • Opportunity"
+      icon: "las la-project-diagram"
+      description: >
+        Each spoke represents a **direct point of impact** —
+        schools, orphanages, NGOs, inclusion centers, and grassroots communities. <br /><br />
+
+        Guided by the Foundation’s governance and the Academy’s systems,
+        children receive **safe access to sport, mentorship,
+        and long-term development pathways** that create lasting opportunity on the ground.
 
 # partnerships
 partnerships:
@@ -102,7 +164,7 @@ partnerships:
 
       - **Malkom (Uganda/Rwanda)** — Veteran of **African Division 1 leagues**, providing a roadmap for competitive resilience and physical literacy. <br /><br />
 
-      These exchanges elevate our training standards, ensuring that every child in our program receives a world-class athletic foundation."
+      These international exchanges elevate our training standards, ensuring that every child in our program receives a world-class athletic foundation."
     image: "images2/international-sponsorship-opportunities-ib-sports-academy.png"
 
 # our office

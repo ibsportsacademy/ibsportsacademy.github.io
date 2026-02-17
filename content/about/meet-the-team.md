@@ -12,7 +12,7 @@ banner:
 # dream_team
 dream_team:
   enable: true
-  subtitle: "Driven by Passion | United by Purpose"
+  subtitle: "Driven by Passion • United by Purpose"
   title: "🏀 The Dream Team"
   image: "images2/coach-ib-sports-academy-team-2.jpg"
   description: "At **IB Sports Academy**, our coaches and staff share one goal: **helping every athlete reach their full potential**, on the court and off. With years of professional experience, a true passion for basketball, and a commitment to growth, our team creates an environment where players can **improve, compete, and love the game**. <br><br>
