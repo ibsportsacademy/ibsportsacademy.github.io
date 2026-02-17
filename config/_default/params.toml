@@ -12,7 +12,7 @@ logo_webp = true
 logo_text = "IB Sports Academy"
 
 # footer information
-footer_info = "Driven by passion, powered by coaching | We help every kid find their game, their grit, and their greatness."
+footer_info = "Driven by passion, powered by coaching • We help every kid find their game, their grit, and their greatness."
 
 # footer copyright
 copyright = "Copyright © 2026 IB Sports Academy - All Rights Reserved."
@@ -107,7 +107,7 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 # call-to-action
 [cta]
 enable = true
-title = "Building Ballers | Fueling Dreams"
+title = "Building Ballers • Fueling Dreams"
 content = "At IB Sports Academy, we turn raw energy into real skill, and big dreams into bigger futures. <br /> From the first dribble to national tournaments, we coach hustle, heart, and the mindset of a champion. <br /> For kids who live to play. For parents who want more than just playtime."
 button = "Ready to rise? Let’s ball."
 button_link = "https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"

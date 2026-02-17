@@ -12,7 +12,7 @@ who_we_are:
   title: "Every Child Can Rise Through Hoops"
   description: "At IB Sports Foundation, sport is more than a game, it is a powerful tool for confidence, belonging, and life opportunity. Founded in 2022, our work is rooted in a simple truth: talent exists everywhere, but access does not. <br /><br />
   
-  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> Through the **Rise Through Hoops** initiative, we provide essential equipment, structured coaching, and global mentorship to ensure a child’s starting point never defines their finish line. Delivered through structured coaching, safeguarding standards, and long-term partnerships."
+  <span style=\"color: #FE6019;\">**Talent is Universal. Opportunity is Not.**</span> Through the **Rise Through Hoops** initiative, we provide essential equipment, structured coaching, and global mentorship to ensure a child’s starting point never defines their finish line. Delivered through structured coaching systems, safeguarding protocols, and long-term institutional partnerships."
   image: "images2/empower-children-rise-through-hoops-ib-sports-foundation-academy.png"
 
 # dream_team
@@ -39,14 +39,15 @@ hub_and_spoke:
   image_alt: "IB Impact Engine Diagram. Hub and Spoke Model - IB Sports Foundation | IB Sports Academy"
   description: >
     IB Sports Foundation operates a structured **Hub-and-Spoke Impact Engine**
-    designed to scale youth sports access through structured systems, institutional discipline, and long-term accountability. Governance, safeguarding, and standards are centralized at the core, while
-    technical systems, strategic partnerships, and impact capital enable expansion across communities. <br />
+    designed to scale youth sports access through centralized governance,
+    safeguarding, and technical standards.
 
-    This architecture ensures every new program maintains **consistent quality,
-    ethical standards, and measurable impact**, regardless of geography or scale. <br /><br />
+    This model ensures every program delivers **consistent quality, ethical oversight,
+    and measurable impact**, while coaching systems and strategic partners enable
+    sustainable expansion across communities. <br /><br />
 
-    Every component of the IB Impact Engine operates under a **Zero-Tolerance Safeguarding Policy**. From international mentors to local volunteers, 100% of our team undergoes rigorous background verification and mandatory child protection training, ensuring sport remains a safe and trusted space for every child.
-
+    Every component operates under a **Zero-Tolerance Safeguarding Policy**, ensuring
+    sport remains a safe, trusted, and accountable space for every child.
   blocks:
     - title: "The Hub — IB Sports Foundation"
       subtitle: "Strategy • Governance • Impact"
