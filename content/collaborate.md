@@ -61,7 +61,7 @@ partnerships:
       <br /><br />
 
       👉 Go behind the scenes: <ins>[Celebrity Collaborations That Inspired](https://blog.ibsportsacademy.com/tags/bollywood-collaboration/)</ins>"
-    image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chadha.png"
+    image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chaddha.png"
 
   - subtitle: "Driving Social Change Through Sports"
     title: "🫶 NGO & Social Sector Partnerships"

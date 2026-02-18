@@ -53,6 +53,54 @@ features:
         All powered by **coaches who live the game**. <br />
         **Join Us • Enroll Now • The Court’s Calling! 📲**"
 
+# highlights_gallery
+highlights_gallery:
+  enable: true
+  subtitle: "Highlights from Our Pursuit of Greatness"
+  title: "Screen Icons <i class=\"text-primary las la-sm la-handshake\"></i> <span class=\"no-wrap\">Court Titans</span>"
+  description: "We bring the world’s best to our courts. From the influence of <span class=\"text-primary fw-semibold\">Bollywood’s biggest stars</span> to the technical mastery of international 
+    <span class=\"no-wrap text-primary fw-semibold\">FIBA-level coaching legends</span>, we provide our athletes with the elite exposure they need to dream bigger and train bolder."
+  images:
+    - src: "images2/highlights/aamir-khan-basketball-signing-ib-sports-academy.png"
+      alt: "Sitaare Zameen Par's Aamir Khan signing basketballs for Ishwar Bhati • IB Sports Academy"
+      mobile_show: true
+    - src: "images2/highlights/kartik-aaryan-shehzada-ishwar-bhati-ib-sports-academy.png"
+      alt: "Actor Kartik Aaryan with Ishwar Bhati playing Basketball for Shehzada movie • IB Sports Academy"
+      mobile_show: true
+    - src: "images2/highlights/aamir-khan-students-sitaare-zameen-par-ib-sports-academy.png"
+      alt: "Aamir Khan interacting with IB Sports Academy's student athletes during Sitaare Zameen Par movie shooting."
+      mobile_show: true
+    - src: "images2/highlights/anshika-team-india-special-olympics-chiranjeev-ib-sports-academy.png"
+      alt: "IB Sports Academy's student Anshika (Special Olympics Bharat) represented Team India at the 3x3 Unified Basketball World Cup in Puerto Rico with Coach Chiranjeev."
+      mobile_show: true
+    - src: "images2/highlights/inter-ib-4_0-event-benny-mascot-ib-sports-academy.png"
+      alt: "The vibrant Inter-IB 4.0 basketball championship event featuring the academy mascot Benny hosted by IB Sports Academy."
+      mobile_show: false
+    - src: "images2/highlights/coach-malkom-rwanda-africa-division-ib-sports-academy.png"
+      alt: "International basketball session led by Coach Malkom of the Uganda & Rwanda Africa Division, focusing on elite D1 level basketball fundamentals."
+      mobile_show: true
+    - src: "images2/highlights/sheeba-chaddha-sunfeast-chiranjeev-ib-sports-academy.png"
+      alt: "Actress Sheeba Chaddha supporting grassroots sports development during the Sunfeast youth basketball initiative with IB Sports Academy's Coach Chiranjeev and student athletes."
+      mobile_show: true
+    - src: "images2/highlights/coach-naoufal-uariachi-ib-sports-academy.png"
+      alt: "Former Morocco National Team Coach Naoufal Uariachi delivering advanced tactical basketball sessions to IB Sports Academy's elite prospects."
+      mobile_show: false
+    - src: "images2/highlights/gold-medal-winners-special-olympics-bharat-ib-sports-academy.png"
+      alt: "A celebratory group shot of gold medal winners with Coach Ishwar Bhati of IB Sports Academy at Special Olympic Bharat showcasing their medals at national championship in Odisha."
+      mobile_show: true
+    - src: "images2/highlights/coach-hassan-el-saddique-all-dream-sports-ib-sports-academy.png"
+      alt: "Coach Hassan El Saddique from All Dream Sports conducting an intensive skills development camp for academy players at IB Sports Academy."
+      mobile_show: true
+    - src: "images2/highlights/ishwar-bhati-achievements-ib-sports-academy.png"
+      alt: "Founder Ishwar Bhati of IB Sports Academy presenting one of academy’s many achievements and institutional milestones."
+      mobile_show: false
+    - src: "images2/highlights/ranveer-singh-saini-para-golfer-ib-sports-academy.jpg"
+      alt: "Special Olympics Gold Medalist and Para-golfer Ranveer Singh Saini at the inauguration of our Sunday Center for Special Children, an inclusive sports initiative of IB Sports Foundation"
+      mobile_show: true
+    - src: "images2/highlights/coach-guillaume-soares-benjamin-bari-france-ib-sports-academy.png"
+      alt: "French professional coaches Guillaume Soares and Benjamin Bari demonstrating FIBA-standard offensive drills to student athletes at IB Sports Academy."
+      mobile_show: false
+
 # intro_video
 intro_video:
   enable: true

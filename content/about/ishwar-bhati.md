@@ -51,7 +51,9 @@ who_we_are2:
 
     * ✈️ **Delegate to NBA China Games (2018)**
 
-    * 🎬 **Technical Coach & Consultant for Bollywood for movies like 'Sitaare Zameen Par' (2025) - coaching Aamir Khan and on-screen youth athletes**"
+    * 🎬 **Technical Coach & Consultant for Bollywood movies.**
+    
+    * 🎬 Appeared as the opposing basketball team’s coach in **Sitaare Zameen Par, starring Aamir Khan**, alongside several IB Sports Academy athletes."
   image: "images2/ishwar-bhati-achievements-ib-sports-academy.png"
 
 # what_we_do

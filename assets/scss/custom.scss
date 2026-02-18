@@ -13,13 +13,17 @@
 .macy-item {
   overflow: hidden;
   border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+
+.macy-item:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .macy-item img {
   width: 100%;
   display: block;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .macy-item img:hover {
