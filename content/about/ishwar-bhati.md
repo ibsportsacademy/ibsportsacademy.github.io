@@ -9,7 +9,7 @@ who_we_are:
   enable: true
   subtitle: "Who We Are"
   title: "Coach. Mentor. Founder. Dreamer."
-  description: "Ishwar Bhati is the visionary founder and Head Coach of **IB Sports Academy**, a powerhouse for grassroots basketball in India. With over 15 years of experience in coaching, refereeing, and mentoring youth, Coach Bhati has become a respected figure in Indian sports—not just for building better players, but for shaping stronger individuals.
+  description: "Ishwar Bhati is the visionary Founder and Head Coach of **IB Sports Academy** & **IB Sports Foundation**, a powerhouse for grassroots basketball in India. With over 20 years of experience in coaching, refereeing, and mentoring youth, Coach Bhati has become a respected figure in Indian sports—not just for building better players, but for shaping stronger individuals.
 
     > \"We don’t just open doors—we open hearts to welcome you on the court.\"
     > — Ishwar Bhati"

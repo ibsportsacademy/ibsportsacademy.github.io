@@ -241,7 +241,7 @@ how_it_works:
 
   - subtitle: "Show us your game online — and play with us for free!"
     title: "🏀 Earn a Free Class!"
-    description: "Follow us on **<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>** and Subscribe to our **<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**, and tag us in your basketball post or story to **unlock a free trial session at IB Sports Academy!** <br />
+    description: "Follow us on <span class=\"text-primary-a no-wrap\">**<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>**</span> and Subscribe to our <span class=\"text-primary-a no-wrap\">**<ins>[{{< icon youtube >}} YouTube channel](https://www.youtube.com/c/IBSportsAcademy)</ins>**</span>, and tag us in your basketball post or story to **unlock a free trial session at IB Sports Academy!** <br />
       Let’s shoot, share, and shine together! 🔥 <br />
       Whether it’s your **first shot or your hundredth dunk**, we want to see it. <br />
       Join the IB family online — and step onto the court for real. <br />
@@ -253,7 +253,7 @@ testimonials:
   enable: true
   subtitle: "Our Testimonial"
   title: "Don't take our word for it"
-  description: "Hear directly from our <b>Athletes</b> and <b>Parents</b> about their Journey at IB Sports Academy <br> The Training, the Growth, and the Confidence built on and off the Field."
+  description: "Hear directly from our <b>Athletes</b> and <b>Parents</b> about their Journey at IB Sports Academy <br> The Training, the Growth, and the Confidence built on and off the Court."
   image_left: "images2/testimonials-01.png"
   image_right: "images2/testimonials-02.png"
   google_maps_url: "https://maps.google.com/maps?cid=6348905391918028598"

@@ -11,7 +11,7 @@ testimonials:
   enable: true
   subtitle: "Not Sure Yet?"
   title: "See What Our Players & Parents Say"
-  description: "Hear directly from our <b>Athletes</b> and <b>Famielies</b> about their Journey at IB Sports Academy <br> The Training, the Growth, and the Confidence built on and off the Field."
+  description: "Hear directly from our <b>Athletes</b> and <b>Families</b> about their Journey at IB Sports Academy <br> The Training, the Growth, and the Confidence built on and off the Court."
   image_left: "images2/testimonials-01.png"
   image_right: "images2/testimonials-02.png"
   google_maps_url: "https://maps.google.com/maps?cid=6348905391918028598"
