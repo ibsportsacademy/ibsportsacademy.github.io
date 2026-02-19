@@ -19519,21 +19519,60 @@ header {
   border: 1px solid transparent;
   border-radius: 1rem; }
 
-.locations .office-loc-item {
-  border: 1px solid transparent;
-  box-shadow: 0px 0.25rem 1.5rem 0px rgba(0, 0, 0, 0.05);
-  border-radius: 0.375rem;
-  transition: 0.3s ease; }
-  @media (max-width: 767px) {
-    .locations .office-loc-item {
-      padding: 2.5rem 1.5rem; } }
-  @media (max-width: 575px) {
-    .locations .office-loc-item {
-      padding: 2.5rem 0.9rem; } }
-  .locations .office-loc-item:hover {
-    box-shadow: none;
-    border-color: rgba(254, 96, 25, 0.1);
-    transform: translateY(-2px); }
+.locations {
+  /* Standard uniform button shape for all screens */
+  /* List container logic */
+  /* The Fade Overlay */ }
+  .locations .office-loc-item {
+    border: 1px solid transparent;
+    box-shadow: 0px 0.25rem 1.5rem 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0.375rem;
+    transition: 0.3s ease; }
+    @media (max-width: 767px) {
+      .locations .office-loc-item {
+        padding: 2.5rem 1.5rem; } }
+    @media (max-width: 575px) {
+      .locations .office-loc-item {
+        padding: 2.5rem 0.9rem; } }
+    .locations .office-loc-item:hover {
+      box-shadow: none;
+      border-color: rgba(254, 96, 25, 0.1);
+      transform: translateY(-2px); }
+  .locations #locations-toggle-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 220px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none; }
+    .locations #locations-toggle-btn i {
+      margin-left: 5px; }
+  .locations #locations-wrapper {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.875, 0.885, 0.32, 1); }
+  .locations .locations-collapsed {
+    max-height: 420px;
+    /* Desktop height */ }
+  @media (max-width: 991px) {
+    .locations .locations-collapsed {
+      max-height: 580px;
+      /* Mobile height */ } }
+  .locations .locations-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+    z-index: 2;
+    pointer-events: none;
+    display: none; }
+  .locations .locations-collapsed .locations-fade {
+    display: block; }
 
 .video-popup.has-bg-color {
   background-color: #ffffff; }

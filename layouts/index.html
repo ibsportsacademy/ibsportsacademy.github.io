@@ -343,7 +343,7 @@
 
   {{ with .Params.our_office }}
     {{ if .enable }}
-      <section class="locations section-sm mb-4">
+      <section id="office-locations" class="locations section-sm mb-4">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8 col-md-10">
@@ -356,20 +356,32 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-xl-10">
-              <div class="row">
-                {{ range .office_locations }}
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="office-loc-item">
-                      {{ $filename := .country_flag | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
-                      {{ partial "image.html" (dict "Src" .country_flag "Alt" (printf "%s - Location IB Sports Academy" $filename) "Size" "80x") }}
-                      <h3>{{ .city | markdownify }}</h3>
-                      <p>{{ .address_line_one | markdownify }}</p>
-                      <p>{{ .address_line_two | markdownify }}</p>
+              <div id="locations-wrapper" class="locations-collapsed">
+                <div class="row">
+                  {{ range .office_locations }}
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="office-loc-item">
+                        {{ $filename := .country_flag | replaceRE ".*/" "" | replaceRE "\\.[^.]+$" "" | replaceRE "-" " " | title }}
+                        {{ partial "image.html" (dict "Src" .country_flag "Alt" (printf "%s - Location IB Sports Academy" $filename) "Size" "80x") }}
+                        <h3>{{ .city | markdownify }}</h3>
+                        <p>{{ .address_line_one | markdownify }}</p>
+                        <p>{{ .address_line_two | markdownify }}</p>
+                      </div>
                     </div>
-                  </div>
-                {{ end }}
+                  {{ end }}
+                </div>
+                <div class="locations-fade"></div>
               </div>
             </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 text-center" style="margin-top: 30px; min-height: 60px;">
+                <button id="locations-toggle-btn" class="btn btn-primary">
+                  See All Locations <i class="las la-lg la-chevron-circle-down"></i>
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

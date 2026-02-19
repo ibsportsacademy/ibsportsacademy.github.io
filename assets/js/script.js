@@ -200,6 +200,32 @@ window.onload = () => {
   });
 };
 
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById('locations-toggle-btn');
+  const wrapper = document.getElementById('locations-wrapper');
+  const section = document.getElementById('office-locations');
+
+  if (!btn || !wrapper) return;
+
+  btn.addEventListener('click', function() {
+    const isCollapsed = wrapper.classList.contains('locations-collapsed');
+
+    if (isCollapsed) {
+      // Open the list to its full natural height
+      wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+      wrapper.classList.remove('locations-collapsed');
+      btn.innerHTML = 'Show Less <i class="las la-lg la-chevron-circle-up"></i>';
+    } else {
+      // Close the list and scroll back to the section title
+      wrapper.style.maxHeight = "";
+      wrapper.classList.add('locations-collapsed');
+      btn.innerHTML = 'See All Locations <i class="las la-lg la-chevron-circle-down"></i>';
+
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
 // Form validation Init
 (function () {
   window.addEventListener(

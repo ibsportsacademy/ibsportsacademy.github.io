@@ -687,6 +687,57 @@
       transform: translateY(-2px);
     }
   }
+
+  /* Standard uniform button shape for all screens */
+  #locations-toggle-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 220px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+
+    i {
+      margin-left: 5px;
+    }
+  }
+
+  /* List container logic */
+  #locations-wrapper {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .locations-collapsed {
+    max-height: 420px; /* Desktop height */
+  }
+
+  @media (max-width: 991px) {
+    .locations-collapsed {
+      max-height: 580px; /* Mobile height */
+    }
+  }
+
+  /* The Fade Overlay */
+  .locations-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    z-index: 2;
+    pointer-events: none;
+    display: none;
+  }
+
+  .locations-collapsed .locations-fade {
+    display: block;
+  }
 }
 
 // video-popup
