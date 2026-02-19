@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Close the list and scroll back to the section title
       wrapper.style.maxHeight = "";
       wrapper.classList.add('locations-collapsed');
-      btn.innerHTML = 'See All Locations <i class="las la-lg la-chevron-circle-down"></i>';
+      btn.innerHTML = 'Explore All Locations <i class="las la-lg la-chevron-circle-down"></i>';
 
       section.scrollIntoView({ behavior: 'smooth' });
     }
