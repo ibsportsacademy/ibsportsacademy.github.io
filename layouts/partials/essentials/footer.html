@@ -62,47 +62,30 @@
 
 
 <footer
-  class="footer pb-5 {{ if site.Params.cta.enable }}
-  {{ else }}
-    mt-0
-  {{ end }}">
+  class="footer pb-5 {{ if site.Params.cta.enable }}{{ else }}mt-0{{ end }}">
   <div class="container">
     <div class="row justify-content-center">
+
       <div class="col-12">
         <div class="border-top pb-5"></div>
       </div>
+
+      <!-- Column 1: Brand -->
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="pe-4">
-          <a
-            class="navbar-brand d-inline-block mb-4"
-            href="{{ site.BaseURL | relLangURL }}">
+          <a class="navbar-brand d-inline-block mb-4"
+             href="{{ site.BaseURL | relLangURL }}">
             {{ partial "logo.html" }}
           </a>
           <p class="mb-0">{{ site.Params.footer_info | markdownify }}</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-sm-0">
-        <div class="footer-widget">
-          <h4 class="mb-4">{{ T `socials` }}</h4>
 
-          {{ with site.Params.contact_info.email }}
-            <ul class="footer-links list-unstyled mb-4">
-              {{ range first 1 . }}
-                {{ if . }}
-                  <li><a href="mailto:{{ . }}">{{ . }}</a></li>
-                {{ end }}
-              {{ end }}
-            </ul>
-          {{ end }}
-
-          <ul class="social-links list-inline">
+          <ul class="social-links list-inline mt-3">
             {{ range site.Data.social.main }}
               <li class="list-inline-item">
-                <a
-                  target="_blank"
-                  aria-label="{{ .title }}"
-                  rel="nofollow noopener"
-                  href="{{ .link | safeURL }}">
+                <a target="_blank"
+                   aria-label="{{ .title }}"
+                   rel="nofollow noopener"
+                   href="{{ .link | safeURL }}">
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
@@ -110,33 +93,61 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-5 mt-lg-0">
-        <div class="footer-widget">
-          <h4 class="mb-4">{{ T `quick_links` }}</h4>
 
+      <!-- Column 2: Explore -->
+      <div class="col-lg col-md-6 col-sm-6 mt-5 col-6 mt-lg-0">
+        <div class="footer-widget">
+          <h5 class="mb-3">Beyond the Court</h5>
           <ul class="footer-links list-unstyled">
-            {{ range site.Menus.footer }}
+            {{ range site.Menus.footer_explore }}
               <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
             {{ end }}
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-lg-0">
-        <div class="footer-widget">
-          <h4 class="mb-4">{{ T `location_contact` }}</h4>
 
-          {{ with site.Params.contact_info }}
-            <ul class="footer-links list-unstyled">
-              <li>{{ .address | markdownify }}</li>
-              {{ range first 1 .phone }}
-                {{ if . }}
-                  <li><a href="tel:{{ . }}">{{ . }}</a></li>
-                {{ end }}
-              {{ end }}
-            </ul>
-          {{ end }}
+      <!-- Column 3: Programs -->
+      <div class="col-lg col-md-6 col-sm-6 mt-5 col-6 mt-lg-0">
+        <div class="footer-widget">
+          <h5 class="mb-3">Train & Play</h5>
+          <ul class="footer-links list-unstyled">
+            {{ range site.Menus.footer_programs }}
+              <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
         </div>
       </div>
+
+      <!-- Column 4: Contact -->
+      <div class="col-lg col-md-6 col-sm-6 mt-5 mt-lg-0">
+        <div class="footer-widget">
+          <h5 class="mb-3">Get In Touch</h5>
+
+          {{ with site.Params.contact_info }}
+            <ul class="footer-links list-unstyled mb-3">
+              {{ range site.Menus.footer_contact }}
+                <li><a href="{{ .URL | relLangURL }}"><i class="las la-lg la-link"></i> {{ .Name }}</a></li>
+              {{ end }}
+
+              {{ range first 1 .phone }}
+                {{ if .raw }}
+                  <li><i class="las la-lg la-phone-volume"></i> <a href="tel:{{ .raw }}">{{ .display }}</a></li>
+                {{ end }}
+              {{ end }}
+
+              {{ range first 1 .email }}
+                {{ if . }}
+                  <li><i class="las la-lg la-envelope"></i> <a href="mailto:{{ . }}">{{ . }}</a></li>
+                {{ end }}
+              {{ end }}
+
+              <li><i class="las la-lg la-map-marker"></i> <a target="_blank" href="https://maps.google.com/maps?cid=6348905391918028598">{{ .address | markdownify }}</a></li>
+            </ul>
+          {{ end }}
+
+        </div>
+      </div>
+
     </div>
   </div>
 </footer>
@@ -145,8 +156,18 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="py-4 border-top text-center">
-          <p class="mb-0 content">{{ site.Params.copyright | markdownify }}</p>
+        <div class="py-3 border-top text-center small">
+          <p class="mb-2">
+            {{ site.Params.copyright | markdownify }}
+          </p>
+
+          <ul class="list-inline mb-0">
+            {{ range site.Menus.footer_legal }}
+              <li class="list-inline-item">
+                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
         </div>
       </div>
     </div>

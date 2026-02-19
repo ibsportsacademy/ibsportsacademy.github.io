@@ -28,6 +28,8 @@
   </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
+    <loc>//localhost:1313/pay-and-play/</loc>
+  </url><url>
     <loc>//localhost:1313/foundation/</loc>
   </url><url>
     <loc>//localhost:1313/tags/</loc>

@@ -1,6 +1,8 @@
 ############# English navigation ##############
 
-# main menu
+# ----------------
+# Header Menu
+# ----------------
 [[main]]
 name = "Home"
 url = ""
@@ -29,24 +31,48 @@ hasChildren = true
   url = "about/meet-the-team/"
   weight = 3
 
+  [[main]]
+  parent = "About"
+  name = "Gallery"
+  url = "gallery/"
+  weight = 4
+
+  [[main]]
+  parent = "About"
+  name = "Videos"
+  url = "videos/"
+  weight = 5
+
 [[main]]
-name = "Gallery"
-url = "gallery/"
+name = "Programs"
 weight = 3
+hasChildren = true
 
-[[main]]
-name = "Videos"
-url = "videos/"
-weight = 4
+  [[main]]
+  parent = "Programs"
+  name = "Locations"
+  url = "locations/"
+  weight = 1
 
-[[main]]
-name = "Locations"
-url = "locations/"
-weight = 5
+  [[main]]
+  parent = "Programs"
+  name = "Pay & Play"
+  url = "pay-and-play/"
+  weight = 2
+
+#[[main]]
+#weight = 4
+#name = "Achievements"
+#url = "achievements/"
 
 [[main]]
 name = "Collaborate"
 url = "collaborate/"
+weight = 5
+
+[[main]]
+name = "IB Sports Foundation"
+url = "foundation/"
 weight = 6
 
 [[main]]
@@ -55,66 +81,82 @@ url = "https://blog.ibsportsacademy.com/"
 weight = 7
 
 [[main]]
-weight = 8
-name = "Pages"
-hasChildren = true
-
-  [[main]]
-  parent = "Pages"
-  name = "Privacy Policy"
-  url = "privacy-policy/"
-  weight = 1
-
-  [[main]]
-  parent = "Pages"
-  name = "Terms & Conditions"
-  url = "terms-and-conditions/"
-  weight = 2
-
-  [[main]]
-  parent = "Pages"
-  name = "Disclaimer"
-  url = "disclaimer/"
-  weight = 3
-
-[[main]]
-name = "IB Sports Foundation"
-url = "foundation/"
-weight = 9
-
-[[main]]
 name = "Contact"
 url = "contact/"
-weight = 10
+weight = 8
 
 
-# footer menu
-[[footer]]
-name = "About"
-url = "about/"
+# ----------------
+# Footer Column 1 — Explore
+# ----------------
+[[footer_explore]]
+name = "Meet The Team"
+url = "about/meet-the-team/"
 weight = 1
 
-[[footer]]
-name = "Blog"
-url = "https://blog.ibsportsacademy.com/"
+[[footer_explore]]
+name = "IB Sports Foundation"
+url = "foundation/"
 weight = 2
 
-[[footer]]
+[[footer_explore]]
 name = "Partner With Us"
 url = "collaborate/"
 weight = 3
 
-[[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+[[footer_explore]]
+name = "Ball & Train • Blog"
+url = "https://blog.ibsportsacademy.com/"
 weight = 4
 
-[[footer]]
+
+# ----------------
+# Footer Column 2 — Programs & Community
+# ----------------
+[[footer_programs]]
+name = "Pay & Play"
+url = "pay-and-play/"
+weight = 1
+
+[[footer_programs]]
+name = "Locations"
+url = "locations/"
+weight = 2
+
+[[footer_programs]]
+name = "Gallery"
+url = "gallery/"
+weight = 3
+
+[[footer_programs]]
+name = "Videos"
+url = "videos/"
+weight = 4
+
+
+# ----------------
+# Footer Column 3 - Contact
+# ----------------
+[[footer_contact]]
+name = "Contact"
+url = "contact/"
+weight = 1
+
+
+# ----------------
+# Footer Legal (Bottom Bar)
+# ----------------
+[[footer_legal]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 1
+
+[[footer_legal]]
 name = "Terms & Conditions"
 url = "terms-and-conditions/"
-weight = 5
+weight = 2
 
-[[footer]]
+[[footer_legal]]
 name = "Disclaimer"
 url = "disclaimer/"
-weight = 6
+weight = 3

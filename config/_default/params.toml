@@ -31,9 +31,11 @@ mainSections= ["blog"]
 
 # contact information
 [contact_info]
-address = "Sector 9, Dwarka, New Delhi, Delhi, India"
-phone = ["8860500060"]
+address = "Sector 9, Dwarka, New Delhi, India"
 email = ["academyibsports@gmail.com"]
+  [[contact_info.phone]]
+  raw = "+918860500060"
+  display = "+91 88605 00060"
 
 # Preloader 
 # module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

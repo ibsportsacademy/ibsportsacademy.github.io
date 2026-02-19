@@ -7,6 +7,16 @@
     color: darken($color-primary, 10) !important;
   }
 }
+// typography a tags
+a {
+  color: lighten($black, 33.33);
+  transition: all 0.3s;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: lighten($black, 13.33);
+  }
+}
 
 .text-contrast {
   text-shadow:
