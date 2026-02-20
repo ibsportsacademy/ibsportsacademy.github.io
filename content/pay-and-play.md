@@ -2,7 +2,7 @@
 title: "Pay & Play Basketball in Delhi-NCR | Book on BookMyShow"
 meta_title: "Pay & Play Basketball in Delhi-NCR | IB Sports Academy | BookMyShow"
 # open graph
-meta_image: "images2/pay-and-play-bookmyshow-ib-sports-academy.png"
+meta_image: "images2/og/og_pay-and-play-bookmyshow-ib-sports-academy.png"
 description: "Book IB Sports Academy’s high-energy Pay & Play basketball sessions in Delhi-NCR via BookMyShow. 2-hour coach-supervised games for students and adults. Limited slots available — reserve today."
 layout: "pay_and_play"
 draft: false
