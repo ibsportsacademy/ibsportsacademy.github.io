@@ -254,19 +254,20 @@
       </div>
 
       {{ range .stories }}
-      <div class="row align-items-center mb-5 pb-lg-4 {{ if .reverse }}flex-row-reverse{{ end }}">
+      <div class="row align-items-center mb-5 pb-lg-4">
 
-        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="{{ if .reverse }}fade-left{{ else }}fade-right{{ end }}">
+        <div class="col-lg-5 mb-4 mb-lg-0
+        order-2 {{ if .reverse }}order-lg-2{{ else }}order-lg-1{{ end }}" data-aos="{{ if .reverse }}fade-left{{ else }}fade-right{{ end }}">
           <div class="block" style="transition: transform .5s ease;">
             {{ partial "image.html" (dict "Src" .image "Alt" .image_alt  "Size" "1200x") }}
           </div>
         </div>
 
-        <div class="col-lg-6 {{ if .reverse }}me-auto{{ else }}ms-auto{{ end }}" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 {{ if .reverse }}me-auto{{ else }}ms-auto{{ end }}
+        order-1
+        {{ if .reverse }}order-lg-1{{ else }}order-lg-2{{ end }}" data-aos="fade-up" data-aos-delay="100">
           <div class="ps-lg-3 pe-lg-3">
             <span class="icon badge impact-badge bg-soft-primary text-primary fw-semibold px-3 py-2 mb-4 d-inline-block rounded-pill">
-              <!-- <span class="badge d-inline-flex align-items-center gap-2 px-4 py-2 mb-4 rounded-pill fw-semibold "> -->
-
               <i class="las la-lg la-graduation-cap"></i> {{ .subtitle | markdownify }}
             </span>
             <h2>{{ .name | markdownify }}</h2>

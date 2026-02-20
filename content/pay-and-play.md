@@ -1,7 +1,7 @@
 ---
 title: "Pay & Play Basketball in Delhi-NCR | Book on BookMyShow"
 meta_title: "Pay & Play Basketball in Delhi-NCR | IB Sports Academy | BookMyShow"
-description: "Book IB Sports Academy’s high-intensity Pay & Play basketball sessions in Delhi-NCR via BookMyShow. 2-hour coach-supervised games for students and adults. Limited slots available — reserve today."
+description: "Book IB Sports Academy’s high-energy Pay & Play basketball sessions in Delhi-NCR via BookMyShow. 2-hour coach-supervised games for students and adults. Limited slots available — reserve today."
 layout: "pay_and_play"
 draft: false
 
@@ -10,7 +10,7 @@ og_image: "images2/pay-and-play-bookmyshow-ib-sports-academy.png"
 
 # banner
 banner:
-  title: "High-Intensity <span class=\"no-wrap\">Pay & Play</span> Basketball on BookMyShow"
+  title: "High-Energy <span class=\"no-wrap\">Pay & Play</span> Basketball on BookMyShow"
   image: "images2/pay-and-play-bookmyshow-ib-sports-academy.png"
   button: "<i class=\"las la-lg la-basketball-ball\"></i> Book Now on BookMyShow"
   button_link: "https://in.bookmyshow.com/sports/pay-play-basketball-sessions/ET00481314"
@@ -18,30 +18,30 @@ banner:
 # intro
 intro:
   enable: true
-  title: "Serious Basketball. Professional Environment."
-  subtitle: "Structured Gameplay. Real Competition."
+  title: "Play. Compete. Have Fun."
+  subtitle: "Structured Gameplay. Real Court Energy."
   description: >
-    Experience competitive Pay & Play basketball at **IB Sports Academy – Delhi-NCR**, where every session is designed for intensity, discipline, and authentic game flow. <br /><br />
+    Experience high-energy Pay & Play basketball across **IB Sports Academy’s multiple courts in Delhi-NCR**, where every session blends competitive gameplay with an exciting and welcoming atmosphere. <br /><br />
 
-    Each 2-hour session delivers extended court time through structured team rotations and balanced matchups — all supervised by certified coaches to maintain safety, professionalism, and competitive standards. <br /><br />
+    Whether you're stepping onto the court for the first time, getting quality run with friends, or pushing yourself in real match situations, our 2-hour sessions deliver structured rotations, balanced teams, and extended court time — all supervised by certified coaches to ensure safety and smooth gameplay. <br /><br />
 
-    Open to players aged 8 years and above, these sessions are ideal for students, working professionals, and dedicated athletes seeking to sharpen their skills, stay match-ready, and access premium basketball court facilities in Delhi-NCR.
+    Open to players aged 8 years and above, these sessions are **perfect for beginners exploring the game, casual players staying active, and serious athletes sharpening their edge**.
   image: "images2/pay-and-play-players-mascot-benny-ib-sports-academy.png"
 
 # highlights
 highlights:
   enable: true
-  title: "Designed for Serious Players"
-  subtitle: "High Standards. High Energy."
+  title: "Competitive Energy. Open to All."
+  subtitle: "Play Hard. Enjoy More."
   points:
     - title: "Fast & Secure Online Booking"
       description: "Reserve your preferred session instantly through BookMyShow with a smooth and reliable booking process."
-    - title: "2 Hours of Structured Gameplay"
-      description: "Managed team rotations ensure consistent touches, fair matchups, and minimal downtime."
-    - title: "Coach-Supervised Sessions"
-      description: "Certified coaches oversee gameplay to maintain discipline, safety, and real match intensity."
-    - title: "Inclusive Yet Competitive"
-      description: "Welcoming all skill levels while preserving the pace and structure of serious basketball."
+    - title: "2 Hours of Real Court Time"
+      description: "Structured team rotations ensure fair matchups, consistent touches, and minimal waiting."
+    - title: "Coach-Supervised Gameplay"
+      description: "Certified coaches oversee sessions to maintain safety, flow, and an enjoyable competitive environment."
+    - title: "Fun, Competitive Atmosphere"
+      description: "Welcoming for new players while preserving the pace, excitement, and structure of real basketball games."
 
 # details
 details:
@@ -59,16 +59,16 @@ details:
     - label: "Booking Platform"
       value: "BookMyShow"
     - label: "Ideal For"
-      value: "Students, Working Professionals & Passionate Players"
+      value: "Beginners, Casual & Competitive Players"
 
 # cta
 cta:
   enable: true
   title: "Limited Slots Per Session"
   content: >
-    Player capacity is intentionally limited to preserve structured gameplay, balanced rotations, and high match quality. <br />
+    Sessions are capped to ensure quality court time, exciting matchups, and the best on-court experience for every player. <br />
 
-    Reserve your Pay & Play session today on BookMyShow and secure your place on the court.
-  button: "<i class=\"las la-lg la-heartbeat\"></i> Reserve Your Session"
+    Book your Pay & Play session today on **BookMyShow** and join the action.
+  button: "<i class=\"las la-lg la-heartbeat\"></i> Book Your Slot"
   button_link: "https://in.bookmyshow.com/sports/pay-play-basketball-sessions/ET00481314"
 ---
