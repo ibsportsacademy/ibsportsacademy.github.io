@@ -1,4 +1,7 @@
 ---
+# open graph
+meta_image: "images2/og/og_banner_ib_sports_academy.png"
+
 # banner
 banner:
   title: "Transform Your Game with NBA Level Coaching"
