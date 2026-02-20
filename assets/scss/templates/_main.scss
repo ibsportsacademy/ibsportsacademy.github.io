@@ -526,6 +526,51 @@ a {
     }
   }
 }
+.pay-play-highlights {
+  .icon-wrap {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 15px;
+    background: rgba(254, 96, 25, 0.1);
+    color: #FE6019;
+    font-size: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    .highlight-item {
+      padding: 40px 30px;
+    }
+    .highlight-item {
+      transition: transform 0.3s ease;
+    }
+    .highlight-item:hover {
+      transform: translateY(-10px);
+    }
+    /* Vertical divider (middle line) */
+    .highlight-item:nth-child(even)::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      right: 0;
+      height: 60%;
+      width: 1px;
+      background: rgba(254, 96, 25, 0.15); /* lighter */
+      }
+
+    /* Horizontal divider (middle line) */
+    .highlight-item:nth-child(2)::before,
+    .highlight-item:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      width: 60%;
+      height: 1px;
+      background: rgba(254, 96, 25, 0.15); /* lighter */
+    }
+  }
+}
+
 // features
 .features {
   .features-carousel {
