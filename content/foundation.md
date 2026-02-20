@@ -255,7 +255,7 @@ impact_stories:
     icon: "<i class=\"las la-chalkboard-teacher\"></i>"
     description: "These stories reflect **our long-term commitment** to ensuring that no child’s education is interrupted by financial hardship. <br />
     Will you <span class=\"text-primary fw-semibold\">help us enable education for more children</span> like Rishika and Bithi?"
-    btn_text: "Sponsor a Child's Education"
+    btn_text: "<i class=\"las la-lg la-hand-holding-heart\"></i> Sponsor a Child's Education"
     btn_link: "http://wa.me/918860500060?text=Hi+IB+Sports+Foundation%2C+I+found+your+website+and+am+inspired+by+your+impact.+I%27m+interested+in+supporting+a+child%27s+education+and+would+love+more+details%21"
 
 cta:
@@ -268,14 +268,14 @@ cta:
   Whether you're an **individual, institution, coach, or partner**, your support helps turn potential into opportunity. <br />
 
   Together, we can ensure that **equity, opportunity, and the chance to rise through hoops are not privileges, but possibilities for every child.**"
-  button: "Support a Child’s Rise"
+  button: "<i class=\"lab la-lg la-whatsapp\"></i> Support a Child’s Rise"
   button_link: "http://wa.me/918860500060?text=Hi+IB+Sports+Foundation%2C+I+found+your+website+and+am+inspired+by+your+impact.+I%27m+interested+in+supporting+or+collaborating+and+would+love+more+details%21"
   button_secondary:
     enable: true
-    label: "Email Us"
+    label: "<i class=\"las la-lg la-envelope\"></i> Email Us"
     link: "mailto:foundation.ibsports@gmail.com"
   button_tertiary:
     enable: true
-    label: "Get in Touch"
+    label: "<i class=\"las la-lg la-handshake\"></i> Get in Touch"
     link: "/contact"
 ---

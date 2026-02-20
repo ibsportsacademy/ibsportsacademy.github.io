@@ -300,7 +300,7 @@
             <p>{{ .description | markdownify }}</p>
             <div class="mt-4">
               <a href="{{ .btn_link | safeURL}}" class="btn btn-primary">
-                <i class="las la-lg la-hand-holding-heart"></i> {{ .btn_text }}
+                {{ .btn_text | markdownify }}
               </a>
             </div>
           </div>
