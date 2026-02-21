@@ -3,6 +3,8 @@ title: "Meet The Team"
 meta_title: "Meet The Team | IB Sports Academy"
 layout: "meet_the_team"
 draft: false
+# open graph
+meta_image: "images2/og/og_coach-ib-sports-academy-team-2.png"
 
 # banner
 banner:

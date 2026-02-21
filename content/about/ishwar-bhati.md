@@ -3,6 +3,8 @@ title: "Who Is <span class=\"no-wrap\">Ishwar Bhati?</span>"
 meta_title: "Who Is Ishwar Bhati? | IB Sports Academy"
 layout: "ishwar_bhati"
 draft: false
+# open graph
+meta_image: "images2/og/og_who-is-coach-ishwar-bhati-ib-sports-academy.png"
 
 # who_we_are
 who_we_are:

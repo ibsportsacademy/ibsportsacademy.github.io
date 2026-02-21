@@ -3,6 +3,8 @@ title: "Our Story"
 meta_title: "Our Story | IB Sports Academy"
 layout: "about"
 draft: false
+# open graph
+meta_image: "images2/og/og_our-story-team-ib-sports-academy.png"
 
 # who_we_are
 who_we_are:

@@ -5,4 +5,6 @@ layout: "gallery"
 url: "/gallery/"
 description: "View high-quality photos from basketball events, coaching sessions, celebrity visits, and tournaments at IB Sports Academy. Discover why we’re India’s leading youth basketball training center based in Delhi."
 draft: false
+# open graph
+meta_image: "images2/og/og_gallery-photos-ib-sports-academy.png"
 ---

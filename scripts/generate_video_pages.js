@@ -35,6 +35,8 @@ description: "Page ${i} of IB Sports Academy's elite basketball training videos.
 layout: "videos/page"
 page_number: ${i}
 draft: false
+# open graph
+meta_image: "images2/og/og_videos-youtube-ib-sports-academy.png"
 ---
 `;
 

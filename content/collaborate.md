@@ -4,6 +4,8 @@ title: "Collaborate for Impact with <span class=\"no-wrap\">IB Sports Academy</s
 description: "Opportunities for Corporates, Celebrities, Movies, Production Houses, NGOs, and Brands to partner with IB Sports Academy to empower youth athletes through basketball."
 layout: "collaborate"
 draft: false
+# open graph
+meta_image: "images2/og/og_collaborate-international-coach-corporate-csr-ib-sports-academy.png"
 
 # who_we_are
 who_we_are:

@@ -3,6 +3,8 @@ title: "Contact • <span class=\"no-wrap\">IB Sports Academy</span>"
 meta_title: "Contact | Get in Touch with IB Sports Academy"
 layout: "contact"
 draft: false
+# open graph
+meta_image: "images2/og/og_contact-ib-sports-academy.png"
 
 contact_image: "images/vectors/contact.png"
 

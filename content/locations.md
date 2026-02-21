@@ -3,6 +3,8 @@ title: "Our Locations • <span class=\"no-wrap\">IB Sports Academy</span>"
 meta_title: "Our Locations | Sports Programs Across Communities | IB Sports Academy"
 layout: "locations"
 draft: false
+# open graph
+meta_image: "images2/og/og_delhi-gurugram-ncr-locations-ib-sports-academy.png"
 
 # our office
 our_office:

@@ -4,6 +4,8 @@ meta_title: "Rise Through Hoops | Equity & Access Through Sport | IB Sports Foun
 description: "IB Sports Foundation expands equity and access through structured sports programs, professional coaching, safeguarding standards, and global mentorship for underserved and at-risk youth."
 layout: "foundation"
 draft: false
+# open graph
+meta_image: "images2/og/og_support-ib-sports-foundation-ib-sports-academy.png"
 
 # who_we_are
 who_we_are:

@@ -5,4 +5,6 @@ layout: "videos"
 url: "/videos/"
 description: "Watch elite basketball training videos from IB Sports Academy. Learn NBA-level drills, youth coaching tips, and real game action from India's top basketball academy | Delhi's best basketball academy."
 draft: false
+# open graph
+meta_image: "images2/og/og_videos-youtube-ib-sports-academy.png"
 ---
