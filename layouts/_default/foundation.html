@@ -19,7 +19,7 @@
               data-aos-delay="150">
               <div class="about-image">
                 <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "Play basketball team image - IB Sports Academy" "Size" "464x") }}
+                  {{ partial "image.html" (dict "Src" .image "Alt" "Play basketball team image - IB Sports Academy" "Size" "464x q90") }}
 
                   <div class="has-circle">
                     <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
@@ -58,7 +58,7 @@
                     <div class="col-lg-10">
                       <div class="about-image">
                         <div class="block">
-                          {{ partial "image.html" (dict "Src" . "Alt" (printf "Group Photo Coach %s" $filename)  "Size" "1200x") }}
+                          {{ partial "image.html" (dict "Src" . "Alt" (printf "Group Photo Coach %s" $filename)  "Size" "1200x q90") }}
 
                           <div class="has-circle">
                             <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
@@ -100,11 +100,11 @@
         <div class="row justify-content-center my-3">
           <div class="impact-diagram-wrapper text-center col-lg-10" data-aos="fade-up" data-aos-delay="300">
             <div class="d-none d-md-block">
-              {{ partial "image.html" (dict "Src" .image_desktop "Alt" .image_alt "Size" "3600x" "Class" "img-fluid") }}
+              {{ partial "image.html" (dict "Src" .image_desktop "Alt" .image_alt "Size" "3600x q95" "Class" "img-fluid") }}
             </div>
 
             <div class="d-block d-md-none">
-              {{ partial "image.html" (dict "Src" .image_mobile "Alt" .image_alt "Size" "2400x" "Class" "img-fluid") }}
+              {{ partial "image.html" (dict "Src" .image_mobile "Alt" .image_alt "Size" "2400x q95" "Class" "img-fluid") }}
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@
         <div class="col-lg-5 mb-4 mb-lg-0
         order-2 {{ if .reverse }}order-lg-2{{ else }}order-lg-1{{ end }}" data-aos="{{ if .reverse }}fade-left{{ else }}fade-right{{ end }}">
           <div class="block" style="transition: transform .5s ease;">
-            {{ partial "image.html" (dict "Src" .image "Alt" .image_alt  "Size" "1200x") }}
+            {{ partial "image.html" (dict "Src" .image "Alt" .image_alt  "Size" "1200x q90") }}
           </div>
         </div>
 

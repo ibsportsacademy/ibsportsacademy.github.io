@@ -1,7 +1,9 @@
 {{ define "main" }}
 
+{{/* Sort pages by year parameter descending */}}
+{{ $p := .Data.Pages.ByParam "year" }}
 {{ $limit := .Params.paginate | default 10 }}
-{{ $paginator := .Paginate .Data.Pages $limit }}
+{{ $paginator := .Paginate ($p.Reverse) $limit }}
 
 {{ partial "components/page-header.html" . }}
 
@@ -18,7 +20,7 @@
             {{ $resource := resources.Get . }}
             {{ if $resource }}
               {{/* Resize to 1200px width for the expanded drawer */}}
-              {{ $drawerImg = ($resource.Resize "1200x").RelPermalink }}
+              {{ $drawerImg = ($resource.Resize "1200x q90").RelPermalink }}
             {{ end }}
           {{ end }}
 
@@ -32,7 +34,7 @@
               data-img="{{ $drawerImg }}">
 
             <div class="achievement-image">
-              {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Size" "600x" "Class" "img-fluid") }}
+              {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Size" "600x q90" "Class" "img-fluid") }}
             </div>
             <div class="achievement-content">
               <h4>{{ .Title }}</h4>

@@ -8,7 +8,7 @@
       <!-- IMAGE -->
       <div class="col-lg-5 col-md-8 text-center mb-5 mb-lg-0" data-aos="fade-up">
         <div class="pe-0 pe-lg-5">
-          {{ partial "image.html" (dict "Src" .Params.contact_image "Alt" "contact image" "Size" "575x") }}
+          {{ partial "image.html" (dict "Src" .Params.contact_image "Alt" "contact image" "Size" "575x q90") }}
         </div>
       </div>
 
@@ -165,7 +165,7 @@
                         <i class="quote-icon las la-quote-left"></i>
                         <p class="quote-text">{{ .quote }}</p>
                         <span class="author">
-                          {{ partial "image.html" (dict "Src" .image "Alt" "user testimonial - IB Sports Academy" "Class" "rounded-circle" "Size" "90x") }}
+                          {{ partial "image.html" (dict "Src" .image "Alt" "user testimonial - IB Sports Academy" "Class" "rounded-circle" "Size" "90x q90") }}
                           <h5>{{ .name | markdownify }}</h5>
                           <p>{{ .designation | markdownify }}</p>
                           {{ with .rating }}
