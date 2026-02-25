@@ -60,30 +60,53 @@ hasChildren = true
   url = "pay-and-play/"
   weight = 2
 
-#[[main]]
-#weight = 4
-#name = "Achievements"
-#url = "achievements/"
+[[main]]
+weight = 4
+name = "Events"
+hasChildren = true
+
+  [[main]]
+  parent = "Events"
+  name = "Inter IB - 4.0"
+  url = "events/inter-ib-4/"
+  weight = 1
+
+  [[main]]
+  parent = "Events"
+  name = "Inter IB - 3.0"
+  url = "events/inter-ib-3/"
+  weight = 2
+
+  [[main]]
+  parent = "Events"
+  name = "View All Events"
+  url = "events/"
+  weight = 200
+
+[[main]]
+weight = 5
+name = "Achievements"
+url = "achievements/"
 
 [[main]]
 name = "Collaborate"
 url = "collaborate/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "IB Sports Foundation"
 url = "foundation/"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Blog"
 url = "https://blog.ibsportsacademy.com/"
-weight = 7
+weight = 8
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 9
 
 
 # ----------------

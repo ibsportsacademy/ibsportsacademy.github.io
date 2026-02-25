@@ -59,7 +59,7 @@ a {
     border-radius: 1.875rem;
     background-color: rgba($color-primary, 0.05);
     z-index: 1;
-  
+
     .wave-1 {
       position: absolute;
       top: 0;
@@ -567,6 +567,275 @@ a {
       width: 60%;
       height: 1px;
       background: rgba(254, 96, 25, 0.15); /* lighter */
+    }
+  }
+}
+
+.events-section {
+  .event-image {
+    width: 100%;
+    height: 260px; /* fixed height */
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+  }
+  .event-image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;      /* fills space */
+    object-position: center; /* center crop */
+    display: block;
+    transition: transform .4s ease;
+  }
+  /* Event Card */
+  .event-card {
+    transition: all .25s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  /* Hover Effect */
+  .event-card:hover {
+    transform: translateY(-6px);
+    /* Soft base shadow */
+    box-shadow:
+      0 12px 30px rgba(0,0,0,0.08),
+      /* IB orange glow */
+      0 0 0 1px rgba(210,84,38,0.25),
+      0 8px 24px rgba(210,84,38,0.18) !important;
+  }
+  /* Image Zoom */
+  .event-card:hover img {
+    // transform: scale(1.05);
+    overflow: hidden;
+  }
+}
+
+/* --- Achievement Section Styles --- */
+.achievement-section {
+  padding: 60px 0;
+  background-color: #fcfcfc;
+
+  /* 1. Grid Container */
+  .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 Columns on Desktop */
+    gap: 24px;
+    position: relative;
+  }
+
+  /* 2. Card Styling (Your Original Branding) */
+  .achievement-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(254, 96, 25, 0.2); /* FE6019 Glow */
+    border-color: #FE6019;
+  }
+
+  .achievement-card.active {
+    border: 2px solid #FE6019;
+    background-color: #fffaf8;
+    box-shadow: 0 0 30px rgba(254, 96, 25, 0.3);
+  }
+
+  /* Image inside Card */
+  .achievement-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    transition: transform 0.5s ease;
+  }
+
+  .achievement-card:hover .achievement-image img {
+    transform: scale(1.08);
+  }
+
+  /* Card Content */
+  .achievement-content {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .achievement-content h4 {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .achievement-year {
+    color: #FE6019;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .achievement-preview {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .more {
+    color: #FE6019;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  .achievement-card .more i {
+    transition: all 0.5s ease;
+  }
+  .achievement-card.active .more i {
+    transform: rotate(45deg); /* Turns plus into an 'x' */
+    transition: all 0.5s ease;
+  }
+  .achievement-expand {
+    grid-column: 1 / -1; /* This is the magic line */
+    display: none;       /* Hidden until clicked */
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  }
+
+  .achievement-expand.open {
+    max-height: 1200px;
+    opacity: 1;
+    margin: 15px 0 30px 0;
+  }
+  .expand-inner > * {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  /* A state for when we are swapping content */
+  .drawer-loading .expand-inner > * {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  /* Inner Layout of Drawer */
+  .expand-inner {
+    position: relative;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    border-top: 5px solid #FE6019;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+    margin: 15px 0 30px;
+  }
+
+  .expand-image {
+    flex-shrink: 0;
+  }
+
+  .expand-image img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .expand-text {
+    color: #444;
+  }
+
+  .expand-text h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  .expand-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Close Button */
+  .close-btn {
+    font-size: 2.5rem;
+    line-height: 0.8;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .close-btn:hover {
+    color: #FE6019;
+  }
+  .meta-value {
+    color: #FE6019;
+  }
+  /* 4. Responsive Media Queries */
+  /* Ensure the text has some breathing room on large screens */
+  @media (min-width: 992px) {
+    .expand-text {
+      padding-left: 20px;
+    }
+  }
+  /* Tablet (2 or 3 Columns) */
+  @media (max-width: 1100px) {
+    .achievement-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 850px) {
+    .achievement-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .expand-inner {
+      aspect-ratio: 4/3; 
+      height: auto;
+      padding: 25px;
+    }
+  }
+
+  /* Mobile (1 Column) */
+  @media (max-width: 550px) {
+    .achievement-grid {
+      grid-template-columns: 1fr;
+    }
+    .achievement-image {
+      aspect-ratio: 16 / 9;
+    }
+    .expand-text h3 {
+      font-size: 1.4rem;
+    }
+  }
+  /* Mobile specific tweaks */
+  @media (max-width: 991px) {
+    .expand-inner {
+      padding: 20px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      z-index: 10;
     }
   }
 }
@@ -1338,8 +1607,6 @@ a {
     }
   }
 }
-
-
 
 // contact
 .contact-form {

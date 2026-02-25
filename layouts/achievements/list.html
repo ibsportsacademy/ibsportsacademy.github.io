@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+{{ $limit := .Params.paginate | default 10 }}
+{{ $paginator := .Paginate .Data.Pages $limit }}
+
+{{ partial "components/page-header.html" . }}
+
+<section class="section achievement-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="achievement-grid" id="achievementGrid">
+        {{ range $index, $page := $paginator.Pages }}
+
+          {{/* Process the image for the drawer here */}}
+          {{ $drawerImg := "" }}
+          {{ with .Params.image }}
+            {{ $resource := resources.Get . }}
+            {{ if $resource }}
+              {{/* Resize to 1200px width for the expanded drawer */}}
+              {{ $drawerImg = ($resource.Resize "1200x").RelPermalink }}
+            {{ end }}
+          {{ end }}
+
+          <div class="achievement-card" 
+              onclick="handleToggle(this)"
+              data-title="{{ .Title }}"
+              data-year="{{ .Params.year }}"
+              data-desc="{{ .Params.description }}"
+              data-cat='{{ .Params.category | default "Tournament" }}'
+              data-loc='{{ .Params.location | default "New Delhi" }}'
+              data-img="{{ $drawerImg }}">
+
+            <div class="achievement-image">
+              {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Size" "600x" "Class" "img-fluid") }}
+            </div>
+            <div class="achievement-content">
+              <h4>{{ .Title }}</h4>
+              <div class="achievement-year">{{ .Params.year }}</div>
+              <div class="achievement-preview">
+                {{ .Params.summary | default (.Params.description | truncate 80) }}
+                <div class="more"><i class="las la-lg la-plus-circle"></i> View Details</div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+      <div id="sharedDrawer" class="achievement-expand">
+        <div class="expand-inner container-fluid">
+          <div class="row align-items-center">
+
+            <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+              <div class="expand-image">
+                <img id="drawerImg" src="" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <div class="expand-text">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 id="drawerTitle"></h3>
+                  <span class="close-btn" onclick="closeDrawer()">&times;</span>
+                </div>
+                <div id="drawerYear" class="achievement-year mb-3"></div>
+                <p id="drawerDesc"></p>
+
+                <div class="drawer-meta d-flex gap-4 border-top pt-3">
+                  <div>
+                    <small class="meta-label">Category</small>
+                    <span id="drawerCat" class="meta-value"></span>
+                  </div>
+                  <div>
+                    <small class="meta-label">Location</small>
+                    <span id="drawerLoc" class="meta-value"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-sm pt-0 mt-5">
+    <div class="container-xxl">
+
+      <div class="row mb-4">
+        <div class="col-12">
+
+          {{ $paginator := .Paginator }}
+          {{ if gt $paginator.TotalPages 1 }}
+
+          <nav class="mb-3">
+
+            <ul class="pagination justify-content-center">
+
+              {{ if $paginator.HasPrev }}
+                <li class="page-item">
+                  <a class="page-link arrow" href="{{ $paginator.Prev.URL }}">
+                  <i class="las la-angle-left"></i>
+                  </a>
+                </li>
+              {{ end }}
+
+              {{ range $paginator.Pagers }}
+                <li class="page-item">
+                  <a href="{{ .URL }}" class="page-link{{ if eq . $paginator }} active {{ end }}">
+                  {{ .PageNumber }}
+                  </a>
+                </li>
+              {{ end }}
+
+              {{ if $paginator.HasNext }}
+                <li class="page-item">
+                  <a class="page-link arrow" href="{{ $paginator.Next.URL }}">
+                  <i class="las la-angle-right"></i>
+                  </a>
+                </li>
+              {{ end }}
+
+            </ul>
+          </nav>
+
+          {{ end }}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

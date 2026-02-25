@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+{{ partial "components/page-header.html" . }}
+
+<section class="section-sm events-section" data-aos="fade-in">
+  <div class="container">
+
+    {{ with .Params.who_we_are }}
+    {{ if .enable }}
+    <div class="row justify-content-center align-items-center mb-4">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+          <h2 class="title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+    <div class="row justify-content-center">
+
+      {{ $pages := where site.RegularPages "Section" "events" }}
+      {{ $sorted := $pages.ByParam "event_date" }}
+      {{ $paginator := .Paginate $sorted.Reverse }}
+
+      {{ range $paginator.Pages }}
+
+      {{ $page := . }}
+
+      <div class="col-lg-5 col-md-6">
+        <a href="{{ $page.RelPermalink }}" class="text-decoration-none text-dark">
+          <div class="card shadow-sm mb-4 event-card">
+
+            {{ with $page.Params.image }}
+            <div class="event-image pb-0">
+              {{ partial "image.html" (dict
+              "Src" .
+              "Alt" $.Title
+              "Size" "1200x"
+              "Class" "img-fluid") }}
+            </div>
+            {{ end }}
+
+            <div class="p-4">
+              {{ with $page.Params.event_date }}
+              <p class="text-primary fw-semibold small mb-2">
+              {{ . | time.Format "January 2006" }}
+              </p>
+              {{ end }}
+              <h3>
+              {{ $page.Title | markdownify }}
+              </h3>
+              <p>
+              {{ $page.Params.summary | markdownify }}
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <div class="section-sm pt-0">
+    <div class="container-xxl">
+
+      <div class="row mb-4">
+        <div class="col-12">
+
+          {{ $paginator := .Paginator }}
+          {{ if gt $paginator.TotalPages 1 }}
+
+          <nav class="mb-3">
+
+            <ul class="pagination justify-content-center">
+
+              {{ if $paginator.HasPrev }}
+                <li class="page-item">
+                  <a class="page-link arrow" href="{{ $paginator.Prev.URL }}">
+                  <i class="las la-angle-left"></i>
+                  </a>
+                </li>
+              {{ end }}
+
+              {{ range $paginator.Pagers }}
+                <li class="page-item">
+                  <a href="{{ .URL }}" class="page-link{{ if eq . $paginator }} active {{ end }}">
+                  {{ .PageNumber }}
+                  </a>
+                </li>
+              {{ end }}
+
+              {{ if $paginator.HasNext }}
+                <li class="page-item">
+                  <a class="page-link arrow" href="{{ $paginator.Next.URL }}">
+                  <i class="las la-angle-right"></i>
+                  </a>
+                </li>
+              {{ end }}
+
+            </ul>
+          </nav>
+
+          {{ end }}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {{ end }}

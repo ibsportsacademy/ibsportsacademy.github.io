@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{ partial "components/page-header.html" . }}
+
+<section class="section">
+
+<div class="container-xxl">
+
+<div class="row">
+
+<div class="col-lg-10 mx-auto">
+
+<div class="content">
+
+{{ with .Params.image }}
+
+<div class="mb-4">
+
+{{ partial "image.html" (dict "Src" . "Alt" $.Title "Size" "1200x") }}
+
+</div>
+
+{{ end }}
+
+
+<p class="text-primary fw-semibold mb-3">
+
+{{ .Params.event_date | time.Format "January 2, 2006" }}
+
+</p>
+
+
+{{ .Content }}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{{ end }}

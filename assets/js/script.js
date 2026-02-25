@@ -252,11 +252,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const buyPremiumPopup = document.querySelector('.buyPremium');
   const overlay = document.querySelector('.overlay');
   const closeBtn = document.querySelector('.buyPremium .close');
-  
+
   if (buyPremiumPopup && overlay && closeBtn) {
       let popupShown = false;
       let lastPopupTime = 0;
-  
+
       // Function to show the popup
       function showPopup() {
         const currentTime = Date.now();
@@ -267,31 +267,102 @@ document.addEventListener('DOMContentLoaded', function() {
           lastPopupTime = currentTime; // Update the last shown time
         }
       }
-  
+
       // Function to hide the popup
       function hidePopup() {
         buyPremiumPopup.classList.remove('show');
         overlay.classList.remove('fade', 'show');
         popupShown = false; // Reset the flag
       }
-  
+
       // Check scroll position
       window.addEventListener('scroll', function() {
         if (window.scrollY > 1000 && !popupShown) {
           showPopup();
         }
       });
-  
+
       // Close button click event
       closeBtn.addEventListener('click', hidePopup);
-  
+
       // Click overlay to close popup
       overlay.addEventListener('click', hidePopup);
   } 
   // else {
   //     console.error('Required elements not found.');
   // }
-  
-  
-  
+
 })();
+
+function handleToggle(card) {
+  const drawer = document.getElementById('sharedDrawer');
+  const grid = document.getElementById('achievementGrid');
+  const isOpeningSame = card.classList.contains('active');
+
+  if (isOpeningSame) {
+    closeDrawer();
+    return;
+  }
+
+  // If drawer is already open elsewhere, collapse it first
+  if (drawer.classList.contains('open')) {
+    drawer.classList.remove('open'); // This triggers the height -> 0
+    document.querySelectorAll('.achievement-card').forEach(c => c.classList.remove('active'));
+
+    // Wait for the collapse animation (0.4s) before moving and re-opening
+    setTimeout(() => {
+      updateAndMoveDrawer(card, drawer, grid);
+      openDrawer(card, drawer);
+    }, 450);
+  } else {
+    // Standard open from closed state
+    updateAndMoveDrawer(card, drawer, grid);
+    openDrawer(card, drawer);
+  }
+}
+
+function openDrawer(card, drawer) {
+  drawer.style.display = 'block';
+  card.classList.add('active');
+
+  // Minimal delay to ensure display:block is registered
+  setTimeout(() => {
+    drawer.classList.add('open');
+  }, 50);
+
+  // Smooth scroll
+  setTimeout(() => {
+    const yOffset = -120;
+    const y = drawer.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  }, 500);
+}
+
+function updateAndMoveDrawer(card, drawer, grid) {
+  // Update Content
+  document.getElementById('drawerImg').src = card.dataset.img;
+  document.getElementById('drawerTitle').innerText = card.dataset.title;
+  document.getElementById('drawerYear').innerText = card.dataset.year;
+  document.getElementById('drawerDesc').innerText = card.dataset.desc;
+  document.getElementById('drawerCat').innerText = card.dataset.cat;
+  document.getElementById('drawerLoc').innerText = card.dataset.loc;
+
+  // Find Position Logic
+  const cards = Array.from(grid.querySelectorAll('.achievement-card'));
+  const cardIndex = cards.indexOf(card);
+  const cols = window.getComputedStyle(grid).getPropertyValue('grid-template-columns').split(' ').length;
+  let insertAfterIndex = (Math.floor(cardIndex / cols) + 1) * cols - 1;
+  if (insertAfterIndex >= cards.length) insertAfterIndex = cards.length - 1;
+
+  const targetCard = cards[insertAfterIndex];
+  targetCard.after(drawer);
+}
+
+function closeDrawer() {
+  const drawer = document.getElementById('sharedDrawer');
+  drawer.classList.remove('open');
+  document.querySelectorAll('.achievement-card').forEach(c => c.classList.remove('active'));
+  setTimeout(() => {
+    if(!drawer.classList.contains('open')) drawer.style.display = 'none'; 
+  }, 600);
+}
