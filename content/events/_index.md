@@ -5,12 +5,12 @@ description: "Explore IB Sports Academy basketball tournaments, competitions, an
 layout: "events"
 draft: false
 # open graph
-meta_image: "images2/og/og_collaborate-international-coach-corporate-csr-ib-sports-academy.png"
+meta_image: "images2/og/og_events-ib-sports-academy.png"
 
 # who_we_are
 who_we_are:
   enable: true
   subtitle: "IB Sports Academy"
   title: "Events & Tournaments"
-  description: "Major basketball tournaments and events organized by IB Sports Academy."
+  description: "Experience the thrill of competitive basketball. We host regional and academy-level tournaments to foster sportsmanship and elite talent."
 ---
