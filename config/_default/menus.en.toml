@@ -86,7 +86,25 @@ hasChildren = true
 [[main]]
 weight = 5
 name = "Achievements"
-url = "achievements/"
+hasChildren = true
+
+  [[main]]
+  parent = "Achievements"
+  name = "Overview"
+  url = "achievements/"
+  weight = 1
+
+  [[main]]
+  parent = "Achievements"
+  name = "Student Success"
+  url = "achievements/students"
+  weight = 2
+
+  [[main]]
+  parent = "Achievements"
+  name = "Academy Honors"
+  url = "achievements/academy/"
+  weight = 3
 
 [[main]]
 name = "Collaborate"

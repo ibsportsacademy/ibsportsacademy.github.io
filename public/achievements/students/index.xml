@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Student Success on India&#39;s #1 Basketball Training Academy | IB Sports Academy</title>
+    <link>//localhost:1313/achievements/students/</link>
+    <description>Recent content in Student Success on India&#39;s #1 Basketball Training Academy | IB Sports Academy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/achievements/students/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>National Gold: Unified Basketball Championship</title>
+      <link>//localhost:1313/achievements/students/national-unified-gold-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/achievements/students/national-unified-gold-2025/</guid>
+      <description>Delhi Unified Team strikes GOLD at the Special Olympics Bharat National Basketball Championship 2025.</description>
+    </item>
+  </channel>
+</rss>

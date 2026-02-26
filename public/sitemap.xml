@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/achievements/students/</loc>
+  </url><url>
+    <loc>//localhost:1313/achievements/academy/</loc>
+  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2026-02-04T00:00:00+05:30</lastmod>
   </url><url>
@@ -16,37 +20,39 @@
   </url><url>
     <loc>//localhost:1313/events/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/reliance-jr-nba-best-coach-2017/</loc>
+    <loc>//localhost:1313/achievements/academy/reliance-jr-nba-best-coach-2017/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/best-preceptor-award-2021/</loc>
+    <loc>//localhost:1313/achievements/academy/best-preceptor-award-2021/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/cbse-observer-basketball-cluster-2023/</loc>
+    <loc>//localhost:1313/achievements/academy/cbse-observer-basketball-cluster-2023/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/khelo-masters-champions-2019/</loc>
+    <loc>//localhost:1313/achievements/academy/khelo-masters-champions-2019/</loc>
   </url><url>
     <loc>//localhost:1313/collaborate/</loc>
   </url><url>
     <loc>//localhost:1313/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/dr-ambedkar-khel-ratna-2021/</loc>
+    <loc>//localhost:1313/achievements/academy/dr-ambedkar-khel-ratna-2021/</loc>
   </url><url>
     <loc>//localhost:1313/gallery/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/khelo-masters-gold-medal-2022/</loc>
+    <loc>//localhost:1313/achievements/academy/khelo-masters-gold-medal-2022/</loc>
   </url><url>
     <loc>//localhost:1313/events/inter-ib-3/</loc>
   </url><url>
     <loc>//localhost:1313/events/inter-ib-4/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/jr-nba-coach-delhi-girls-2022/</loc>
+    <loc>//localhost:1313/achievements/academy/jr-nba-coach-delhi-girls-2022/</loc>
   </url><url>
     <loc>//localhost:1313/about/meet-the-team/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/national-coach-delhi-boys-2025/</loc>
+    <loc>//localhost:1313/achievements/academy/national-coach-delhi-boys-2025/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/nfpet-best-coach-award-2022/</loc>
+    <loc>//localhost:1313/achievements/students/national-unified-gold-2025/</loc>
+  </url><url>
+    <loc>//localhost:1313/achievements/academy/nfpet-best-coach-award-2022/</loc>
   </url><url>
     <loc>//localhost:1313/achievements/</loc>
   </url><url>
@@ -54,11 +60,11 @@
   </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/outstanding-pe-teacher-award-2017/</loc>
+    <loc>//localhost:1313/achievements/academy/outstanding-pe-teacher-award-2017/</loc>
   </url><url>
     <loc>//localhost:1313/pay-and-play/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/pefi-best-coach-award-2024/</loc>
+    <loc>//localhost:1313/achievements/academy/pefi-best-coach-award-2024/</loc>
   </url><url>
     <loc>//localhost:1313/foundation/</loc>
   </url><url>

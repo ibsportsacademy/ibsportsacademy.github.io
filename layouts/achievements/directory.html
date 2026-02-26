@@ -1,0 +1,62 @@
+{{ define "main" }}
+{{ partial "components/page-header.html" . }}
+
+{{ with .Params.hero_section }}
+{{ if .enable }}
+  <section class="section pb-0 pt-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="section-title text-center">
+            <p class="text-uppercase">
+              {{ .subtitle | markdownify }}
+            </p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+{{ end }}
+
+<section class="section achievement-directory pt-0">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      {{ range (where .Sections "Section" "achievements").ByWeight }}
+      <div class="col-md-6 col-lg-5">
+        <a href="{{ .RelPermalink }}" class="portal-card-link">
+          <div class="portal-card">
+            
+            <div class="portal-image-wrapper">
+              {{ partial "image.html" (dict "Src" .Params.image "Alt" .Params.image_alt "Size" "600x q90" "Class" "portal-img") }}
+
+              <div class="portal-icon-overlay">
+                {{ .Params.image_icon | markdownify}}
+              </div>
+
+              <div class="portal-gradient"></div>
+              
+              <div class="portal-title-area">
+                <span class="portal-subtitle">Explore</span>
+                <h2 class="portal-title">{{ .Title }}</h2>
+              </div>
+            </div>
+
+            <div class="portal-body">
+              <p>{{ .Description | default .Params.meta_description }}</p>
+              <div class="portal-link-text">
+                View All Records <i class="las la-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
