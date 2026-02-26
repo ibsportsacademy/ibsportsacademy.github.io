@@ -1,116 +1,65 @@
 {{ define "main" }}
 
+{{/* Sort logic remains the same */}}
+{{ $pages := .Data.Pages }}
+{{ $sorted := (sort (sort $pages "Date" "desc") "Params.year" "desc") }}
+{{ $paginator := .Paginate $sorted (.Params.paginate | default 12) }}
+
 {{ partial "components/page-header.html" . }}
 
-<section class="section-sm events-section" data-aos="fade-in">
+<section class="section achievement-section events-section pt-5">
   <div class="container">
+    <div class="row g-4 justify-content-center">
 
-    {{ with .Params.who_we_are }}
-    {{ if .enable }}
-    <div class="row justify-content-center align-items-center mb-4">
-      <div class="col-lg-8">
-        <div class="section-title text-center">
-          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-          <h2 class="title">{{ .title | markdownify }}</h2>
-          <p>{{ .description | markdownify }}</p>
-        </div>
-      </div>
-    </div>
-    {{ end }}
-    {{ end }}
+      <div class="achievement-grid" id="eventGrid">
+        {{ range $paginator.Pages }}
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">
+            <div class="achievement-card h-100">
 
-    <div class="row justify-content-center">
+              <div class="achievement-image">
+                {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Size" "600x q90" "Class" "img-fluid") }}
+              </div>
 
-      {{ $pages := where site.RegularPages "Section" "events" }}
-      {{ $sorted := $pages.ByParam "event_date" }}
-      {{ $paginator := .Paginate $sorted.Reverse }}
+              <div class="achievement-content">
+                <div class="justify-content-between align-items-start">
+                  <h4>{{ .Title | markdownify }}</h4>
+                  <div class="achievement-year ms-2">{{ .Params.year }}</div>
+                </div>
 
-      {{ range $paginator.Pages }}
+                <div class="achievement-preview">
+                  <p class="mb-2">{{ .Summary | default (.Params.description | truncate 80) }}</p>
 
-      {{ $page := . }}
+                  {{/* Brand Meta Row */}}
+                  <div class="d-flex align-items-center gap-3 border-top pt-2 mt-2">
+                    {{ if eq .Params.organizer "IB Sports Foundation" }}
+                    <small class="ib-foundation fw-bold d-flex align-items-center gap-1">
+                      <i class="las la-lg la-heart"></i> Foundation Initiative
+                    </small>
+                    {{ else }}
+                    <small class="ib-academy fw-bold d-flex align-items-center gap-1">
+                      <i class="las la-lg la-university"></i> IB Academy Event
+                    </small>
+                    {{ end }}
 
-      <div class="col-lg-5 col-md-6">
-        <a href="{{ $page.RelPermalink }}" class="text-decoration-none text-dark">
-          <div class="card shadow-sm mb-4 event-card">
+                    <small class="text-muted ms-auto">
+                      {{ .Params.category | default "Tournament" }}
+                    </small>
+                  </div>
 
-            {{ with $page.Params.image }}
-            <div class="event-image pb-0">
-              {{ partial "image.html" (dict
-              "Src" .
-              "Alt" $.Title
-              "Size" "1200x q90"
-              "Class" "img-fluid") }}
+                  <div class="more mt-3">
+                    <i class="las la-lg la-arrow-right"></i> Explore Highlights
+                  </div>
+                </div>
+              </div>
+
             </div>
-            {{ end }}
-
-            <div class="p-4">
-              {{ with $page.Params.event_date }}
-              <p class="text-primary fw-semibold small mb-2">
-              {{ . | time.Format "January 2006" }}
-              </p>
-              {{ end }}
-              <h3>
-              {{ $page.Title | markdownify }}
-              </h3>
-              <p>
-              {{ $page.Params.summary | markdownify }}
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      {{ end }}
-      </div>
-    </div>
-  </section>
-
-  <div class="section-sm pt-0">
-    <div class="container-xxl">
-
-      <div class="row mb-4">
-        <div class="col-12">
-
-          {{ $paginator := .Paginator }}
-          {{ if gt $paginator.TotalPages 1 }}
-
-          <nav class="mb-3">
-
-            <ul class="pagination justify-content-center">
-
-              {{ if $paginator.HasPrev }}
-                <li class="page-item">
-                  <a class="page-link arrow" href="{{ $paginator.Prev.URL }}">
-                  <i class="las la-angle-left"></i>
-                  </a>
-                </li>
-              {{ end }}
-
-              {{ range $paginator.Pagers }}
-                <li class="page-item">
-                  <a href="{{ .URL }}" class="page-link{{ if eq . $paginator }} active {{ end }}">
-                  {{ .PageNumber }}
-                  </a>
-                </li>
-              {{ end }}
-
-              {{ if $paginator.HasNext }}
-                <li class="page-item">
-                  <a class="page-link arrow" href="{{ $paginator.Next.URL }}">
-                  <i class="las la-angle-right"></i>
-                  </a>
-                </li>
-              {{ end }}
-
-            </ul>
-          </nav>
-
-          {{ end }}
-
-        </div>
+          </a>
+        {{ end }}
       </div>
 
     </div>
   </div>
+</section>
 
-  {{ end }}
+</section>
+{{ end }}

@@ -34,11 +34,20 @@
     <loc>//localhost:1313/achievements/students/world-cup-puerto-rico-2025/</loc>
     <lastmod>2025-12-05T00:00:00+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/events/</loc>
+    <lastmod>2025-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/events/inter-ib-4/</loc>
+    <lastmod>2025-12-01T00:00:00+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/achievements/students/thakur-memorial-trophy-2025/</loc>
     <lastmod>2025-10-30T00:00:00+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/achievements/students/national-unified-gold-2025/</loc>
     <lastmod>2025-10-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/events/inter-ib-3/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/achievements/students/bhumit-kumar-sgfi-nationals-2024/</loc>
     <lastmod>2024-05-10T00:00:00+05:30</lastmod>
@@ -52,10 +61,11 @@
     <loc>//localhost:1313/achievements/students/aryan-india-national-team/</loc>
     <lastmod>2023-01-17T00:00:00+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/events/basketball-clinic-naoufal-uariachi/</loc>
+    <lastmod>2022-07-07T00:00:00+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/achievements/students/bhuvanesh-rajagopal-alumni/</loc>
     <lastmod>2021-05-26T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/events/</loc>
   </url><url>
     <loc>//localhost:1313/achievements/academy/reliance-jr-nba-best-coach-2017/</loc>
   </url><url>
@@ -76,10 +86,6 @@
     <loc>//localhost:1313/gallery/</loc>
   </url><url>
     <loc>//localhost:1313/achievements/academy/khelo-masters-gold-medal-2022/</loc>
-  </url><url>
-    <loc>//localhost:1313/events/inter-ib-3/</loc>
-  </url><url>
-    <loc>//localhost:1313/events/inter-ib-4/</loc>
   </url><url>
     <loc>//localhost:1313/achievements/academy/jr-nba-coach-delhi-girls-2022/</loc>
   </url><url>

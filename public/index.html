@@ -19764,7 +19764,8 @@ a {
 .events-section {
   /* Event Card */
   /* Hover Effect */
-  /* Image Zoom */ }
+  /* Image Zoom */
+  /* Make Foundation stand out slightly more if it's a CSR initiative */ }
   .events-section .event-image {
     width: 100%;
     height: 260px;
@@ -19776,7 +19777,7 @@ a {
     height: 100%;
     object-fit: cover;
     /* fills space */
-    object-position: center;
+    object-position: center top;
     /* center crop */
     display: block;
     transition: transform .4s ease; }
@@ -19790,6 +19791,56 @@ a {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(210, 84, 38, 0.25), 0 8px 24px rgba(210, 84, 38, 0.18) !important; }
   .events-section .event-card:hover img {
     overflow: hidden; }
+  .events-section .ib-academy {
+    color: var(--bs-primary) !important; }
+  .events-section .ib-foundation {
+    color: #FE6019 !important; }
+
+/* --- Event Single Page Styles --- */
+.event-single {
+  /* Event Page Specific Styles */
+  /* Sidebar Styling */
+  /* Macy Grid Fade-In Effect */ }
+  .event-single .event-hero-wrapper img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover; }
+  .event-single .badge {
+    top: 0 !important; }
+  .event-single .sticky-sidebar {
+    position: sticky;
+    top: 100px; }
+  .event-single .sidebar-card {
+    padding: 1.5rem;
+    border-radius: 1rem; }
+  .event-single .sidebar-card i {
+    margin: auto 0; }
+  .event-single .meta-label {
+    text-uppercase: uppercase;
+    color: #6c757d;
+    display: block;
+    font-weight: 700;
+    font-size: 0.7rem; }
+  .event-single .icon-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .event-single .mission-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-style: italic; }
+  .event-single .insight-card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+  .event-single .topic-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888; }
+  .event-single #macy-container {
+    transition: opacity 0.6s ease; }
 
 /* --- Achievement Directory Section Styles --- */
 .achievement-directory {
@@ -19797,7 +19848,7 @@ a {
   /* Hover Effects */ }
   .achievement-directory .portal-card {
     background: #fff;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid #eee;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -19844,7 +19895,7 @@ a {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: block;
@@ -22243,7 +22294,7 @@ iframe.wait-autoplay {
                 <a
                   href="https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
                   class="btn btn-primary">
-                  Join Now!
+                  <i class="lab la-lg la-whatsapp"></i> Join Now!
                 </a>
               </div>
             
@@ -22281,7 +22332,7 @@ iframe.wait-autoplay {
                   class="btn btn-primary"
                   data-aos="fade-up"
                   data-aos-delay="200"
-                  >Book Your Free Trial!</a
+                  ><i class="lab la-lg la-whatsapp"></i> Book Your Free Trial!</a
                 >
               </div>
             </div>

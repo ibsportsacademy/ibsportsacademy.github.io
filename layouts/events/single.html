@@ -2,44 +2,143 @@
 
 {{ partial "components/page-header.html" . }}
 
-<section class="section">
+<section class="section event-single pt-5">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
 
-<div class="container-xxl">
+        {{/* 1. Feature Hero Image */}}
+        {{ with .Params.image }}
+        <div class="event-hero-wrapper mb-5" data-aos="fade-up" data-aos-delay="300">
+          {{ partial "image.html" (dict "Src" . "Alt" $.Title "Size" "1200x600 q90" "Class" "img-fluid rounded-4 shadow-lg") }}
+        </div>
+        {{ end }}
 
-<div class="row">
+        <div class="row g-5">
+          {{/* 2. Main Content Column */}}
+          <div class="col-lg-8">
+            <div class="content entry-content">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <span class="badge bg-primary-soft text-primary px-3 py-2 rounded-pill fw-bold">
+                  {{ .Params.category | default "Event" }}
+                </span>
+                <span class="text-muted fw-medium border-start ps-3">
+                  <i class="las la-calendar-alt me-1"></i> {{ .Params.date | time.Format "January 2, 2006" }}
+                </span>
+              </div>
 
-<div class="col-lg-10 mx-auto">
+              {{ .Content }}
+            </div>
 
-<div class="content">
+            {{/* 3. Macy.js Gallery Integration */}}
+            {{ if .Params.gallery }}
+            <div class="mt-5 pt-5 border-top">
+              <h3 class="fw-bold mb-4">Event Gallery</h3>
+              <div id="macy-container" data-aos="fade-up" data-aos-delay="100">
+                {{ range $index, $image := .Params.gallery }}
 
-{{ with .Params.image }}
+                  {{ $image_src := resources.Get $image.src }}
+                  {{ with $image_src }}
+                  <div class="macy-item mb-3" data-aos="fade-up" data-aos-delay="{{ mul $index 200 }}">
+                      <a href="{{ .RelPermalink }}" class="glightbox" title="{{ $image.alt | title }}" data-gallery="highlights">
+                        <img src="{{ .RelPermalink }}" alt="{{ $image.alt | title }}" class="img-fluid rounded-3 shadow-sm">
+                      </a>
+                  </div>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+          </div>
 
-<div class="mb-4">
+          {{/* 4. Sidebar Info */}}
+          <div class="col-lg-4">
+            <div class="sticky-sidebar">
+              <div class="sidebar-card bg-light border mb-4 shadow-sm">
+                <h5 class="fw-bold mb-3">Event Details</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3 d-flex gap-3">
+                    <i class="las la-map-marker text-primary fs-4"></i>
+                    <div>
+                      <small class="meta-label">Location</small>
+                      <span class="fw-semibold">{{ .Params.location | default "New Delhi" }}</span>
+                    </div>
+                  </li>
+                  {{ with .Params.organizer }}
+                  <li class="mb-3 d-flex gap-3">
+                    <i class="las la-users text-primary fs-4"></i>
+                    <div>
+                      <small class="meta-label">Organized By</small>
+                      <span class="fw-semibold text-dark">{{ . }}</span>
+                    </div>
+                  </li>
+                  {{ end }}
+                  {{ with .Params.initiative }}
+                  <li class="d-flex gap-3">
+                    <i class="las la-heart text-primary fs-4"></i>
+                    <div>
+                      <small class="meta-label">Initiative</small>
+                      <span class="fw-semibold text-primary">{{ . }}</span>
+                    </div>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
 
-{{ partial "image.html" (dict "Src" . "Alt" $.Title "Size" "1200x q90") }}
+              {{ with .Params.mission }}
+              <div class="sidebar-card bg-white border mb-4 shadow-sm">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="icon-circle bg-primary">
+                    <i class="las la-globe text-white small"></i>
+                  </div>
+                  <h6 class="fw-bold mb-0">Our Mission</h6>
+                </div>
+                <p class="mission-text mb-0">
+                  {{ . }}
+                </p>
+              </div>
+              {{ end }}
 
-</div>
-
-{{ end }}
-
-
-<p class="text-primary fw-semibold mb-3">
-
-{{ .Params.event_date | time.Format "January 2, 2006" }}
-
-</p>
-
-
-{{ .Content }}
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+              {{ with .Params.coach_insight }}
+              <div class="sidebar-card insight-card p-4 rounded-4 border-start border-primary border-4 bg-white mb-4">
+                <h6 class="fw-bold mb-2">Coach's Insight</h6>
+                <div class="small mb-0 text-dark">
+                  {{ .text | markdownify }}
+                </div>
+                {{ with .topic }}
+                <hr class="my-3 opacity-10">
+                <div class="topic-tag">Focus: {{ . }}</div>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+{{ if .Params.gallery }}
+<script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    const macyInstance = Macy({
+      container: '#macy-container',
+      trueOrder: false,
+      waitForImages: true,
+      margin: 15,
+      columns: 3,
+      breakAt: { 940: 2, 520: 2 }
+    });
+
+    macyInstance.on(macyInstance.constants.EVENT_IMAGE_COMPLETE, function() {
+      document.getElementById('macy-container').classList.remove('macy-waiting');
+      document.getElementById('macy-container').classList.add('macy-ready');
+    });
+  });
+</script>
+{{ end }}
 {{ end }}

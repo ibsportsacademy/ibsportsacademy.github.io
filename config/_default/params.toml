@@ -46,7 +46,7 @@ preloader = "images2/favicon.png" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Join Now!"
+label = "<i class=\"lab la-lg la-whatsapp\"></i> Join Now!"
 link = "https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
 
 # seo meta data for OpenGraph / Twitter Card

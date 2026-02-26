@@ -7,7 +7,8 @@ draft: false
 # open graph
 meta_image: "images2/og/og_collaborate-international-coach-corporate-csr-ib-sports-academy.png"
 
-event_date: 2024-09-01
+date: 2024-09-01
+year: "2024"
 summary: >
   The third edition of the Inter IB tournament brought together IB athletes
   for one of the most competitive in-house basketball events organized by

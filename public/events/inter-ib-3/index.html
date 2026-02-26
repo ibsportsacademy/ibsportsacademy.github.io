@@ -19759,7 +19759,8 @@ a {
 .events-section {
   /* Event Card */
   /* Hover Effect */
-  /* Image Zoom */ }
+  /* Image Zoom */
+  /* Make Foundation stand out slightly more if it's a CSR initiative */ }
   .events-section .event-image {
     width: 100%;
     height: 260px;
@@ -19771,7 +19772,7 @@ a {
     height: 100%;
     object-fit: cover;
     /* fills space */
-    object-position: center;
+    object-position: center top;
     /* center crop */
     display: block;
     transition: transform .4s ease; }
@@ -19785,6 +19786,56 @@ a {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(210, 84, 38, 0.25), 0 8px 24px rgba(210, 84, 38, 0.18) !important; }
   .events-section .event-card:hover img {
     overflow: hidden; }
+  .events-section .ib-academy {
+    color: var(--bs-primary) !important; }
+  .events-section .ib-foundation {
+    color: #FE6019 !important; }
+
+/* --- Event Single Page Styles --- */
+.event-single {
+  /* Event Page Specific Styles */
+  /* Sidebar Styling */
+  /* Macy Grid Fade-In Effect */ }
+  .event-single .event-hero-wrapper img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover; }
+  .event-single .badge {
+    top: 0 !important; }
+  .event-single .sticky-sidebar {
+    position: sticky;
+    top: 100px; }
+  .event-single .sidebar-card {
+    padding: 1.5rem;
+    border-radius: 1rem; }
+  .event-single .sidebar-card i {
+    margin: auto 0; }
+  .event-single .meta-label {
+    text-uppercase: uppercase;
+    color: #6c757d;
+    display: block;
+    font-weight: 700;
+    font-size: 0.7rem; }
+  .event-single .icon-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .event-single .mission-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-style: italic; }
+  .event-single .insight-card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+  .event-single .topic-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888; }
+  .event-single #macy-container {
+    transition: opacity 0.6s ease; }
 
 /* --- Achievement Directory Section Styles --- */
 .achievement-directory {
@@ -19792,7 +19843,7 @@ a {
   /* Hover Effects */ }
   .achievement-directory .portal-card {
     background: #fff;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid #eee;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -19839,7 +19890,7 @@ a {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: block;
@@ -22240,7 +22291,7 @@ iframe.wait-autoplay {
                 <a
                   href="https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
                   class="btn btn-primary">
-                  Join Now!
+                  <i class="lab la-lg la-whatsapp"></i> Join Now!
                 </a>
               </div>
             
@@ -22321,21 +22372,15 @@ iframe.wait-autoplay {
 </section>
 
 
-<section class="section">
-
-<div class="container-xxl">
-
-<div class="row">
-
-<div class="col-lg-10 mx-auto">
-
-<div class="content">
-
-
-
-<div class="mb-4">
-
-
+<section class="section event-single pt-5">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        
+        
+        
+        <div class="event-hero-wrapper mb-5" data-aos="fade-up" data-aos-delay="300">
+          
 
 
 
@@ -22410,16 +22455,16 @@ iframe.wait-autoplay {
 
         <img
           
-            src="/images2/events/inter-ib-3/coach-ib-sports-academy-team-2_hu_9b7a125303e782b8.webp" loading="lazy"
+            src="/images2/events/inter-ib-3/coach-ib-sports-academy-team-2_hu_b571243789583c9c.webp" loading="lazy"
             decoding="async"
           
 
           alt="Inter IB 3.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;"
-          class="  img"
+          class=" img-fluid rounded-4 shadow-lg img"
           width="1200"
-          height="576"
+          height="600"
           onerror="this.onerror='null';
-          this.src='\/images2\/events\/inter-ib-3\/coach-ib-sports-academy-team-2_hu_14090092fca84b91.jpg';" />
+          this.src='\/images2\/events\/inter-ib-3\/coach-ib-sports-academy-team-2_hu_86860a9e1ed21427.jpg';" />
 
         
       
@@ -22432,20 +22477,23 @@ iframe.wait-autoplay {
   
 
 
+        </div>
+        
 
-</div>
+        <div class="row g-5">
+          
+          <div class="col-lg-8">
+            <div class="content entry-content">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <span class="badge bg-primary-soft text-primary px-3 py-2 rounded-pill fw-bold">
+                  Event
+                </span>
+                <span class="text-muted fw-medium border-start ps-3">
+                  <i class="las la-calendar-alt me-1"></i> September 1, 2024
+                </span>
+              </div>
 
-
-
-
-<p class="text-primary fw-semibold mb-3">
-
-September 1, 2024
-
-</p>
-
-
-<h2 id="about-inter-ib-30">About Inter IB 3.0</h2>
+              <h2 id="about-inter-ib-30">About Inter IB 3.0</h2>
 <p>Inter IB 3.0 is one of the flagship basketball tournaments organized by IB Sports Academy.</p>
 <p>The event featured competitive matchups and participation from athletes across
 different training batches.</p>
@@ -22467,16 +22515,41 @@ different training batches.</p>
 <li>Team discipline</li>
 </ul>
 
+            </div>
 
-</div>
+            
+            
+          </div>
 
-</div>
+          
+          <div class="col-lg-4">
+            <div class="sticky-sidebar">
+              <div class="sidebar-card bg-light border mb-4 shadow-sm">
+                <h5 class="fw-bold mb-3">Event Details</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3 d-flex gap-3">
+                    <i class="las la-map-marker text-primary fs-4"></i>
+                    <div>
+                      <small class="meta-label">Location</small>
+                      <span class="fw-semibold">New Delhi</span>
+                    </div>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
 
-</div>
+              
 
-</div>
-
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
     </main>

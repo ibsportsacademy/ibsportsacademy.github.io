@@ -6,20 +6,28 @@
     <description>Recent content in Basketball Events &amp; Tournaments on India&#39;s #1 Basketball Training Academy | IB Sports Academy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inter IB 4.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;</title>
+      <link>//localhost:1313/events/inter-ib-4/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0530</pubDate>
+      <guid>//localhost:1313/events/inter-ib-4/</guid>
+      <description>The fourth edition of the Inter IB tournament brought together IB athletes for one of the most competitive in-house basketball events organized by IB Sports Academy.</description>
+    </item>
     <item>
       <title>Inter IB 3.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;</title>
       <link>//localhost:1313/events/inter-ib-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
       <guid>//localhost:1313/events/inter-ib-3/</guid>
       <description>The third edition of the Inter IB tournament brought together IB athletes for one of the most competitive in-house basketball events organized by IB Sports Academy.</description>
     </item>
     <item>
-      <title>Inter IB 4.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;</title>
-      <link>//localhost:1313/events/inter-ib-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/events/inter-ib-4/</guid>
-      <description>The fourth edition of the Inter IB tournament brought together IB athletes for one of the most competitive in-house basketball events organized by IB Sports Academy.</description>
+      <title>Basketball Clinic • Naoufal Uariachi</title>
+      <link>//localhost:1313/events/basketball-clinic-naoufal-uariachi/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0530</pubDate>
+      <guid>//localhost:1313/events/basketball-clinic-naoufal-uariachi/</guid>
+      <description>FIBA Instructor and Morocco National Team Coach Naoufal Uariachi leads an elite clinic for New Delhi&amp;rsquo;s underserved youth.</description>
     </item>
   </channel>
 </rss>

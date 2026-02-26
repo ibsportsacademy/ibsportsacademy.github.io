@@ -5,7 +5,7 @@ meta_image: "images2/og/og_banner_ib_sports_academy.png"
 # banner
 banner:
   title: "Transform Your Game with NBA Level Coaching"
-  button: "Book Your Free Trial!"
+  button: "<i class=\"lab la-lg la-whatsapp\"></i> Book Your Free Trial!"
   button_link: "https://wa.me/918860500060?text=Hi%20IB%20Sports%20Academy%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20joining%20the%20basketball%20academy.%20Could%20you%20please%20share%20details%20about%20trials%20and%20fees%3F"
   image: "images2/banner-app2.png"
 

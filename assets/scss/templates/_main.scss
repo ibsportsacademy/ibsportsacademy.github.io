@@ -582,7 +582,7 @@ a {
     width:100%;
     height:100%;
     object-fit: cover;      /* fills space */
-    object-position: center; /* center crop */
+    object-position: center top; /* center crop */
     display: block;
     transition: transform .4s ease;
   }
@@ -607,13 +607,78 @@ a {
     // transform: scale(1.05);
     overflow: hidden;
   }
+  /* Make Foundation stand out slightly more if it's a CSR initiative */
+  .ib-academy {
+    color: var(--bs-primary) !important;
+  }
+  .ib-foundation {
+    color: $color-primary !important;
+  }
+}
+
+/* --- Event Single Page Styles --- */
+.event-single {
+  /* Event Page Specific Styles */
+  .event-hero-wrapper img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+  }
+  .badge {
+    top: 0 !important;
+  }
+  /* Sidebar Styling */
+  .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+  }
+  .sidebar-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  .sidebar-card i {
+    margin: auto 0;
+  }
+  .meta-label {
+    text-uppercase: uppercase;
+    color: #6c757d;
+    display: block;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  .icon-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-style: italic;
+  }
+  .insight-card {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  }
+  .topic-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+  }
+  /* Macy Grid Fade-In Effect */
+  #macy-container {
+    transition: opacity 0.6s ease;
+  }
 }
 
 /* --- Achievement Directory Section Styles --- */
 .achievement-directory {
   .portal-card {
     background: #fff;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid #eee;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -673,7 +738,7 @@ a {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: rgba(255,255,255,0.9);
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     display: block;
