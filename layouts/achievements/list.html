@@ -1,9 +1,15 @@
 {{ define "main" }}
 
-{{/* Sort pages by year parameter descending */}}
-{{ $p := .Data.Pages.ByParam "year" }}
+{{/* 1. Get all pages */}}
+{{ $pages := .Data.Pages }}
+
+{{/* 2. Sort by Year (Desc), then by Date (Desc) */}}
+{{/* We use 'params.year' to group by year first, then 'Date' for specific order */}}
+{{ $sorted := (sort (sort $pages "Date" "desc") "Params.year" "desc") }}
+
+{{/* 3. Paginate the Pages collection */}}
 {{ $limit := .Params.paginate | default 10 }}
-{{ $paginator := .Paginate ($p.Reverse) $limit }}
+{{ $paginator := .Paginate $sorted $limit }}
 
 {{ partial "components/page-header.html" . }}
 {{ with .Params.hero_section }}

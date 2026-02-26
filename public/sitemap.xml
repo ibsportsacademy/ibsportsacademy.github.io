@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/achievements/students/</loc>
+    <lastmod>2026-01-31T00:00:00+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/achievements/academy/</loc>
   </url><url>
@@ -17,6 +18,42 @@
   </url><url>
     <loc>//localhost:1313/terms-and-conditions/</loc>
     <lastmod>2026-02-04T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/shaurya-jindal-nationals-2026/</loc>
+    <lastmod>2026-01-31T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/</loc>
+    <lastmod>2026-01-31T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/naunit-goyat-nationals-2026/</loc>
+    <lastmod>2026-01-11T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/inter-zonal-girls-u17-2026/</loc>
+    <lastmod>2026-01-09T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/world-cup-puerto-rico-2025/</loc>
+    <lastmod>2025-12-05T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/thakur-memorial-trophy-2025/</loc>
+    <lastmod>2025-10-30T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/national-unified-gold-2025/</loc>
+    <lastmod>2025-10-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/bhumit-kumar-sgfi-nationals-2024/</loc>
+    <lastmod>2024-05-10T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/jr-nba-delhi-ncr-champions-2023/</loc>
+    <lastmod>2023-10-05T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/aksh-keshav-national-school-games/</loc>
+    <lastmod>2023-07-07T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/aryan-india-national-team/</loc>
+    <lastmod>2023-01-17T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/achievements/students/bhuvanesh-rajagopal-alumni/</loc>
+    <lastmod>2021-05-26T00:00:00+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/events/</loc>
   </url><url>
@@ -50,11 +87,7 @@
   </url><url>
     <loc>//localhost:1313/achievements/academy/national-coach-delhi-boys-2025/</loc>
   </url><url>
-    <loc>//localhost:1313/achievements/students/national-unified-gold-2025/</loc>
-  </url><url>
     <loc>//localhost:1313/achievements/academy/nfpet-best-coach-award-2022/</loc>
-  </url><url>
-    <loc>//localhost:1313/achievements/</loc>
   </url><url>
     <loc>//localhost:1313/locations/</loc>
   </url><url>

@@ -309,11 +309,11 @@ function handleToggle(card) {
     drawer.classList.remove('open'); // This triggers the height -> 0
     document.querySelectorAll('.achievement-card').forEach(c => c.classList.remove('active'));
 
-    // Wait for the collapse animation (0.4s) before moving and re-opening
+    // Wait for the collapse animation (0.3s) before moving and re-opening
     setTimeout(() => {
       updateAndMoveDrawer(card, drawer, grid);
       openDrawer(card, drawer);
-    }, 450);
+    }, 300);
   } else {
     // Standard open from closed state
     updateAndMoveDrawer(card, drawer, grid);
@@ -335,7 +335,7 @@ function openDrawer(card, drawer) {
     const yOffset = -120;
     const y = drawer.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({top: y, behavior: 'smooth'});
-  }, 500);
+  }, 100);
 }
 
 function updateAndMoveDrawer(card, drawer, grid) {
@@ -343,7 +343,9 @@ function updateAndMoveDrawer(card, drawer, grid) {
   document.getElementById('drawerImg').src = card.dataset.img;
   document.getElementById('drawerTitle').innerText = card.dataset.title;
   document.getElementById('drawerYear').innerText = card.dataset.year;
-  document.getElementById('drawerDesc').innerText = card.dataset.desc;
+  desc = card.dataset.desc
+             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Fixes **Bold**
+  document.getElementById('drawerDesc').innerHTML = desc;
   document.getElementById('drawerCat').innerText = card.dataset.cat;
   document.getElementById('drawerLoc').innerText = card.dataset.loc;
 
@@ -364,5 +366,5 @@ function closeDrawer() {
   document.querySelectorAll('.achievement-card').forEach(c => c.classList.remove('active'));
   setTimeout(() => {
     if(!drawer.classList.contains('open')) drawer.style.display = 'none'; 
-  }, 600);
+  }, 200);
 }

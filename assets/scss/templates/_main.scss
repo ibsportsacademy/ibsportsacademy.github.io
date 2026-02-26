@@ -822,13 +822,17 @@ a {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    transition: max-height 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+    opacity 0.2s linear,
+    visibility 0.3s,
+    transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .achievement-expand.open {
     max-height: 1200px;
     opacity: 1;
     margin: 15px 0 30px 0;
+    padding: 2rem 0; /* Add your padding here so it collapses too */
   }
   .expand-inner > * {
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -845,7 +849,7 @@ a {
     background: #ffffff;
     border-radius: 16px;
     border-top: 5px solid #FE6019;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.12);
     margin: 15px 0 30px;
   }
 
