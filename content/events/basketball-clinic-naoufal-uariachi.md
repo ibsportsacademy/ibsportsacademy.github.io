@@ -5,20 +5,23 @@ description: "IB Sports Academy & Foundation hosted FIBA Instructor Naoufal Uari
 layout: "page"
 draft: false
 
-# open graph
+# Open Graph / SEO
 meta_image: "images2/og/og_events-naoufal-uariachi-ib-sports-academy.png"
 keywords: ["Naoufal Uariachi", "FIBA Basketball Clinic", "IB Sports Foundation", "IB Sports Academy", "Rise Through Hoops", "Basketball coaching New Delhi", "Morocco National Team Coach"]
 
+# Project Details
 date: 2022-07-07
 year: "2022"
 category: "International Event"
 summary: "FIBA Instructor and Morocco National Team Coach Naoufal Uariachi leads an elite clinic for New Delhi's underserved youth."
-location: "Don Bosco Ashalayam, New Delhi"
 image: "images2/events/basketball-clinic/event-coach-naoufal-uariachi-ib-sports-foundation-academy.png"
 
+# Sidebar Params
 # Foundation Association
 organizer: "IB Sports Foundation"
 initiative: "Rise Through Hoops"
+location: "Don Bosco Ashalayam, New Delhi"
+
 mission: "Talent is Universal. Opportunity is Not. We provide mentorship to ensure a child’s starting point never defines their finish line."
 coach_insight:
   text: "Coach Naoufal emphasized that **international success** is built on **local fundamentals**. Every drill in this clinic was designed to bridge that gap."
