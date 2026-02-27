@@ -18,7 +18,7 @@ summary: "A celebration of rhythm and athleticism, featuring talented participan
 
 # Sidebar
 organizer: "IB Sports Foundation"
-initiative: "Rise Through Hoops" # or leave blank if it's a general Foundation event
+initiative: "Rise Through Hoops"
 location: "DIS Edge, New Delhi"
 
 mission: "Talent is Universal. Opportunity is Not. We provide mentorship to ensure a child’s starting point never defines their finish line."

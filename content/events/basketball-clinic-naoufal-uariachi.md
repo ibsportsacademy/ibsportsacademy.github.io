@@ -12,7 +12,7 @@ keywords: ["Naoufal Uariachi", "FIBA Basketball Clinic", "IB Sports Foundation",
 # Project Details
 date: 2022-07-07
 year: "2022"
-category: "International Event"
+category: "International Masterclass"
 summary: "FIBA Instructor and Morocco National Team Coach Naoufal Uariachi leads an elite clinic for New Delhi's underserved youth."
 image: "images2/events/basketball-clinic/event-coach-naoufal-uariachi-ib-sports-foundation-academy.png"
 
