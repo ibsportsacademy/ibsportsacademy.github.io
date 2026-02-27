@@ -34,19 +34,20 @@ gallery:
     alt: "Coach Ishwar Bhati distributing professional basketball kits to students at Don Bosco Ashalayam"
   - src: "images2/events/ashalayam/don-bosco-children-happy-ib-sports-foundation-academy.jpg"
     alt: "Joyful children at Don Bosco Ashalayam receiving support from IB Sports Foundation"
-  - src: "images2/events/ashalayam/community-outreach-don-bosco-flyer-ib-sports-foundation-academy.jpg"
-    alt: "Official program flyer for the basketball training initiative at Don Bosco Ashalayam"
   - src: "images2/events/ashalayam/community-outreach-play-learn-grow-ib-sports-foundation-academy.jpg"
     alt: "Young athletes participating in the Play Learn Grow basketball program in New Delhi"
-  - src: "images2/events/ashalayam/community-outreach-ashalayam-ib-sports-foundation-academy.png"
-    alt: "Community outreach program at Don Bosco Ashalayam organized by IB Sports Foundation"
+  - src: "images2/events/ashalayam/community-outreach-don-bosco-flyer-ib-sports-foundation-academy.jpg"
+    alt: "Official program flyer for the basketball training initiative at Don Bosco Ashalayam"
   - src: "images2/events/ashalayam/coach-ishwar-bhati-distributing-shoes-ib-sports-foundation-academy.jpg"
     alt: "Coach Ishwar Bhati gifting basketball shoes to young athletes as part of the Rise Through Hoops initiative"
   - src: "images2/events/ashalayam/life-skills-competition-teamwork-training-ib-sports-foundation-academy.png"
     alt: "Teaching teamwork and life skills through competitive basketball training at the Academy"
   - src: "images2/events/ashalayam/empower-children-rise-through-hoops-ib-sports-foundation-academy.jpg"
     alt: "Empowering children through basketball mentorship and the Rise Through Hoops project"
-
+  - src: "images2/events/ashalayam/coach-ishwar-bhati-students-group-photo-ib-sports-foundation-academy.png"
+    alt: "Coach Ishwar Bhati with student-athletes of Don Bosco Ashalayam during a Rise Through Hoops community outreach session"
+  - src: "images2/events/ashalayam/community-outreach-ashalayam-ib-sports-foundation-academy.png"
+    alt: "Community outreach program at Don Bosco Ashalayam organized by IB Sports Foundation"
 ---
 
 ### Big Dreams. Small Courts. Real Hustle.
