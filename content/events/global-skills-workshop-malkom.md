@@ -18,8 +18,6 @@ summary: "An elite exchange of knowledge and passion as Coach Malkom (Uganda) br
 
 # Sidebar
 organizer: "IB Sports Foundation"
-guest_coach: "Coach Malkom (Uganda, Africa)"
-affiliations: ["Unlmted Basketball", "Jerome Randle"]
 initiative: "Rise Through Hoops"
 location: "ITL Public School, New Delhi"
 
