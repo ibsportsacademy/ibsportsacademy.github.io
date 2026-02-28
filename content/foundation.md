@@ -101,7 +101,7 @@ partnerships:
   block:
   - subtitle: "Long-Term Engagement & Structured Development"
     title: "🏀 Coaching & Institutional Partnership Programs"
-    description: "We partner with and support children from orphanages such as **Don Bosco Ashalayam**, providing consistent, professional coaching and opportunities to participate in competitions. Our programs follow a **long-term engagement model**, ensuring continuity, mentorship, and measurable growth. <br />
+    description: "We partner with and support children from orphanages such as <span class=\"text-primary-a no-wrap\">**<ins>[Don Bosco Ashalayam <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/community-outreach-ashalayam.md\" >}})</ins>**</span>, providing consistent, professional coaching and opportunities to participate in competitions. Our programs follow a **long-term engagement model**, ensuring continuity, mentorship, and measurable growth. <br />
     
       How This Creates Impact:
 
@@ -131,7 +131,7 @@ partnerships:
 
       Expanded Exposure Includes:
 
-      - **Gymnastics Competitions** — broadening physical literacy
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Aerobics & Gymnastics <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/aerobics-inter-school-championship-2022.md\" >}})</ins>**</span> — broadening physical literacy
 
       - **Multi-Sport Training** — encouraging diverse movement development
       
@@ -142,11 +142,13 @@ partnerships:
     title: "⛹️ Inclusive Sports – The Sunday Center"
     description: "Our **Sunday Center for Special Children** creates a safe, joyful, and encouraging environment for children of all abilities. Inclusion is not a side program — it is central to our mission. <br />
 
+      <span class=\"text-primary-a no-wrap\">**<ins>[Explore the Sunday Center Program <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/sunday-centre-weekly-program.md\" >}})</ins>**</span> <br>
+
       Inclusion in Action:
 
       - **Weekly Adaptive Sessions** — sports tailored to different abilities
 
-      - **Role Model Inspiration** — guest of honor **Ranveer Saini**, Special Olympics Gold Medalist
+      - **Role Model Inspiration** — guest of honor <span class=\"text-primary-a no-wrap\">**<ins>[Ranveer Saini <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/sunday-centre-launch-ranveer-saini.md\" >}})</ins>**</span>, Special Olympics Gold Medalist
 
       - **Confidence & Social Belonging** — building peer connection through play"
     image: "images2/inclusive-basketball-special-children-sports-ib-sports-foundation-academy.png"
@@ -161,11 +163,11 @@ partnerships:
 
       - **Benjamin Bari (France)** — Professional Coach with deep roots in the French basketball system, specialized in technical skill acquisition and professional player pathways.
 
-      - **Naoufal Uariachi (Morocco)** — Former Head Coach of the **Morocco Men’s National Team**; a FIBA-level strategist who led his nation through the **AfroBasket Qualifiers**.
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Naoufal Uariachi (Morocco) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/basketball-clinic-naoufal-uariachi.md\" >}})</ins>**</span> — Former Head Coach of the **Morocco Men’s National Team**; a FIBA-level strategist who led his nation through the **AfroBasket Qualifiers**.
 
-      - **Hassan El Saddique (USA/Argentina)** — Founder of **All Dream Sports**, specializing in youth scouting and international athletic development.
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Hassan El Saddique (USA/Argentina) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/court-workshop-hassan-el-saddique.md\" >}})</ins>**</span> — Founder of **All Dream Sports**, specializing in youth scouting and international athletic development.
 
-      - **Malkom (Uganda/Rwanda)** — Veteran of **African Division 1 leagues**, providing a roadmap for competitive resilience and physical literacy. <br /><br />
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Coach Malkom (Uganda/Rwanda) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/global-skills-workshop-malkom.md\" >}})</ins>**</span> — Veteran of **African Division 1 leagues**, providing a roadmap for competitive resilience and physical literacy. <br /><br />
 
       These international exchanges elevate our training standards, ensuring that every child in our program receives a world-class athletic foundation."
     image: "images2/international-sponsorship-opportunities-ib-sports-academy.png"

@@ -13,15 +13,12 @@ banner:
 locations_carousel:
   enable: true
   location_images:
-    - "images2/locations/tihs.webp"
-    - "images2/locations/rotary.webp"
     - "images2/locations/oyster.webp"
     - "images2/locations/itl.webp"
     - "images2/locations/gyaananda.webp"
-    - "images2/locations/gdgoenka.webp"
+    - "images2/locations/mcl.webp"
     - "images2/locations/dis.webp"
     - "images2/locations/delhicantonment.webp"
-    - "images2/locations/dcac.webp"
     - "images2/locations/chintels.webp"
     - "images2/locations/bgs.webp"
     - "images2/locations/balbharti.webp"
