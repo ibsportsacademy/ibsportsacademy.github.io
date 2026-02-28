@@ -42,7 +42,7 @@ partnerships:
       - **Fitness & Sports Bootcamps** — energizing wellness experiences tailored for your workforce
       <br /><br />
 
-      👉 Read how we work with brands: <ins>[Our Corporate Impact Stories](https://blog.ibsportsacademy.com/categories/events/)</ins>"
+      👉 Read how we work with brands: <span class=\"text-primary-a no-wrap\">**<ins>[Our Corporate Impact Stories <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/events/)</ins>**</span>"
     image: "images2/corporate-company-parents-match-yakult-ib-sports-academy.png"
 
   - subtitle: "Create Iconic Moments Through Sports"
@@ -62,7 +62,7 @@ partnerships:
       - **Short-form Viral Content**: Co-create Instagram Reels, YouTube Shorts, and social stories with athletes and stars — blending entertainment and empowerment.
       <br /><br />
 
-      👉 Go behind the scenes: <ins>[Celebrity Collaborations That Inspired](https://blog.ibsportsacademy.com/tags/bollywood-collaboration/)</ins>"
+      👉 Go behind the scenes: <span class=\"text-primary-a no-wrap\">**<ins>[Celebrity Collaborations That Inspired <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/tags/bollywood-collaboration/)</ins>**</span>"
     image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chaddha.png"
 
   - subtitle: "Driving Social Change Through Sports"
@@ -80,7 +80,7 @@ partnerships:
       - **Monitor & Report Impact**: Get access to data, media, and storytelling that highlights measurable impact from our joint efforts.
       <br /><br />
 
-      👉 Explore success stories: <ins>[Community Impact Through Sports](https://blog.ibsportsacademy.com/categories/community-outreach/)</ins>"
+      👉 Explore success stories: <span class=\"text-primary-a no-wrap\">**<ins>[Community Impact Through Sports <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/community-outreach/)</ins>**</span>"
     image: "images2/ngo-social-cause-don-bosco-school-ib-sports-academy.png"
 
   - subtitle: "Fuel Dreams. Amplify Impact."
@@ -111,7 +111,7 @@ partnerships:
       - 🙌 Public gratitude across our events and channels
       <br /><br />
 
-      👉 Interested in becoming a sponsor? <ins>[Get in Touch](mailto:academyibsports@gmail.com)</ins> to learn more."
+      👉 Interested in becoming a sponsor? <span class=\"text-primary-a no-wrap\">**<ins>[Get in Touch <i class=\"las la-external-link-alt\"></i>](mailto:academyibsports@gmail.com)</ins>**</span> to learn more."
     image: "images2/international-sponsorship-opportunities-ib-sports-academy.png"
 
   - subtitle: "Where Purpose Meets Performance"
@@ -139,7 +139,7 @@ partnerships:
       Let’s come together to build stories that matter, inspire the next generation, and create lasting change — all through the power of sport.
       <br /><br />
       
-      <ins>[📩 Reach out to us here](mailto:academyibsports@gmail.com)</ins> • Visit our <ins>[Instagram](https://www.instagram.com/ibsportsacademy)</ins> and <ins>[YouTube](https://www.youtube.com/@ibsportsacademy)</ins> to see us in action."
+      <span class=\"text-primary-a no-wrap\">**<ins>[📩 Reach out to us here](mailto:academyibsports@gmail.com)</ins>**</span> • Visit our <span class=\"text-primary-a no-wrap\">**<ins>[{{< icon instagram >}} Instagram](https://www.instagram.com/ibsportsacademy)</ins>**</span> and <span class=\"text-primary-a no-wrap\">**<ins>[{{< icon youtube >}} YouTube](https://www.youtube.com/@ibsportsacademy)</ins>**</span> to see us in action."
     image: "images2/lets-build-basketball-together-ib-sports-academy.png"
 
 # what_we_do
