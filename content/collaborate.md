@@ -62,7 +62,7 @@ partnerships:
       - **Short-form Viral Content**: Co-create Instagram Reels, YouTube Shorts, and social stories with athletes and stars — blending entertainment and empowerment.
       <br /><br />
 
-      👉 Go behind the scenes: <span class=\"text-primary-a no-wrap\">**<ins>[Celebrity Collaborations That Inspired <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/tags/bollywood-collaboration/)</ins>**</span>"
+      👉 Go behind the scenes: <span class=\"text-primary-a no-wrap\">**<ins>[Celebrity Collaborations That Inspired <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/bollywood-collaboration/)</ins>**</span>"
     image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chaddha.png"
 
   - subtitle: "Driving Social Change Through Sports"
