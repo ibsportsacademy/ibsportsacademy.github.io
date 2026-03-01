@@ -1,0 +1,39 @@
+{{ define "main" }}
+  {{ partial "components/page-header.html" . }}
+
+  <section class="section-sm faq-section pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-11 col-11">
+          
+          {{ with .Params.everything_need_to_know_whatsapp }}
+          {{ if .enable }}
+          <div class="text-center mb-3 faq-whatsapp-box" data-aos="fade-up" data-aos-delay="100">
+            <h5 class="mb-0">
+              {{ .text }}
+              <span class="text-primary-a no-wrap">
+                <a href="{{ .link }}" class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+                    {{ .label | markdownify }}
+                </a>
+              </span>
+            </h5>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <div class="faq-controls mb-2 text-right text-center" data-aos="fade-up" data-aos-delay="200">
+            <button class="btn btn-primary btn-sm" onclick="document.querySelectorAll('details').forEach(el => el.open = true)">Expand All</button>
+            <button class="btn btn-outline-primary btn-sm" onclick="document.querySelectorAll('details').forEach(el => el.open = false)">Collapse All</button>
+          </div>
+
+          <div class="faq-content-wrapper" data-aos="fade-up" data-aos-delay="400">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  </style>
+{{ end }}

@@ -60,6 +60,12 @@ hasChildren = true
   url = "pay-and-play/"
   weight = 2
 
+  [[main]]
+  parent = "Programs"
+  name = "FAQs"
+  url = "faq/"
+  weight = 3
+
 [[main]]
 weight = 4
 name = "Events"

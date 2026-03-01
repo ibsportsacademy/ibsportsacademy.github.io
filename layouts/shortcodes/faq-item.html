@@ -1,0 +1,5 @@
+<details class="faq-item-details" {{ if eq (.Get "open") "true" }}open{{ end }}>
+    <summary class="faq-summary">Q: {{ .Get "question" }}</summary>
+    <div class="faq-answer-content">
+      {{ .Inner | chomp }}
+    </div></details>

@@ -20094,6 +20094,99 @@ a {
       justify-content: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       z-index: 10; } }
+.faq-section {
+  /* Modern Grid Layout */
+  /* Mobile First: Stack columns on tablets and phones */
+  /* Category Headers Styling */
+  /* Accordion / Details Styling */
+  /* Custom Arrow for Accordion */
+  /* WhatsApp Box Styling */ }
+  .faq-section .faq-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: start; }
+  @media (max-width: 991px) {
+    .faq-section .faq-grid-container {
+      grid-template-columns: 1fr;
+      gap: 20px; } }
+  .faq-section .faq-column h2, .faq-section .faq-column .h2 {
+    background: linear-gradient(90deg, #FE6019 0%, #ff8c52 100%);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(254, 96, 25, 0.2); }
+  .faq-section .faq-column h2 i, .faq-section .faq-column .h2 i {
+    margin-right: 12px; }
+  .faq-section details {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    overflow: hidden; }
+  .faq-section details[open] {
+    border-color: #FE6019;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
+  .faq-section summary {
+    padding: 18px 24px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #222;
+    position: relative;
+    transition: color 0.3s ease; }
+  .faq-section summary:hover {
+    color: #FE6019; }
+  .faq-section summary::-webkit-details-marker {
+    display: none; }
+  .faq-section summary::after {
+    content: '\2b';
+    /* Plus sign */
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    position: absolute;
+    right: 24px;
+    color: #FE6019;
+    transition: transform 0.3s ease; }
+  .faq-section details[open] summary::after {
+    content: '\2212';
+    /* Minus sign */
+    transform: rotate(180deg); }
+  .faq-section .faq-answer-content {
+    padding: 0 24px 20px 24px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95rem; }
+    .faq-section .faq-answer-content ul li, .faq-section .faq-answer-content ol li {
+      list-style-position: outside; }
+    .faq-section .faq-answer-content ul, .faq-section .faq-answer-content ol {
+      padding-left: 1rem; }
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+  .faq-section details[open] summary ~ * {
+    animation: sweep .3s ease-in-out; }
+  .faq-section .faq-whatsapp-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #FE6019; }
+  .faq-section .whatsapp-link {
+    color: #FE6019 !important;
+    text-decoration: none;
+    font-weight: 700; }
+
 .features .features-carousel {
   padding-bottom: 2.5rem; }
 
@@ -22022,6 +22115,10 @@ iframe.wait-autoplay {
                       
                       active
                     
+                      
+                      
+                      
+                    
                     ">
                     <a
                       class="nav-link dropdown-toggle"
@@ -22059,6 +22156,19 @@ iframe.wait-autoplay {
                               /pay-and-play/
                             "
                             >Pay &amp; Play</a
+                          >
+                        </li>
+                      
+                        
+                        
+                        <li>
+                          <a
+                            class="dropdown-item "
+                            
+                            href="
+                              /faq/
+                            "
+                            >FAQs</a
                           >
                         </li>
                       
