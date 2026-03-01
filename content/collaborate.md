@@ -42,7 +42,7 @@ partnerships:
       - **Fitness & Sports Bootcamps** — energizing wellness experiences tailored for your workforce
       <br /><br />
 
-      👉 Read how we work with brands: <span class=\"text-primary-a no-wrap\">**<ins>[Our Corporate Impact Stories <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/events/)</ins>**</span>"
+      👉 Read how we work with brands: <span class=\"text-primary-a no-wrap\">**<ins>[Our Corporate Impact Stories <i class=\"las la-external-link-alt\"></i>](https://ibsportsacademy.com/blog/categories/events/)</ins>**</span>"
     image: "images2/corporate-company-parents-match-yakult-ib-sports-academy.png"
 
   - subtitle: "Create Iconic Moments Through Sports"
@@ -62,7 +62,7 @@ partnerships:
       - **Short-form Viral Content**: Co-create Instagram Reels, YouTube Shorts, and social stories with athletes and stars — blending entertainment and empowerment.
       <br /><br />
 
-      👉 Go behind the scenes: <span class=\"text-primary-a no-wrap\">**<ins>[Celebrity Collaborations That Inspired <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/bollywood-collaboration/)</ins>**</span>"
+      👉 Go behind the scenes: <span class=\"text-primary-a no-wrap\">**<ins>[Celebrity Collaborations That Inspired <i class=\"las la-external-link-alt\"></i>](https://ibsportsacademy.com/blog/categories/bollywood-collaboration/)</ins>**</span>"
     image: "images2/bollywood-basketball-stars-kartik-aaryan-aamir-khan-sheeba-chaddha.png"
 
   - subtitle: "Driving Social Change Through Sports"
@@ -80,7 +80,7 @@ partnerships:
       - **Monitor & Report Impact**: Get access to data, media, and storytelling that highlights measurable impact from our joint efforts.
       <br /><br />
 
-      👉 Explore success stories: <span class=\"text-primary-a no-wrap\">**<ins>[Community Impact Through Sports <i class=\"las la-external-link-alt\"></i>](https://blog.ibsportsacademy.com/categories/community-outreach/)</ins>**</span>"
+      👉 Explore success stories: <span class=\"text-primary-a no-wrap\">**<ins>[Community Impact Through Sports <i class=\"las la-external-link-alt\"></i>](https://ibsportsacademy.com/blog/categories/community-outreach/)</ins>**</span>"
     image: "images2/ngo-social-cause-don-bosco-school-ib-sports-academy.png"
 
   - subtitle: "Fuel Dreams. Amplify Impact."

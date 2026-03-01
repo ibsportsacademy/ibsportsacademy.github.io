@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basketball Events &amp; Tournaments on India&#39;s #1 Basketball Training Academy | IB Sports Academy</title>
-    <link>//localhost:1313/events/</link>
+    <link>http://localhost:1313/events/</link>
     <description>Recent content in Basketball Events &amp; Tournaments on India&#39;s #1 Basketball Training Academy | IB Sports Academy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inter IB 4.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;</title>
-      <link>//localhost:1313/events/inter-ib-4/</link>
+      <link>http://localhost:1313/events/inter-ib-4/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/inter-ib-4/</guid>
+      <guid>http://localhost:1313/events/inter-ib-4/</guid>
       <description>The fourth edition of the Inter IB tournament brought together IB athletes for one of the most competitive in-house basketball events organized by IB Sports Academy.</description>
     </item>
     <item>
       <title>Court to Championship • Coach Hassan El-Saddique</title>
-      <link>//localhost:1313/events/court-workshop-hassan-el-saddique/</link>
+      <link>http://localhost:1313/events/court-workshop-hassan-el-saddique/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/court-workshop-hassan-el-saddique/</guid>
+      <guid>http://localhost:1313/events/court-workshop-hassan-el-saddique/</guid>
       <description>A high-energy USA-India collaboration featuring Hassan El-Saddique, focusing on pro-level skill development and motivational mentorship on the court.</description>
     </item>
     <item>
       <title>Global Hoops Meet • Coach Malkom</title>
-      <link>//localhost:1313/events/global-skills-workshop-malkom/</link>
+      <link>http://localhost:1313/events/global-skills-workshop-malkom/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/global-skills-workshop-malkom/</guid>
+      <guid>http://localhost:1313/events/global-skills-workshop-malkom/</guid>
       <description>An elite exchange of knowledge and passion as Coach Malkom (Uganda) brings African championship-level training to IB Sports Academy &amp;amp; Foundation athletes.</description>
     </item>
     <item>
       <title>The Sunday Centre • Every Child, Every Dream</title>
-      <link>//localhost:1313/events/sunday-centre-weekly-program/</link>
+      <link>http://localhost:1313/events/sunday-centre-weekly-program/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/sunday-centre-weekly-program/</guid>
+      <guid>http://localhost:1313/events/sunday-centre-weekly-program/</guid>
       <description>Our weekly Sunday Centre creates a safe, structured environment at ITL Public School where confidence and joy are built through inclusive basketball.</description>
     </item>
     <item>
       <title>Ranveer Singh Saini Inaugurates &lt;br&gt;Sunday Centre for Special Children</title>
-      <link>//localhost:1313/events/sunday-centre-launch-ranveer-saini/</link>
+      <link>http://localhost:1313/events/sunday-centre-launch-ranveer-saini/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/sunday-centre-launch-ranveer-saini/</guid>
+      <guid>http://localhost:1313/events/sunday-centre-launch-ranveer-saini/</guid>
       <description>Special Olympian Ranveer Singh Saini joins Coach Ishwar Bhati to inaugurate a new era of inclusive basketball at ITL Public School, Dwarka.</description>
     </item>
     <item>
       <title>Inter IB 3.0 • &lt;span class=&#34;no-wrap&#34;&gt;IB Sports Academy&lt;/span&gt;</title>
-      <link>//localhost:1313/events/inter-ib-3/</link>
+      <link>http://localhost:1313/events/inter-ib-3/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/inter-ib-3/</guid>
+      <guid>http://localhost:1313/events/inter-ib-3/</guid>
       <description>The third edition of the Inter IB tournament brought together IB athletes for one of the most competitive in-house basketball events organized by IB Sports Academy.</description>
     </item>
     <item>
       <title>Poetry of Movement • Aerobics Tournament</title>
-      <link>//localhost:1313/events/aerobics-inter-school-championship-2022/</link>
+      <link>http://localhost:1313/events/aerobics-inter-school-championship-2022/</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/aerobics-inter-school-championship-2022/</guid>
+      <guid>http://localhost:1313/events/aerobics-inter-school-championship-2022/</guid>
       <description>A celebration of rhythm and athleticism, featuring talented participants from across New Delhi at DIS Edge-18, showcasing high-energy performances.</description>
     </item>
     <item>
       <title>Basketball Clinic • Naoufal Uariachi</title>
-      <link>//localhost:1313/events/basketball-clinic-naoufal-uariachi/</link>
+      <link>http://localhost:1313/events/basketball-clinic-naoufal-uariachi/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/basketball-clinic-naoufal-uariachi/</guid>
+      <guid>http://localhost:1313/events/basketball-clinic-naoufal-uariachi/</guid>
       <description>FIBA Instructor and Morocco National Team Coach Naoufal Uariachi leads an elite clinic for New Delhi&amp;rsquo;s underserved youth.</description>
     </item>
     <item>
       <title>Community Outreach • Basketball for Change</title>
-      <link>//localhost:1313/events/community-outreach-ashalayam/</link>
+      <link>http://localhost:1313/events/community-outreach-ashalayam/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0530</pubDate>
-      <guid>//localhost:1313/events/community-outreach-ashalayam/</guid>
+      <guid>http://localhost:1313/events/community-outreach-ashalayam/</guid>
       <description>Under the &amp;lsquo;Rise Through Hoops&amp;rsquo; initiative, we provide weekly basketball training and professional gear to the students of Don Bosco Ashalayam.</description>
     </item>
   </channel>

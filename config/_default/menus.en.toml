@@ -118,7 +118,7 @@ weight = 7
 
 [[main]]
 name = "Blog"
-url = "https://blog.ibsportsacademy.com/"
+url = "https://ibsportsacademy.com/blog/"
 weight = 8
 
 [[main]]
@@ -147,7 +147,7 @@ weight = 3
 
 [[footer_explore]]
 name = "Ball & Train • Blog"
-url = "https://blog.ibsportsacademy.com/"
+url = "https://ibsportsacademy.com/blog/"
 weight = 4
 
 

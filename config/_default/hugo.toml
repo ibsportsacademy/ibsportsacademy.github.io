@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-# baseURL = "https://demo.gethugothemes.com/andromeda/site/"
+baseURL = "https://ibsportsacademy.com/"
 # Title of your website (required).
 title = "India's #1 Basketball Training Academy | IB Sports Academy"
 # Your theme name
