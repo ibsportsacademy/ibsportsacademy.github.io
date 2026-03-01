@@ -1,5 +1,5 @@
 ---
-meta_title: "Community Basketball Outreach | Don Bosco Ashalayam | IB Sports Foundation | IB Sports Academy"
+meta_title: "Community Basketball Outreach | Don Bosco Ashalayam | Events | IB Sports Foundation | IB Sports Academy"
 title: "Community Outreach • Basketball for Change"
 description: "Empowering underserved youth at Don Bosco Ashalayam through weekly basketball training, equipment support, and life-skills mentorship."
 layout: "page"

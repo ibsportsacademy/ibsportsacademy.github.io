@@ -1,5 +1,5 @@
 ---
-meta_title: "Basketball Clinic with Naoufal Uariachi | Events | IB Sports Academy | IB Sports Foundation"
+meta_title: "Basketball Clinic with Naoufal Uariachi | Events | IB Sports Foundation | IB Sports Academy"
 title: "Basketball Clinic • Naoufal Uariachi"
 description: "IB Sports Academy & Foundation hosted FIBA Instructor Naoufal Uariachi for an elite basketball clinic in New Delhi, empowering youth through the Rise Through Hoops initiative."
 layout: "page"
@@ -14,7 +14,7 @@ date: 2022-07-07
 year: "2022"
 category: "International Masterclass"
 summary: "FIBA Instructor and Morocco National Team Coach Naoufal Uariachi leads an elite clinic for New Delhi's underserved youth."
-image: "images2/events/basketball-clinic/event-coach-naoufal-uariachi-ib-sports-foundation-academy.png"
+image: "images2/events/basketball-clinic-morocco/event-coach-naoufal-uariachi-ib-sports-foundation-academy.png"
 
 # Sidebar Params
 # Foundation Association
@@ -29,23 +29,23 @@ coach_insight:
 
 # Media
 gallery:
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-ishwar-bhati-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-ishwar-bhati-ib-sports-foundation-academy.jpg"
     alt: "Coach Naoufal Uariachi and Coach Ishwar Bhati discussing basketball strategy at IB Sports Academy"
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-basketball-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-basketball-ib-sports-foundation-academy.jpg"
     alt: "FIBA Instructor Naoufal Uariachi demonstrating ball handling techniques during the New Delhi clinic"
-  - src: "images2/events/basketball-clinic/event-banner-coach-naoufal-uariachi-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/event-banner-coach-naoufal-uariachi-ib-sports-foundation-academy.jpg"
     alt: "Official event banner for the Naoufal Uariachi Basketball Clinic organized by IB Sports Foundation"
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-workshop-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-workshop-ib-sports-foundation-academy.jpg"
     alt: "Professional basketball coaching workshop led by Naoufal Uariachi at Don Bosco Ashalayam"
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-teaching-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-teaching-ib-sports-foundation-academy.jpg"
     alt: "Coach Naoufal Uariachi explaining tactical basketball positioning to the 'Rise Through Hoops' participants"
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-with-students-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-with-students-ib-sports-foundation-academy.jpg"
     alt: "Morocco National Team Coach Naoufal Uariachi mentoring young basketball players in India"
-  - src: "images2/events/basketball-clinic/group-photo-coach-naoufal-uariachi-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/group-photo-coach-naoufal-uariachi-ib-sports-foundation-academy.jpg"
     alt: "Group photo of Coach Naoufal Uariachi with IB Sports Academy coaches and students after the clinic"
-  - src: "images2/events/basketball-clinic/coach-naoufal-uariachi-counting-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/coach-naoufal-uariachi-counting-ib-sports-foundation-academy.jpg"
     alt: "International coach Naoufal Uariachi conducting a drill session for student-athletes"
-  - src: "images2/events/basketball-clinic/event-student-basketball-ib-sports-foundation-academy.jpg"
+  - src: "images2/events/basketball-clinic-morocco/event-student-basketball-ib-sports-foundation-academy.jpg"
     alt: "A student-athlete practicing fundamentals under the 'Rise Through Hoops' initiative at IB Sports Academy"
 ---
 

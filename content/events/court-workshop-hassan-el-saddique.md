@@ -1,5 +1,5 @@
 ---
-meta_title: "International Basketball Workshop with Hassan El-Saddique | IB Sports Academy"
+meta_title: "International Basketball Workshop with Hassan El-Saddique | Events | IB Sports Foundation | IB Sports Academy"
 title: "Court to Championship • Coach Hassan El-Saddique"
 description: "US Pro-baller and entrepreneur Hassan El-Saddique visits IB Sports Academy for a special session on athlete empowerment, technical drills, global basketball, and a motivational session with Special Olympics athletes."
 layout: "page"

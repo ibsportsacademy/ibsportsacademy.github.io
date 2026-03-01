@@ -1,5 +1,5 @@
 ---
-meta_title: "Poetry of Movement: Aerobics Tournament 2022 | IB Sports Foundation | IB Sports Academy"
+meta_title: "Poetry of Movement: Aerobics Tournament 2022 | Events | IB Sports Foundation | IB Sports Academy"
 title: "Poetry of Movement • Aerobics Tournament"
 description: "IB Sports Foundation hosted the Aerobics Inter School Championship at DIS Edge, celebrating the poetry of movement and fitness among young athletes."
 layout: "page"

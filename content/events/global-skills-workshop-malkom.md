@@ -1,5 +1,5 @@
 ---
-meta_title: "International Basketball Skills Workshop with Coach Malkom | IB Sports Foundation | IB Sports Academy"
+meta_title: "International Basketball Skills Workshop with Coach Malkom | Events | IB Sports Foundation | IB Sports Academy"
 title: "Global Hoops Meet • Coach Malkom"
 description: "IB Sports Academy & Foundation hosts Coach Malkom from Uganda for an exclusive international basketball skills workshop in New Delhi, featuring elite drills and global techniques."
 layout: "page"

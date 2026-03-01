@@ -159,9 +159,9 @@ partnerships:
 
       **Distinguished International Mentors:**
 
-      - **Guillaume Soares (France)** — Assistant Basketball Coach at **JAV Basket (JA Vichy)**. Hailing from Nice, he brings experience from the French professional leagues (Pro B & SOPCC), focusing on high-level tactical development.
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Guillaume Soares (France) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/basketball-clinic-french-coaches.md\" >}})</ins>**</span> — Assistant Basketball Coach at **JAV Basket (JA Vichy)**. Hailing from Nice, he brings experience from the French professional leagues (Pro B & SOPCC), focusing on high-level tactical development.
 
-      - **Benjamin Bari (France)** — Professional Coach with deep roots in the French basketball system, specialized in technical skill acquisition and professional player pathways.
+      - <span class=\"text-primary-a no-wrap\">**<ins>[Benjamin Bari (France) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/basketball-clinic-french-coaches.md\" >}})</ins>**</span> — Professional Coach with deep roots in the French basketball system, specialized in technical skill acquisition and professional player pathways.
 
       - <span class=\"text-primary-a no-wrap\">**<ins>[Naoufal Uariachi (Morocco) <i class=\"las la-external-link-alt\"></i>]({{< relref \"events/basketball-clinic-naoufal-uariachi.md\" >}})</ins>**</span> — Former Head Coach of the **Morocco Men’s National Team**; a FIBA-level strategist who led his nation through the **AfroBasket Qualifiers**.
 
