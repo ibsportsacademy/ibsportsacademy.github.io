@@ -1,6 +1,8 @@
 ---
 title: "Contact • <span class=\"no-wrap\">IB Sports Academy</span>"
 meta_title: "Contact | Get in Touch with IB Sports Academy"
+aliases:
+  - /contact-us/
 layout: "contact"
 draft: false
 # open graph
