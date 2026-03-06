@@ -120,8 +120,6 @@
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
     <loc>http://localhost:1313/achievements/academy/outstanding-pe-teacher-award-2017/</loc>
   </url><url>
     <loc>http://localhost:1313/achievements/academy/outstanding-sports-academy-education-excellence-award/</loc>
@@ -133,6 +131,8 @@
     <loc>http://localhost:1313/foundation/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/videos/1/</loc>
   </url><url>

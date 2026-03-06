@@ -1,287 +1,426 @@
 {{ define "main" }}
   {{ partial "components/page-header.html" . }}
 
-  {{ with .Params.who_we_are }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h1 class="h2 title">{{ .title | markdownify }}</h1>
-                <p>{{ .description | markdownify }}</p>
+  <div class="page-our-story">
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1: ORIGIN STORY
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.origin }}
+  {{ if .enable }}
+  <section class="section-sm">
+    <div class="container position-relative">
+      <div class="row justify-content-center align-items-center">
+
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="about-image">
+            <div class="block">
+              {{ partial "image.html" (dict "Src" .image "Alt" "IB Sports Academy origin court our story" "Size" "1200x q90") }}
+              <div class="has-circle">
+                <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
+                <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
               </div>
             </div>
-            <div
-              class="col-lg-5 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "464x q90") }}
-
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
+            <div class="has-circle">
+              <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
+              <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
+              <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
+              <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
             </div>
           </div>
         </div>
-      </section>
-    {{ end }}
+
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="section-title">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <div class="os-body">{{ .description | markdownify }}</div>
+            <a href="/about/ishwar-bhati/" class="os-founder-badge mt-4">
+              <div class="os-founder-icon-box">
+                <span class="os-ib-letters">IB</span>
+              </div>
+              <div class="os-founder-text">
+                <strong>Ishwar Bhati</strong>
+                <span>The visionary behind every court, every player, every dream. · Read his full story →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
-  {{ with .Params.what_we_do }}
-    {{ if .enable }}
-      <section data-aos="fade-in">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="section-title text-center">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
 
-            {{ range .block }}
-              <div class="col-xl-5 col-lg-6">
-                <div class="text-center px-0 px-md-5 mt-4">
-                  <h3 class="text-capitalize">{{ .title | markdownify }}</h3>
-                  <p>{{ .content | markdownify }}</p>
+  <!-- ═══════════════════════════════════════════
+       SECTION 2: NUMBERS
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.ecosystem }}
+  {{ if .enable }}
+  <section class="os-numbers-section" data-aos="fade-in">
+    <div class="container">
+      <div class="col-12 text-center section-title mb-5" data-aos="fade-up">
+        <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+        <h2 class="title">{{ .title | markdownify }}</h2>
+        <div class="os-body">{{ .description | markdownify }}</div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center align-items-stretch g-4 mb-3">
+        {{ range .stats }}
+        <div class="col" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="os-stat-card h-100">
+            <div class="os-icon-box os-icon-box--lg mx-auto">
+              <i class="las {{ .icon }}"></i>
+            </div>
+            <div class="os-stat-number">{{ .number }}</div>
+            <div class="os-stat-label">{{ .label }}</div>
+            <div class="os-stat-sub">{{ .sub }}</div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3: PROOF / ACHIEVEMENTS
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.proof }}
+  {{ if .enable }}
+  <section class="section-sm os-proof-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title mb-4" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+          <h2 class="title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        {{ range .achievements }}
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="os-proof-card">
+            <div class="os-icon-box os-icon-box--sm flex-shrink-0">
+              <i class="las {{ .icon }}"></i>
+            </div>
+            <div>
+              <h4>{{ .name }}</h4>
+              <p>{{ .detail | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-auto" data-aos="fade-up" data-aos-delay="300">
+          <a href="/achievements/students/" class="os-text-link">
+            <i class="las la-lg la-trophy me-2"></i>View all student achievements →
+          </a>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+      {{ with .testimonial }}
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-9" data-aos="fade-up" data-aos-delay="400">
+          <div class="os-testimonial">
+            <div class="os-testimonial-body">
+              <svg class="os-quote-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 22C14 15.373 19.373 10 26 10V14C21.582 14 18 17.582 18 22V38H4V22H14ZM38 22C38 15.373 43.373 10 50 10V14C45.582 14 42 17.582 42 22V38H28V22H38Z" fill="currentColor"/>
+              </svg>
+              <blockquote>{{ .quote | markdownify }}</blockquote>
+            </div>
+            <div class="os-testimonial-author">
+              <div class="os-testimonial-avatar">
+                <i class="las la-lg la-user-alt"></i>
+              </div>
+              <div>
+                <strong>{{ .name }}</strong>
+                <span>{{ .role }}</span>
+                <div class="os-stars">★★★★★</div>
+              </div>
+              <a href="{{ .google_maps_url }}" target="_blank" class="ms-auto google-trust-badge shadow-sm">
+                <div class="os-google-badge ms-auto">
+                  <div class="google-logo-wrapper badge-inner">
+                    <svg viewBox="0 0 48 48" width="20" height="20">
+                      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                      <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                      <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                    </svg>
+                    <span class="badge-cta">
+                      Read More!
+                      <i class="las la-external-link-alt"></i>
+                    </span>
                 </div>
               </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4: BOLLYWOOD / MEDIA
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.media }}
+  {{ if .enable }}
+  <section class="os-media-section section-sm" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+
+        <div class="col-lg-5" data-aos="fade-up">
+          <div class="section-title mb-0">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+            <p class="os-media-tagline">{{ .tagline | markdownify }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="ps-0 ps-lg-4">
+            {{ range .collabs }}
+            <div class="os-collab-card">
+              <div class="os-icon-box os-icon-box--sm flex-shrink-0">
+                <i class="las {{ .icon }}"></i>
+              </div>
+              <div class="os-collab-info">
+                <strong>{{ .name }}</strong>
+                <span>{{ .project }}</span>
+              </div>
+            </div>
             {{ end }}
           </div>
         </div>
-      </section>
-    {{ end }}
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
-  {{ with .Params.our_mission }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x q90") }}
 
+  <!-- ═══════════════════════════════════════════
+       SECTION 5: FOUNDATION
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.foundation_section }}
+  {{ if .enable }}
+  <section class="section-sm os-foundation-section">
+    <div class="container position-relative">
+      <div class="row justify-content-center align-items-center">
 
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="section-title">
+            <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+            <h2 class="title">{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+            <div class="os-fp-list">
+              {{ range .programs }}
+              <div class="os-fp-item">
+                <div class="os-icon-box os-icon-box--sm flex-shrink-0">
+                  <i class="las {{ .icon }}"></i>
                 </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.about_video }}
-    {{ if .enable }}
-      <section class="video-popup video-popup-two has-bg-color">
-        <div class="container-xxl position-relative">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="block">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-5">
-                    <div class="section-title" data-aos="fade-up">
-                      <p class="text-uppercase">
-                        {{ .subtitle | markdownify }}
-                      </p>
-                      <h2 class="title">{{ .title | markdownify }}</h2>
-                      <p>{{ .description | markdownify }}</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-5">
-                    <div
-                      class="video-block"
-                      data-aos="fade-up"
-                      data-aos-delay="100">
-                      <button
-                        type="button"
-                        title="Play Video Button"
-                        class="video-play-btn"
-                        data-src="{{ .video_url }}">
-                        <i class="las la-play"></i>
-                      </button>
-                      {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" "Video Thumbnail" "Class" "video-thumb"
-                        "Size" "700x q90")
-                      }}
-                    </div>
-                  </div>
+                <div>
+                  <strong>{{ .name }}</strong>
+                  <span>{{ .detail }}</span>
                 </div>
               </div>
-
-              <div class="has-circle has-bg-anim" data-aos="fade-in">
-                <span class="ball circle-1 ratio-32"><div class="lines"></div></span>
-                <span class="ball circle-2 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-3 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-4 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-5 ratio-37"><div class="lines"></div></span>
-                <span class="ball circle-6 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-7 ratio-47"><div class="lines"></div></span>
-                <span class="ball circle-8 ratio-37"><div class="lines"></div></span>
-
-                <svg
-                  class="text-primary"
-                  style="opacity:.15"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 1401 613"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 580C35.1785 462.015 166.359 247.408 425.652 332.866C749.767 439.688 890.318 302.84 946.338 181.583C1002.36 60.3256 1149.41 -52.8479 1400 35.4968"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                  <path
-                    d="M1398 0.999977C1364.87 125.95 1233.88 353.224 974.955 262.722C651.302 149.594 510.953 294.52 455.013 422.935C399.073 551.35 252.231 671.203 2.00002 577.644"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.brands_carousel }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-            {{ with site.GetPage (string .Params.clients.section) }}
-              {{ with .Params.brands_carousel }}
-                <div class="col-md-12" data-aos="fade-left">
-                  <div class="brand-carousel swiper-container border-0 mt-0">
-                    <div class="swiper-wrapper">
-                      {{ range .brand_images }}
-                        <div class="swiper-slide">
-                          <div class="brand-item">
-                            {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
-                          </div>
-                        </div>
-                      {{ end }}
-                    </div>
-                  </div>
-                </div>
               {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_team }}
-    {{ if .enable }}
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
+            </div>
+            <div class="mt-4 justify-content-center d-flex flex-wrap gap-2">
+              <a href="{{ .cta_link }}" class="btn btn-primary">{{ .cta_label }}</a>
+              <a href="mailto:{{ .email }}" class="btn btn-outline-primary">{{ .email_label }}</a>
             </div>
           </div>
-          <div class="row justify-content-around">
-            {{ range .team }}
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="team-item text-center">
-                  <div class="team-image">
-                    {{ partial "image.html" (dict "Src" .image "Alt" "Video Thumbnail" "Class" "w-100 rounded-circle" "Size"
-                      "175x")
-                    }}
-                  </div>
-                  <h3>{{ .name | markdownify }}</h3>
-                  <p>{{ .designation | markdownify }}</p>
+        </div>
+
+        <div class="col-lg-7 col-md-6" data-aos="fade-up">
+          <div class="about-image">
+            <div class="block">
+              {{ partial "image.html" (dict "Src" .image "Alt" "IB Sports Foundation our story" "Size" "1200x q90") }}
+              <div class="has-circle">
+                <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
+                <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
+                <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
+              </div>
+            </div>
+            <div class="has-circle">
+              <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
+              <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
+              <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6: WHY BASKETBALL
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.why_basketball }}
+  {{ if .enable }}
+  <section class="os-why-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center section-title mb-4" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+          <h2 class="title">{{ .title | markdownify }}</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+          <div class="os-editorial-body">{{ .body | markdownify }}</div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-1 g-4">
+        {{ range .pillars }}
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="os-pillar-card">
+            <div class="os-icon-box os-icon-box--lg mx-auto">
+              <i class="las {{ .icon }}"></i>
+            </div>
+            <h4>{{ .title }}</h4>
+            <p>{{ .detail }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7: HONOURS
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.honours }}
+  {{ if .enable }}
+  <section class="section-sm os-honours-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-md-9 col-12 text-center section-title mb-4" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+          <h2 class="title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        {{ range .awards }}
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="os-honour-card">
+            <div class="os-honour-year">{{ .year }}</div>
+            <div class="os-icon-box os-icon-box--lg mx-auto">
+              <i class="las {{ .icon }}"></i>
+            </div>
+            <h4>{{ .title }}</h4>
+            <p>{{ .body }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-auto" data-aos="fade-up" data-aos-delay="300">
+          <a href="/achievements/academy/" class="os-text-link">
+            <i class="las la-lg la-trophy me-2"></i>View all academy honors →
+          </a>
+        </div>
+      </div>
+
+      <!-- Mission statement -->
+      {{ with .mission }}
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-10" data-aos="fade-up" data-aos-delay="400">
+          <div class="os-mission-block">
+            <div class="os-mission-inner">
+              <a href="/about/ishwar-bhati/" class="os-mission-portrait-link" aria-label="Read Ishwar Bhati's story">
+                <div class="os-mission-portrait">
+                  <i class="las la-basketball-ball"></i>
                 </div>
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_office }}
-    {{ if .enable }}
-      <section class="section-sm mb-4">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-              <div class="section-title text-center mb-0" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="row">
-                {{ range .office_locations }}
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="office-loc-item">
-                      {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x q90") }}
-                      <h3>{{ .city | markdownify }}</h3>
-                      <p>{{ .address_line_one | markdownify }}</p>
-                      <p>{{ .address_line_two | markdownify }}</p>
-                    </div>
-                  </div>
-                {{ end }}
+              </a>
+              <div class="os-mission-content">
+                <div class="os-mission-label">The Mission</div>
+                <blockquote class="os-mission-quote">{{ .quote | markdownify }}</blockquote>
+                <cite class="os-mission-cite">
+                  — <a href="/about/ishwar-bhati/">{{ .attribution | markdownify }}</a>
+                </cite>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8: CTA GRID
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.cta_grid }}
+  {{ if .enable }}
+  <section class="os-cta-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-lg-7 text-center section-title mb-4">
+          <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
+          <h2 class="title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        {{ range .cards }}
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <a href="{{ .link }}" class="os-cta-card">
+            <div class="os-icon-box os-icon-box--lg mx-auto">
+              <i class="las {{ .icon }}"></i>
+            </div>
+            <h4>{{ .title }}</h4>
+            <p>{{ .detail }}</p>
+            <span class="os-cta-link-label">{{ .label }} <i class="las la-arrow-right"></i></span>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  {{ if .Content }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">{{ .Content }}</div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  </div>
 {{ end }}
