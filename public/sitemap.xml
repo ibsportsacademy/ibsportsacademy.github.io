@@ -110,6 +110,8 @@
   </url><url>
     <loc>http://localhost:1313/achievements/academy/khelo-masters-gold-medal-2022/</loc>
   </url><url>
+    <loc>http://localhost:1313/about/ishwar-bhati/</loc>
+  </url><url>
     <loc>http://localhost:1313/achievements/academy/jr-nba-coach-delhi-girls-2022/</loc>
   </url><url>
     <loc>http://localhost:1313/about/meet-the-team/</loc>
@@ -171,7 +173,5 @@
     <loc>http://localhost:1313/videos/9/</loc>
   </url><url>
     <loc>http://localhost:1313/videos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/about/ishwar-bhati/</loc>
   </url>
 </urlset>

@@ -52,3 +52,103 @@
 
 <!-- Crisp Chat -->
 {{ partialCached "crisp-chat.html" . }}
+
+<!-- Json+LD for Ishwar Bhati About Page  -->
+{{ if eq .Layout "ishwar_bhati" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink | absURL }}#webpage",
+      "url": "{{ .Permalink | absURL }}",
+      "name": {{ .Title | plainify }},
+      "description": {{ .Description }},
+      "breadcrumb": { "@id": "{{ .Permalink | absURL }}#breadcrumb" },
+      "inLanguage": "en-US",
+      "potentialAction": [{ "@type": "ReadAction", "target": ["{{ .Permalink | absURL }}"] }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ .Permalink | absURL }}#breadcrumb",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ibsportsacademy.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://ibsportsacademy.com/about/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ishwar Bhati",
+        "item": "{{ .Permalink | absURL }}"
+      }]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ibsportsacademy.com/#person",
+      "name": "Ishwar Bhati",
+      "jobTitle": "National Basketball Coach",
+      "description": "Founder of IB Sports Academy, India's National Basketball Coach, Khel Ratna awardee, and FIBA Licensed Official with 20+ years of experience in athlete development based in Dwarka, Delhi.",
+      "url": "{{ .Permalink | absURL }}",
+      "image": "https://ibsportsacademy.com/images2/og/og_who-is-coach-ishwar-bhati-ib-sports-academy.png",
+      "sameAs": [
+        "https://in.linkedin.com/in/ishwar-bhati",
+        "https://instagram.com/ibsportsacademy",
+        "https://www.youtube.com/@ibsportsacademy"
+      ],
+      "award": [
+        "Dr. B.R. Ambedkar Khel Ratna 2021",
+        "NBA Best Coach — Reliance Foundation Jr. NBA 2017",
+        "Dr. Ajmer Singh Award, PEFI 2024"
+      ],
+      "worksFor": { "@id": "https://ibsportsacademy.com/#organization" },
+      "affiliation": {
+        "@type": "SportsOrganization",
+        "name": "Basketball Federation of India"
+      },
+      "knowsAbout": [
+        "Basketball Coaching",
+        "FIBA Officiating",
+        "Physical Education",
+        "3x3 Basketball",
+        "Grassroots Sports Development"
+      ]
+    },
+    {
+      "@type": ["SportsOrganization", "LocalBusiness"],
+      "@id": "https://ibsportsacademy.com/#organization",
+      "name": "IB Sports Academy",
+      "url": "https://ibsportsacademy.com",
+      "logo": "https://ibsportsacademy.com/images/logo.png",
+      "founder": { "@id": "https://ibsportsacademy.com/#person" },
+      "telephone": "+918860500060",
+      "email": "academyibsports@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ITL Public School, Sector 9, Dwarka",
+        "addressLocality": "New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110077",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.5823,
+        "longitude": 77.0597
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "480"
+      }
+    }
+  ]
+}
+</script>
+{{ end }}

@@ -1,443 +1,611 @@
 {{ define "main" }}
+
+<div class="page-ishwar-bhati">
   {{ partial "components/page-header.html" . }}
 
-  {{ with .Params.who_we_are }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h1 class="h2 title">{{ .title | markdownify }}</h1>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-            <div
-              class="col-lg-5 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "464x q90") }}
+  <!-- ═══════════════════════════════════════════
+       SECTION 1: HERO
+       Left: name + mission statement + badges + stats + CTA
+       Right: profile photo with balls
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.hero }}
+  {{ if .enable }}
+  <section class="ib-hero-section section-sm">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
 
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
+        <div class="col-lg-5 col-12" data-aos="fade-up">
+          <div class="ib-hero-content">
 
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
+            <h1 class="ib-hero-name">{{ .name | markdownify }}</h1>
+            <p class="ib-hero-role">{{ .title | markdownify }}</p>
+
+            <!-- Role triad — 3 distinct hats he wears -->
+            <div class="ib-authority-triad">
+              {{ range .roles }}
+              <div class="ib-auth-item">
+                <div class="ib-auth-icon"><i class="las {{ .icon }}"></i></div>
+                <div class="ib-auth-label">
+                  <span class="ib-auth-title">{{ .label }}</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.features }}
-    {{ if .enable }}
-      <section class="section features overflow-hidden">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-              <div class="section-title text-center">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.features2 }}
-    {{ if .enable }}
-      <section class="section features overflow-hidden">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-              <div class="section-title text-center">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.who_we_are2 }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-            <div
-              class="col-lg-5 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "464x q90") }}
-
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.what_we_do }}
-    {{ if .enable }}
-      <section data-aos="fade-in">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="section-title text-center">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-
-            {{ range .block }}
-              <div class="col-xl-5 col-lg-6">
-                <div class="text-center px-0 px-md-5 mt-4">
-                  <h3 class="text-capitalize">{{ .title | markdownify }}</h3>
-                  <p>{{ .content | markdownify }}</p>
-                </div>
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_mission }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x q90") }}
-
-
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_mission2 }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x q90") }}
-
-
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_mission3 }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container position-relative">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 col-md-6" data-aos="fade-up">
-              <div class="about-image">
-                <div class="block">
-                  {{ partial "image.html" (dict "Src" .image "Alt" "about-image" "Size" "4645x q90") }}
-
-
-                  <div class="has-circle">
-                    <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
-                    <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
-                  </div>
-                </div>
-
-                <div class="has-circle">
-                  <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
-                  <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
-                  <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
-                  <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="150">
-              <div class="section-title">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.about_video }}
-    {{ if .enable }}
-      <section class="video-popup video-popup-two has-bg-color">
-        <div class="container-xxl position-relative">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="block">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-5">
-                    <div class="section-title" data-aos="fade-up">
-                      <p class="text-uppercase">
-                        {{ .subtitle | markdownify }}
-                      </p>
-                      <h2 class="title">{{ .title | markdownify }}</h2>
-                      <p>{{ .description | markdownify }}</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-5">
-                    <div
-                      class="video-block"
-                      data-aos="fade-up"
-                      data-aos-delay="100">
-                      <button
-                        type="button"
-                        title="Play Video Button"
-                        class="video-play-btn"
-                        data-src="{{ .video_url }}">
-                        <i class="las la-play"></i>
-                      </button>
-                      {{ partial "image.html" (dict "Src" .video_thumbnail "Alt" "Video Thumbnail" "Class" "video-thumb"
-                        "Size" "700x q90")
-                      }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="has-circle has-bg-anim" data-aos="fade-in">
-                <span class="ball circle-1 ratio-32"><div class="lines"></div></span>
-                <span class="ball circle-2 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-3 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-4 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-5 ratio-37"><div class="lines"></div></span>
-                <span class="ball circle-6 ratio-20"><div class="lines"></div></span>
-                <span class="ball circle-7 ratio-47"><div class="lines"></div></span>
-                <span class="ball circle-8 ratio-37"><div class="lines"></div></span>
-
-                <svg
-                  class="text-primary"
-                  style="opacity:.15"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 1401 613"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 580C35.1785 462.015 166.359 247.408 425.652 332.866C749.767 439.688 890.318 302.84 946.338 181.583C1002.36 60.3256 1149.41 -52.8479 1400 35.4968"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                  <path
-                    d="M1398 0.999977C1364.87 125.95 1233.88 353.224 974.955 262.722C651.302 149.594 510.953 294.52 455.013 422.935C399.073 551.35 252.231 671.203 2.00002 577.644"
-                    stroke="currentColor"
-                    stroke-width="4"
-                    stroke-dasharray="10 10" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.brands_carousel }}
-    {{ if .enable }}
-      <section class="section-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-              </div>
-            </div>
-            {{ with site.GetPage (string .Params.clients.section) }}
-              {{ with .Params.brands_carousel }}
-                <div class="col-md-12" data-aos="fade-left">
-                  <div class="brand-carousel swiper-container border-0 mt-0">
-                    <div class="swiper-wrapper">
-                      {{ range .brand_images }}
-                        <div class="swiper-slide">
-                          <div class="brand-item">
-                            {{ partial "image.html" (dict "Src" . "Alt" "Brand Image") }}
-                          </div>
-                        </div>
-                      {{ end }}
-                    </div>
-                  </div>
-                </div>
               {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-
-  {{ with .Params.our_team }}
-    {{ if .enable }}
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
+            </div>
+            <!-- Mission statement -->
+            <div class="ib-hero-mission">
+              <div class="ib-mission-text-content">
+                <p class="ib-hero-mission-text">{{ .mission | markdownify }}</p>
+                <p class="ib-hero-tagline">{{ .tagline | markdownify }}</p>
               </div>
             </div>
+
+            <!-- 3 unique distinctions — not generic stats -->
+            <div class="ib-hero-distinctions">
+              {{ range .distinctions }}
+              <div class="ib-hero-dist-item">
+                <i class="las la-2x {{ .icon }}"></i>
+                <p>{{ .text | markdownify }}</p>
+              </div>
+              {{ end }}
+            </div>
+
+            <a href="{{ .cta_link }}" target="_blank" class="btn btn-primary mt-4">
+              <i class="lab la-lg la-whatsapp me-2"></i>{{ .cta_label | markdownify }}
+            </a>
+
           </div>
-          <div class="row justify-content-around">
-            {{ range .team }}
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="team-item text-center">
-                  <div class="team-image">
-                    {{ partial "image.html" (dict "Src" .image "Alt" "Video Thumbnail" "Class" "w-100 rounded-circle" "Size"
-                      "175x")
-                    }}
-                  </div>
-                  <h3>{{ .name | markdownify }}</h3>
-                  <p>{{ .designation | markdownify }}</p>
+        </div>
+
+        <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="150">
+          <div class="about-image">
+            <div class="block">
+              {{ partial "image.html" (dict "Src" .image "Alt" "Coach Ishwar Bhati Indian National Basketball Coach IB Sports Academy Delhi" "Size" "600x q90") }}
+              <div class="has-circle">
+                <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
+                <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
+              </div>
+            </div>
+            <div class="has-circle">
+              <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
+              <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
+              <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
+              <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2A: BIO BLOCK 1
+       Left: bio | Right: achievements image
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.profile }}
+  {{ if .enable }}
+  <section class="section-sm ib-profile-section">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+
+        <div class="col-lg-6 order-1 order-md-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-title mb-0">
+            <p class="text-uppercase">{{ .subtitle }}</p>
+            <h2 class="title">{{ .title }}</h2>
+            <span class="ib-seo-keywords">Indian National Basketball Coach Delhi | FIBA Licensed Official | Best Basketball Coach Dwarka | IB Sports Academy</span>
+            <div class="ib-bio-body">{{ .bio | markdownify }}</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-2 order-md-2 order-lg-2" data-aos="fade-up">
+          <div class="about-image">
+            <div class="block">
+              {{ partial "image.html" (dict "Src" .image "Alt" .image_alt "Size" "600x q90") }}
+              <div class="has-circle">
+                <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
+                <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
+                <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
+              </div>
+            </div>
+            <div class="has-circle">
+              <span class="ball circle-1 ratio-85 fill mt-5"><div class="lines"></div></span>
+              <span class="ball circle-2 ratio-37 mt-5 me-1"><div class="lines"></div></span>
+              <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2B: BIO BLOCK 2
+       Left: second photo | Right: impact + pull quote
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.profile2 }}
+  {{ if .enable }}
+  <section class="section-sm ib-profile2-section">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+
+        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up">
+          <div class="about-image">
+            <div class="block">
+              {{ partial "image.html" (dict "Src" .image "Alt" .image_alt "Size" "600x q90") }}
+              <div class="has-circle">
+                <span class="ball circle-4 ratio-20 fill"><div class="lines"></div></span>
+                <span class="ball circle-5 ratio-47"><div class="lines"></div></span>
+                <span class="ball circle-6 ratio-85 fill"><div class="lines"></div></span>
+              </div>
+            </div>
+            <div class="has-circle">
+              <span class="ball circle-1 ratio-85 fill"><div class="lines"></div></span>
+              <span class="ball circle-2 ratio-37"><div class="lines"></div></span>
+              <span class="ball circle-3 ratio-20 fill"><div class="lines"></div></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-title mb-0">
+            <p class="text-uppercase">{{ .subtitle }}</p>
+            <h2 class="title">{{ .title }}</h2>
+            <div class="ib-bio-body">{{ .body | markdownify }}</div>
+
+            <!-- Mission statement -->
+            <div class="ib-hero-mission ib-profile-mission">
+              <div class="ib-mission-text-content">
+                <p class="ib-hero-mission-text">{{ .pull_quote | markdownify }}</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2C: CREDENTIALS & EXPERTISE
+       Compact two-column panel — icon + name + tag + one-liner
+       Scannable, not a product grid
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.credentials }}
+  {{ if .enable }}
+  <section class="ib-creds-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title mb-3" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p class="ib-creds-desc">{{ .description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {{ range .items }}
+        <div class="col-lg-6 mb-3" data-aos="fade-up" data-aos-delay="40">
+          <div class="ib-cred-row">
+            <div class="ib-cred-accent"></div>
+
+            <div class="ib-cred-row-icon">
+              <i class="las la-lg {{ .icon }}"></i>
+            </div>
+            <div class="ib-cred-row-body">
+              <div class="ib-cred-row-head">
+                <strong class="ib-cred-title">{{ .title }}</strong>
+                <span class="ib-cred-tag">{{ .tag }}</span>
+              </div>
+              <p class="ib-cred-text">{{ .body }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3: TIMELINE
+       Theme background: has-circle balls spread
+       across full section width with custom positions,
+       plus 2 additional curved SVG lines
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.timeline }}
+  {{ if .enable }}
+  <section class="ib-timeline-section">
+
+    <!-- Background: theme SVG wave + extra curved lines + scattered balls -->
+    <div class="ib-tl-bg" aria-hidden="true">
+
+      <!-- Extra curved dashed lines — spread across section -->
+      <svg class="ib-tl-curve ib-tl-curve--top text-primary" style="opacity:.20" width="100%" height="300" viewBox="0 -100 1400 400" fill="none" preserveAspectRatio="none">
+        <path d="M0 280C180 180 400 80 700 140C1000 200 1200 60 1400 20" stroke="currentColor" stroke-width="3" stroke-dasharray="12 8" />
+      </svg>
+
+      <svg
+        class="text-primary"
+        style="opacity:.3"
+        width="100%"
+        height="90%"
+        viewBox="0 0 1397 502"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M2 501C35.0836 398.787 165.889 212.869 424.439 286.903C747.628 379.445 887.776 260.891 943.636 155.844C999.496 50.796 1146.13 -47.2484 1396 29.2863"
+          stroke="currentColor"
+          stroke-opacity="0.85"
+          stroke-width="4"
+          stroke-dasharray="10 10" />
+      </svg>
+
+      <svg class="ib-tl-curve ib-tl-curve--bot text-primary" style="opacity:.47" width="100%" height="200" viewBox="0 0 1400 200" fill="none" preserveAspectRatio="none">
+        <path d="M0 40C250 140 500 20 800 100C1050 160 1250 80 1400 160" stroke="currentColor" stroke-width="2" stroke-dasharray="6 10" />
+      </svg>
+    </div>
+
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center section-title mb-5" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+        </div>
+      </div>
+
+      <!-- Balls — theme classes for proper basketball rendering, positions overridden below -->
+      <div class="has-circle">
+        <span class="ball ib-tl-ball b1 ratio-32" data-rellax-speed="-1"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b2 ratio-85 fill" data-rellax-speed="-2"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b3 ratio-62" data-rellax-speed="-3"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b4 ratio-62 fill" data-rellax-speed="-1"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b5 ratio-47" data-rellax-speed="-2.5"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b6 ratio-62 fill" data-rellax-speed="-3"><div class="lines"></div></span>
+        <span class="ball ib-tl-ball b7 ratio-20 fill" data-rellax-speed="-3.5"><div class="lines"></div></span>
+      </div>
+
+      <div class="ib-tl-wrap">
+        <div class="ib-tl-spine"></div>
+        {{ range $i, $e := .events }}
+        <div class="ib-tl-item {{ if eq (mod $i 2) 0 }}ib-tl-item--l{{ else }}ib-tl-item--r{{ end }}" data-aos="{{ if eq (mod $i 2) 0 }}fade-right{{ else }}fade-left{{ end }}" data-aos-delay="{{ mul $i 60 }}">
+          <div class="ib-tl-card">
+            <div class="ib-tl-header">
+              <div class="ib-tl-icon-box">
+                <i class="las la-lg {{ $e.icon }}"></i>
+              </div>
+              <span class="ib-tl-year">{{ $e.year }}</span>
+            </div>
+            <h4 class="ib-tl-title">{{ $e.title }}</h4>
+            <p class="ib-tl-body">{{ $e.body }}</p>
+            <div class="ib-tl-watermark" aria-hidden="true">{{ $e.year }}</div>
+          </div>
+          <div class="ib-tl-dot"></div>
+          <div class="ib-tl-connector"></div>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4: TESTIMONIALS
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.testimonials }}
+  {{ if .enable }}
+  <section class="ib-testimonials-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center section-title mt-5 pt-5 mb-3" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {{ range .quotes }}
+        <div class="col-lg-6 col-md-6 mb-lg-3 mb-3" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="ib-testi-card">
+            <div class="ib-testi-stamp" aria-hidden="true">
+              <i class="las la-certificate"></i>
+            </div>
+
+            <div class="ib-testi-reveal"></div>
+
+            <div class="ib-testi-body">
+              <div class="ib-testi-needle"></div>
+              <div class="ib-testi-quote-icon">“</div>
+              <blockquote>{{ .quote | markdownify }}</blockquote>
+            </div>
+
+            <div class="ib-testi-footer">
+              <div class="ib-testi-author-info">
+                <div class="ib-testi-avatar-box">
+                  {{ partial "image.html" (dict "Src" .image "Alt" "user testimonial - IB Sports Academy" "Class" "rounded-circle" "Size" "90x q90") }}
+                </div>
+                <div class="ib-testi-meta">
+                  <strong>{{ .name }}</strong>
+                  <span class="theme-role">{{ .role }}</span>
                 </div>
               </div>
-            {{ end }}
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
 
-  {{ with .Params.our_office }}
-    {{ if .enable }}
-      <section class="section-sm mb-4">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-              <div class="section-title text-center mb-0" data-aos="fade-in">
-                <p class="text-uppercase">{{ .subtitle | markdownify }}</p>
-                <h2 class="title">{{ .title | markdownify }}</h2>
-                <p>{{ .description | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="row">
-                {{ range .office_locations }}
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="office-loc-item">
-                      {{ partial "image.html" (dict "Src" .country_flag "Alt" "Flags" "Size" "80x q90") }}
-                      <h3>{{ .city | markdownify }}</h3>
-                      <p>{{ .address_line_one | markdownify }}</p>
-                      <p>{{ .address_line_two | markdownify }}</p>
+              <div class="ib-testi-rating-block">
+                  <div class="ib-testi-stars">★★★★★</div>
+                  <a href="{{ .google_maps_url }}" target="_blank" class="ib-testi-google-link">
+                    <div class="google-badge-pill">
+                      <svg viewBox="0 0 48 48" width="16" height="16">
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                      </svg>
+                      <span class="badge-text">
+                        Read Review!
+                        <i class="las la-lg la-external-link-alt"></i>
+                      </span>
                     </div>
-                  </div>
-                {{ end }}
+                  </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
   {{ end }}
 
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5: YOUTUBE
+       Featured short + channel stats
+       107K+ views reel: How to Shoot a Layup
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.youtube }}
+  {{ if .enable }}
+
+  <section class="ib-youtube-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center mb-lg-4 mb-0">
+        <div class="col-lg-9 text-center section-title mb-0" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle | default "Digital Court" }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+
+      <div class="row align-items-stretch">
+
+        <!-- Phone frame — 9:16 reel -->
+        <div class="col-lg-6 col-md-7 mx-auto mx-lg-0 order-2 order-lg-1" data-aos="fade-right">
+          <div class="ib-yt-phone-wrap">
+            <div class="ib-yt-phone-frame h-100">
+              <div class="ib-yt-status-tag">
+                <i class="las la-lg la-eye"></i>
+                <span>1.07 Lakh+ Views</span>
+              </div>
+              <div class="ib-yt-video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/{{ .featured_id }}?modestbranding=1&rel=0"
+                  title="{{ .featured_title }}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="ib-yt-phone-notch"></div>
+            </div>
+            <div class="ib-yt-phone-glow"></div>
+          </div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="col-lg-6 d-flex order-1 order-lg-2" data-aos="fade-left">
+          <div class="ib-yt-panel w-100 d-flex flex-column justify-content-between">
+
+            <!-- Channel identity -->
+            <div class="ib-yt-channel-row">
+              <div class="ib-yt-yt-icon"><i class="lab la-youtube"></i></div>
+              <div>
+                <strong class="ib-yt-channel-name">IB Sports Academy</strong>
+                <span class="ib-yt-channel-handle">@ibsportsacademy</span>
+              </div>
+            </div>
+            <div class="ib-yt-content-grid mb-4">
+              <div class="content-pill">
+                <i class="las la-lg la-basketball-ball"></i>
+                Student Progress
+              </div>
+              <div class="content-pill">
+                <i class="las la-lg la-clipboard-list"></i>
+                Coach Masterclasses
+              </div>
+              <div class="content-pill">
+                <i class="las la-lg la-trophy"></i>
+                Event Highlights
+              </div>
+            </div>
+            <!-- Featured video callout -->
+            <div class="ib-yt-callout">
+              <span class="ib-yt-callout-label"><i class="las la-lg la-fire"></i> Most Watched Tutorial</span>
+              <h4 class="ib-yt-callout-title">{{ .featured_title }}</h4>
+              <p class="ib-yt-callout-body">{{ .featured_desc | markdownify }}</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="ib-yt-dashboard">
+              {{ range .stats }}
+              <div class="ib-yt-dash-cell">
+                <span class="ib-yt-cell-val">{{ .value }}</span>
+                <span class="ib-yt-cell-lbl">{{ .label }}</span>
+              </div>
+              {{ end }}
+            </div>
+
+            <a href="{{ .channel_url }}" target="_blank" rel="noopener" class="ib-yt-cta">
+              <i class="lab la-youtube"></i>
+              <span>Subscribe for Pro Drills</span>
+              <i class="las la-arrow-right ms-auto"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {{ end }}
+  {{ end }}
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6: PHILOSOPHY
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.philosophy }}
+  {{ if .enable }}
+  <section class="ib-philosophy-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center section-title mb-4" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center ib-philosophy-grid">
+        {{ range .principles }}
+        <div class="col-lg-6 col-md-6 col-12 mb-3" data-aos="fade-up" data-aos-delay="{{ .delay }}">
+          <div class="ib-principle-card">
+            <div class="ib-principle-icon">
+              <i class="las la-lg {{ .icon }}"></i>
+            </div>
+            <div class="ib-principle-body">
+              <h4>{{ .title }}</h4>
+              <p>{{ .body }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8: VISION
+       4 pillars — what's being built next
+       Dark-accent section to signal a shift in tone
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.vision }}
+  {{ if .enable }}
+  <section class="ib-vision-section" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center section-title mb-4" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p class="ib-vision-desc">{{ .description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {{ range $i, $p := .pillars }}
+        <div class="col-lg-6 mb-3" data-aos="fade-up" data-aos-delay="{{ mul $i 80 }}">
+          <div class="ib-vision-card">
+            <div class="ib-vision-card-left">
+              <div class="ib-vision-icon">
+                <i class="las {{ $p.icon }}"></i>
+              </div>
+              <div class="ib-vision-num">0{{ add $i 1 }}</div>
+            </div>
+            <div class="ib-vision-card-body">
+              <h4>{{ $p.title }}</h4>
+              <p>{{ $p.body }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7: CONNECT
+  ══════════════════════════════════════════════ -->
+  {{ with .Params.connect }}
+  {{ if .enable }}
+  <section class="ib-connect-section section-sm" data-aos="fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center section-title mb-5" data-aos="fade-up">
+          <p class="text-uppercase">{{ .subtitle }}</p>
+          <h2 class="title">{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        {{ range .socials }}
+        <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up">
+          <a href="{{ .link }}" target="_blank" rel="noopener" class="ib-social-card">
+            <i class="{{ .icon }}"></i>
+            <div>
+              <strong>{{ .platform }}</strong>
+              <span>{{ .handle }}</span>
+            </div>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+      <div class="row justify-content-center mb-5">
+        {{ range .links }}
+        <div class="col-auto" data-aos="fade-up">
+          <a href="{{ .url }}" class="ib-nav-link">
+            <i class="las la-lg {{ .icon }}"></i>{{ .label }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-auto">
+          <a href="{{ .cta_link }}" target="_blank" class="btn btn-primary btn-lg">
+            <i class="lab la-whatsapp me-2"></i>{{ .cta_label }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+
+  {{ if .Content }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">{{ .Content }}</div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+</div><!-- /.page-ishwar-bhati -->
 {{ end }}

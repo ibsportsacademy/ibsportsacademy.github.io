@@ -134,6 +134,10 @@
   <meta name="twitter:creator" content="@{{ . }}" />
 {{ end }}
 
+{{ $excludedLayouts := slice "ishwar_bhati" }}
+<!-- more layouts to exclude then -->
+<!-- {{ $excludedLayouts := slice "ishwar_bhati" "our_story" "some_other_layout" }} -->
+{{ if not (in $excludedLayouts .Layout) }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -141,16 +145,16 @@
     "@id": {{ if .IsHome }}
       "https://ibsportsacademy.com/#organization"
     {{ else }}
-      {{ print (.Permalink | absURL) "#webpage" | jsonify }}
+      "{{ .Permalink | absURL }}#webpage"
     {{ end }},
-    "name": {{ $title | plainify | jsonify }},
-    "url": {{ .Permalink | absURL | jsonify }},
-    "description": {{ $description | plainify | jsonify }},
+    "name": {{ $title | plainify }},
+    "url": {{ .Permalink | absURL }},
+    "description": {{ $description | plainify }},
     "inLanguage": "{{ site.Language.Lang | default "en" }}"
     {{ if not .IsHome }},
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": {{ .Permalink | absURL | jsonify }}
+      "@id": "{{ .Permalink | absURL }}"
     }
     {{ end }}
     {{ if .IsHome }},
@@ -169,5 +173,6 @@
     {{ end }}
   }
   </script>
+{{ end }}
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
