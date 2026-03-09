@@ -134,9 +134,9 @@
   <meta name="twitter:creator" content="@{{ . }}" />
 {{ end }}
 
-{{ $excludedLayouts := slice "ishwar_bhati" }}
+<!-- {{ $excludedLayouts := slice "ishwar_bhati" }} -->
 <!-- more layouts to exclude then -->
-<!-- {{ $excludedLayouts := slice "ishwar_bhati" "our_story" "some_other_layout" }} -->
+{{ $excludedLayouts := slice "ishwar_bhati" "about" }}
 {{ if not (in $excludedLayouts .Layout) }}
 <script type="application/ld+json">
   {

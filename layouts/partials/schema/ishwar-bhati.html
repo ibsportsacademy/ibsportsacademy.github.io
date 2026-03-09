@@ -1,0 +1,211 @@
+
+<!-- Json+LD for Ishwar Bhati About Page  -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink | absURL }}#webpage",
+      "url": "{{ .Permalink | absURL }}",
+      "name": {{ .Title | plainify }},
+      "description": {{ .Description }},
+      "breadcrumb": { "@id": "{{ .Permalink | absURL }}#breadcrumb" },
+      "inLanguage": "en-US",
+      "potentialAction": [{ "@type": "ReadAction", "target": ["{{ .Permalink | absURL }}"] }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ .Permalink | absURL }}#breadcrumb",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ibsportsacademy.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://ibsportsacademy.com/about/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ishwar Bhati",
+        "item": "{{ .Permalink | absURL }}"
+      }]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ibsportsacademy.com/#person",
+      "name": "Ishwar Bhati",
+      "jobTitle": "National Basketball Coach",
+      "description": "Founder of IB Sports Academy, India's National Basketball Coach, Khel Ratna awardee, and FIBA Licensed Official with 20+ years of experience in athlete development based in Dwarka, Delhi.",
+      "url": "{{ .Permalink | absURL }}",
+      "image": "https://ibsportsacademy.com/images2/og/og_who-is-coach-ishwar-bhati-ib-sports-academy.png",
+      "sameAs": [
+        "https://in.linkedin.com/in/ishwar-bhati",
+        "https://instagram.com/ibsportsacademy",
+        "https://www.youtube.com/@ibsportsacademy"
+      ],
+      "award": [
+        "Dr. B.R. Ambedkar Khel Ratna 2021",
+        "NBA Best Coach — Reliance Foundation Jr. NBA 2017",
+        "Dr. Ajmer Singh Award, PEFI 2024",
+        "Best Coach Award, National Federation of Physical Education Teachers 2022–23",
+        "Outstanding Physical Education Teacher Award 2017",
+        "Best Preceptor Award, Directorate of Education 2021"
+      ],
+      "worksFor": { "@id": "https://ibsportsacademy.com/#organization" },
+      "affiliation": {
+        "@type": "SportsOrganization",
+        "name": "Basketball Federation of India"
+      },
+      "knowsAbout": [
+        "Basketball Coaching",
+        "FIBA Officiating",
+        "Physical Education",
+        "3x3 Basketball",
+        "Grassroots Sports Development"
+      ]
+    },
+    {
+      "@type": ["SportsOrganization", "LocalBusiness"],
+      "@id": "https://ibsportsacademy.com/#organization",
+      "name": "IB Sports Academy",
+      "url": "https://ibsportsacademy.com",
+      "logo": "https://ibsportsacademy.com/images/logo.png",
+      "founder": { "@id": "https://ibsportsacademy.com/#person" },
+      "telephone": "+918860500060",
+      "email": "academyibsports@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ITL Public School, Sector 9, Dwarka",
+        "addressLocality": "New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110077",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.5823,
+        "longitude": 77.0597
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "480"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{ .Permalink | absURL }}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Ishwar Bhati?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ishwar Bhati is an Indian National Basketball Coach, the founder and CEO of IB Sports Academy in Dwarka, New Delhi. He holds the Dr. B.R. Ambedkar Khel Ratna (2021) — the Government of India's highest sports honour — and has over 20 years of professional coaching experience since 2006."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What awards has Ishwar Bhati won?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ishwar Bhati has received the Dr. B.R. Ambedkar Khel Ratna (2021), the NBA Best Coach Award from the Reliance Foundation Jr. NBA Programme (2017), the Best Preceptor Award from the Directorate of Education (2021), the Dr. Ajmer Singh Award from PEFI (2024), the Best Coach Award from the National Federation of Physical Education Teachers (2022–23), and the Outstanding Physical Education Teacher Award (2017)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is IB Sports Academy located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy is headquartered at ITL Public School, Sector 9, Dwarka, New Delhi — where it was founded in 2010. The academy now operates across 9+ locations in Delhi and Gurugram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Ishwar Bhati a FIBA certified official?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ishwar Bhati holds a FIBA Table Officials License (2024–2028), mandatory for FIBA Level 1 international competitions. He has also been a certified National Referee with the Basketball Federation of India since 2012 — over 14 years of active officiating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Has Ishwar Bhati coached at international level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. His students won three U-19 gold medals at the Asian Continental Games 2017 in Thailand. He was selected by NBA India as one of eight Indian coaches to attend the NBA China Games 2018 in Shanghai and Shenzhen. In 2025, he was appointed Head Coach of the Delhi Boys team at the 40th Youth National Basketball Championship, where Delhi finished 4th nationally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the connection between Ishwar Bhati and Aamir Khan's film Sitaare Zameen Par?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy collaborated with the production of Aamir Khan's film Sitaare Zameen Par (2025). Coach Ishwar Bhati, youth athletes from the academy, and the spirit of real grassroots basketball were brought to the shoot to ensure authenticity. Ishwar Bhati appears in the film's opening scenes as the Karnataka team's coach. The collaboration also included a personal interaction session between Aamir Khan and IB Sports Academy's young athletes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many students has IB Sports Academy trained?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy has trained 3,200+ athletes since its founding in 2010. Students have represented India internationally, competed on 4 continents, won National medals, earned US college scholarships, and competed at the Special Olympics World Cup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I join IB Sports Academy or contact Coach Ishwar Bhati?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach IB Sports Academy via WhatsApp at +91 88605 00060, by email at academyibsports@gmail.com, or by visiting the academy at ITL Public School, Sector 9, Dwarka, New Delhi. Training is open to all age groups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is the best basketball academy in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy is widely regarded as the best basketball academy in Delhi, founded by Khel Ratna awardee and Indian National Coach Ishwar Bhati. Operating since 2010 across 9+ locations in Delhi and Gurugram, the academy has produced national-level players, international representatives, and US college scholarship recipients. It holds a 4.9★ rating across 480+ Google reviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is the best basketball coach in Dwarka, Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ishwar Bhati, based at ITL Public School Sector 9 Dwarka, is the most decorated basketball coach in Dwarka and one of the most recognised in India. He holds the Dr. B.R. Ambedkar Khel Ratna — India's highest sports honour — is a FIBA Licensed Official, a BFI National Referee, and has coached students to Asian gold medals, national championships, and international representation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is the best basketball academy in Gurugram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy operates multiple training centres in Gurugram as part of its 9+ location network across the Delhi-NCR region. Coached by the same team under Khel Ratna awardee Ishwar Bhati, the Gurugram centres follow the same structured curriculum and competitive pathway as the flagship academy in Dwarka, New Delhi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does IB Sports Academy offer basketball training for special needs children in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Through IB Sports Foundation, the academy runs a dedicated Sunday Centre for Special Children — featured in the Times of India — and is an official training partner for Special Olympics Bharat. Sessions are conducted by the same coaching team, adapted for each child's needs, and provided free of charge. The Foundation has served 50+ children across 500+ sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is IB Sports Academy the best basketball academy in Delhi NCR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IB Sports Academy is among the highest-rated and most established basketball academies in Delhi NCR, with 15+ years of operation, 3,200+ athletes trained, and a 4.9★ Google rating. It is the only academy in Delhi led by a Khel Ratna awardee who simultaneously holds FIBA international licensing, BFI national referee certification, and CBSE Observer appointment — making it uniquely positioned as both an elite and grassroots institution."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

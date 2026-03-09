@@ -2012,7 +2012,7 @@ a {
   z-index: 2;
   /* FORCE STRICTOR CLIPPING */
   // overflow: hidden;
-  isolation: isolate; 
+  isolation: isolate;
 }
 
 /* 2. THE VIDEO CONTAINER: The 'Anchor' that stays still */
@@ -2023,7 +2023,7 @@ a {
   border-radius: 2.25rem;
   background: #000;
   /* CLIP THE INTERNAL SCALE */
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* 3. THE IFRAME: This is the ONLY thing that scales */
