@@ -288,7 +288,7 @@
               <span class="ib-tl-year">{{ $e.year }}</span>
             </div>
             <h4 class="ib-tl-title">{{ $e.title }}</h4>
-            <p class="ib-tl-body">{{ $e.body }}</p>
+            <p class="ib-tl-body">{{ $e.body | markdownify }}</p>
             <div class="ib-tl-watermark" aria-hidden="true">{{ $e.year }}</div>
           </div>
           <div class="ib-tl-dot"></div>
@@ -407,6 +407,7 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
                 </iframe>
+                <div class="play-hint"><span>▶</span></div>
               </div>
               <div class="ib-yt-phone-notch"></div>
             </div>
@@ -564,7 +565,7 @@
       </div>
       <div class="row justify-content-center mb-4">
         {{ range .socials }}
-        <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up">
+        <div class="col-lg-3 col-md-6 col-6 mb-2" data-aos="fade-up">
           <a href="{{ .link }}" target="_blank" rel="noopener" class="ib-social-card">
             <i class="{{ .icon }}"></i>
             <div>
@@ -577,7 +578,7 @@
       </div>
       <div class="row justify-content-center mb-5">
         {{ range .links }}
-        <div class="col-auto" data-aos="fade-up">
+        <div class="col-auto mb-2" data-aos="fade-up">
           <a href="{{ .url }}" class="ib-nav-link">
             <i class="las la-lg {{ .icon }}"></i>{{ .label }}
           </a>

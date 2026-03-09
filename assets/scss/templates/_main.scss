@@ -2003,7 +2003,65 @@ a {
   width: 100%; height: 100%;
   border: none;
 }
+/* 1. THE OUTER FRAME: Stay static and define the 'Window' */
+.ib-yt-phone-frame {
+  position: relative;
+  background: #0a0a0a;
+  padding: 10px;
+  border-radius: 2.75rem;
+  z-index: 2;
+  /* FORCE STRICTOR CLIPPING */
+  // overflow: hidden;
+  isolation: isolate; 
+}
 
+/* 2. THE VIDEO CONTAINER: The 'Anchor' that stays still */
+.ib-yt-video-container {
+  position: relative;
+  padding-bottom: 187.77%; /* 9:16 Ratio */
+  height: 0;
+  border-radius: 2.25rem;
+  background: #000;
+  /* CLIP THE INTERNAL SCALE */
+  overflow: hidden; 
+}
+
+/* 3. THE IFRAME: This is the ONLY thing that scales */
+.ib-yt-video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 2.25rem;
+  /* Smooth zoom effect */
+  transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* 4. THE TRIGGER: When the wrap is hovered, only zoom the iframe */
+.ib-yt-phone-wrap:hover .ib-yt-video-container iframe {
+  transform: scale(1.04); /* Zoom the video content 10% */
+}
+
+.play-hint {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FE6019;
+  color: white;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* So it doesn't block the click to the iframe */
+}
+
+.ib-yt-phone-wrap:hover .play-hint {
+  opacity: 1;
+}
 /* Status tag — brand orange, not YouTube red */
 .ib-yt-status-tag {
   position: absolute;
@@ -2018,8 +2076,13 @@ a {
   z-index: 10;
   display: flex; align-items: center; gap: 7px;
   box-shadow: 0 4px 12px rgba(254,96,25,.35);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  will-change: transform;
 }
-
+.ib-yt-phone-wrap:hover .ib-yt-status-tag {
+  transform: scale(1.05); /* Zoom the video content 10% */
+  translate: -10px;
+}
 /* Ambient glow behind phone */
 .ib-yt-phone-glow {
   position: absolute;
