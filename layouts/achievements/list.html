@@ -49,14 +49,15 @@
             {{ end }}
           {{ end }}
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="{{ .Title }}"
               data-year="{{ .Params.year }}"
               data-desc="{{ .Params.description }}"
               data-cat='{{ .Params.category | default "Tournament" }}'
               data-loc='{{ .Params.location | default "New Delhi" }}'
-              data-img="{{ $drawerImg }}">
+              data-img="{{ $drawerImg }}"
+              data-url="{{ .Permalink }}">
 
             <div class="achievement-image">
               {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Size" "600x q90" "Class" "img-fluid") }}
@@ -100,6 +101,25 @@
                   <div>
                     <small class="meta-label">Location</small>
                     <span id="drawerLoc" class="meta-value"></span>
+                  </div>
+                </div>
+
+                <div class="drawer-share border-top pt-3 mt-3">
+                  <small class="meta-label d-block mb-2">Share this achievement</small>
+                  <div class="share-row d-flex gap-2 align-items-center">
+                    <div class="share-url-wrap flex-grow-1 position-relative">
+                      <i class="las la-lg la-link share-url-icon"></i>
+                      <input id="drawerShareUrl" type="text" class="form-control form-control-sm share-url-input" readonly>
+                    </div>
+                    <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()" title="Copy link">
+                      <i class="las la-lg la-copy" id="copyIcon"></i>
+                    </button>
+                    <a id="drawerOpenLink" href="#" target="_blank" rel="noopener" class="btn btn-outline-warning btn-share-open" title="Open in new tab">
+                      <i class="las la-lg la-external-link-alt"></i>
+                    </a>
+                  </div>
+                  <div id="copiedToast" class="copied-toast">
+                    <i class="las la-lg la-check-circle"></i> Copied to clipboard!
                   </div>
                 </div>
               </div>

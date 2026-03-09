@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Click overlay to close popup
       overlay.addEventListener('click', hidePopup);
-  } 
+  }
   // else {
   //     console.error('Required elements not found.');
   // }
@@ -348,6 +348,11 @@ function updateAndMoveDrawer(card, drawer, grid) {
   document.getElementById('drawerDesc').innerHTML = desc;
   document.getElementById('drawerCat').innerText = card.dataset.cat;
   document.getElementById('drawerLoc').innerText = card.dataset.loc;
+  document.getElementById('drawerShareUrl').value = card.dataset.url;
+  document.getElementById('drawerOpenLink').href = card.dataset.url;
+
+  // reset copy button state
+  document.getElementById('copyIcon').className = 'las la-lg la-copy';
 
   // Find Position Logic
   const cards = Array.from(grid.querySelectorAll('.achievement-card'));
@@ -365,6 +370,28 @@ function closeDrawer() {
   drawer.classList.remove('open');
   document.querySelectorAll('.achievement-card').forEach(c => c.classList.remove('active'));
   setTimeout(() => {
-    if(!drawer.classList.contains('open')) drawer.style.display = 'none'; 
+    if(!drawer.classList.contains('open')) drawer.style.display = 'none';
   }, 200);
+}
+function copyShareUrl() {
+  const url = document.getElementById('drawerShareUrl').value;
+  const btn = document.querySelector('.btn-share-copy');
+  const icon = document.getElementById('copyIcon');
+  const toast = document.getElementById('copiedToast');
+
+  navigator.clipboard.writeText(url).then(() => {
+    // 1. Swap Icon
+    icon.className = 'las la-lg la-check';
+    btn.classList.add('success');
+
+    // 2. Show Toast
+    toast.classList.add('show');
+
+    setTimeout(() => {
+      // 3. Revert after 2s
+      toast.classList.remove('show');
+      icon.className = 'las la-lg la-copy';
+      btn.classList.remove('success');
+    }, 2000);
+  });
 }

@@ -3230,6 +3230,138 @@ a {
   .meta-value {
     color: #FE6019;
   }
+  /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
+  .drawer-share {
+    border-top: 1px solid rgba(0,0,0,0.04);
+    padding-top: 1.5rem;
+  }
+
+  /* ── URL WRAP: Aligned & Refined ── */
+  /* ── THE URL WINDOW ── */
+  .share-url-wrap {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* Removed grey */
+    border: 1.5px solid #f0f0f0; /* Crisp, light border */
+    border-radius: 12px;
+    height: 52px;
+    padding: 0 16px;
+    flex-grow: 1;
+    transition: border-color 0.3s ease;
+  }
+
+  .share-url-wrap:focus-within {
+    border-color: #FE6019; /* Highlights on interaction */
+  }
+
+  .share-url-icon {
+    color: #FE6019;
+    margin-right: 4px;
+  }
+
+  .share-url-input {
+    border: none !important;
+    background: transparent !important;
+    font-family: 'JetBrains Mono', monospace; /* Technical, premium look */
+    font-size: 13px;
+    color: #333;
+    width: 100%;
+    cursor: default;
+    /* The Secret Sauce: Fade out the end of the text */
+    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    /* Disable selection on the dots/fade area */
+    user-select: all;
+    overflow-x: auto; /* Enables the scrolling you liked */
+    white-space: nowrap;
+    outline: none;
+    padding: 0.8rem;
+  }
+  .share-url-wrap:focus-within .share-url-input {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  /* 2. Adding the Unselectable Dots */
+  .share-url-wrap::after {
+    content: '...';
+    position: absolute;
+    right: 15px;
+    color: #bbb;
+    font-family: 'JetBrains Mono', monospace;
+    pointer-events: none; /* User cannot click or select these dots */
+    background: white; /* Matches container to hide text underneath */
+    padding-left: 5px;
+  }
+  .share-url-wrap:focus-within::after {
+    display: none;
+  }
+
+  /* ── ICON BUTTONS: Square & Stable ── */
+  .btn-share-copy,
+  .btn-share-open {
+    width: 48px; /* Fixed width prevents size jumping */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-share-copy {
+    background: #FE6019; /* Theme color on hover */
+    color: #fff;
+    border: 1px solid #eee;
+  }
+
+  .btn-share-copy:hover {
+    box-shadow: 0 5px 15px rgba(254, 96, 25, 0.3);
+    border-color: #FE6019;
+  }
+
+  .btn-share-copy.success {
+    background: #2a9d5c; /* Solid green for success */
+  }
+
+  .btn-share-open {
+    background: #fff;
+    color: #111;
+    border: 1px solid #eee;
+  }
+
+  .btn-share-open:hover {
+    background: #fff;
+    color: #FE6019;
+    border: 1px solid #FE6019;
+  }
+  .btn-share-open:hover::after {
+    background-color: #fff !important;
+  }
+  /* ── TOAST: Minimal Center-Top ── */
+  .copied-toast {
+    background: #FE6019;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  .copied-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
   /* 4. Responsive Media Queries */
   /* Ensure the text has some breathing room on large screens */
   @media (min-width: 992px) {
@@ -3285,6 +3417,11 @@ a {
       justify-content: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       z-index: 10;
+    }
+    .copied-toast.show {
+      transform: translateX(-50%);
+      top: auto;
+      bottom: -40px;
     }
   }
 }
