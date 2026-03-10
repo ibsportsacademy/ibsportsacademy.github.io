@@ -171,26 +171,6 @@
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": 
-      "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/#webpage"
-    ,
-    "name": "NFPET National Best Coach Award",
-    "url": "http://localhost:1313/achievements/academy/nfpet-best-coach-award-2022/",
-    "description": "Coach Ishwar Bhati was awarded the coveted Best Coach (Basketball) award by the National Federation of Physical Education Teachers. The 1st National award ceremony was held at the Indira Gandhi Institute of Physical Education \u0026 Sports Sciences, recognizing perfectionism in sports coaching.",
-    "inLanguage": "en"
-    ,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/"
-    }
-    
-    
-  }
-  </script>
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -256,6 +236,69 @@
 
 
 
+
+  
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/#webpage",
+          "url": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/",
+          "name": "NFPET National Best Coach Award",
+          "description": "Honored with the Best Coach (Basketball) award by the National Federation of Physical Education Teachers.",
+          "breadcrumb": { "@id": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/#breadcrumb" },
+          "inLanguage": "en-US",
+          "potentialAction": [{ "@type": "ReadAction", "target": ["http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/"] }]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ibsportsacademy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Achievements",
+              "item": "https://ibsportsacademy.com/achievements/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Academy Honors",
+              "item": "http:\/\/localhost:1313\/achievements\/academy\/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "NFPET National Best Coach Award",
+              "item": "http:\/\/localhost:1313\/achievements\/academy\/nfpet-best-coach-award-2022\/"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ibsportsacademy.com/#person",
+          "name": "Ishwar Bhati",
+          "url": "https://ibsportsacademy.com/about/ishwar-bhati/",
+          "award": "NFPET National Best Coach Award",
+          "worksFor": { "@id": "https://ibsportsacademy.com/#organization" }
+        },
+        {
+          "@type": ["SportsOrganization", "LocalBusiness"],
+          "@id": "https://ibsportsacademy.com/#organization",
+          "name": "IB Sports Academy",
+          "url": "https://ibsportsacademy.com"
+        }
+      ]
+    }
+</script>
 
 
 
@@ -21975,6 +22018,16 @@ a {
     transform: rotate(-10deg) scale(1.1); }
 
 /* --- Achievement Academy & Students Section Styles --- */
+.achievement-single {
+  background: #fff !important;
+  /* ── HERO IMAGE FRAME ── */ }
+  .achievement-single .achievement-hero-frame {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); }
+  .achievement-single .achievement-main-img {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
+  .achievement-single .achievement-hero-frame:hover .achievement-main-img {
+    transform: scale(1.03); }
+
 .achievement-section {
   padding: 60px 0;
   background-color: #fcfcfc;
@@ -21985,6 +22038,7 @@ a {
   /* A state for when we are swapping content */
   /* Inner Layout of Drawer */
   /* Close Button */
+  /* ── META GRID ── */
   /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
   /* ── URL WRAP: Aligned & Refined ── */
   /* ── THE URL WINDOW ── */
@@ -22012,7 +22066,8 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative; }
   .achievement-section .achievement-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(254, 96, 25, 0.2);
@@ -22047,6 +22102,18 @@ a {
     font-size: 14px;
     margin-bottom: 8px;
     display: block; }
+  .achievement-section .achievement-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FE6019;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 2;
+    transform: none; }
   .achievement-section .achievement-preview {
     font-size: 13px;
     color: #666;
@@ -22117,8 +22184,18 @@ a {
     color: #FE6019; }
   .achievement-section .meta-value {
     color: #FE6019; }
+  .achievement-section .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .achievement-section .meta-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-weight: 700; }
   .achievement-section .drawer-share {
-    border-top: 1px solid rgba(0, 0, 0, 0.04);
     padding-top: 1.5rem; }
   .achievement-section .share-url-wrap {
     display: flex;
@@ -24587,9 +24664,7 @@ iframe.wait-autoplay {
 
     <main>
       
-  
-  
-    <section class="page-header">
+<section class="page-header">
   <div class="container-xxl position-relative">
     <div class="row">
       <div class="col-lg-12">
@@ -24601,6 +24676,44 @@ iframe.wait-autoplay {
             
             </h1>
 
+            
+              <nav class="breadcrumb-nav mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                  <ol
+                  class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                    
+                    <li class="breadcrumb-item">
+                      <a class="link-primary" href="/"
+                        >Home</a>
+                    </li>
+
+                    
+                    
+                      
+                        
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/" class="link-primary">Our Achievements</a>
+                      </li>
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/academy/" class="link-primary">Academy Honors</a>
+                      </li>
+                      
+                    
+
+                    
+                    <li class="breadcrumb-item active" aria-current="page">
+                      NFPET National Best Coach Award
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+          
           </div>
         </div>
 
@@ -24652,19 +24765,543 @@ iframe.wait-autoplay {
   </div>
 </section>
 
-    <section class="section-sm">
-      <div class="container-xxl">
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-10 mx-auto">
-            <div class="content">
-              
+
+<section class="section-sm achievement-section achievement-single">
+  <div class="container">
+    <div class="row align-items-center p-lg-0 p-2">
+      
+      <div class="col-12 col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="achievement-hero-frame expand-image">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/nfpet-best-coach-2022-ib-sports-academy_hu_3b6521e60f94f357.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Coach Ishwar Bhati with the NFPET Best Coach (Basketball) Award"
+          class=" img-fluid achievement-main-img img"
+          width="1200"
+          height="900"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/nfpet-best-coach-2022-ib-sports-academy_hu_8c24692ffae4c430.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-lg-5" data-aos="fade-left">
+        <div class="expand-text">
+          <h3 class="achievement-title">NFPET National Best Coach Award</h3>
+          <div class="achievement-year">2022</div>
+
+          <p class="description-text">
+            Coach Ishwar Bhati was awarded the coveted Best Coach (Basketball) award by the National Federation of Physical Education Teachers. The 1st National award ceremony was held at the Indira Gandhi Institute of Physical Education &amp; Sports Sciences, recognizing perfectionism in sports coaching.
+          </p>
+
+          
+          <div class="drawer-meta meta-grid gap-4 border-top pt-3">
+            <div class="meta-item">
+              <small class="meta-label">Category</small>
+              <span class="meta-value">Coaching Excellence</span>
             </div>
+            <div class="meta-item">
+              <small class="meta-label">Location</small>
+              <span class="meta-value">Delhi, India</span>
+            </div>
+          </div>
+
+          
+          <div class="drawer-share border-top pt-3 mt-3">
+            <small class="meta-label d-block mb-2">Share Achievement</small>
+            <div class="share-row d-flex gap-2 align-items-center">
+              <div class="share-url-wrap flex-grow-1 position-relative">
+                <i class="las la-lg la-link share-url-icon"></i>
+                <input id="drawerShareUrl" type="text" class="form-control form-control-sm share-url-input" readonly value="http://localhost:1313/achievements/academy/nfpet-best-coach-award-2022/">
+              </div>
+              <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()">
+                <i class="las la-lg la-copy" id="copyIcon"></i>
+              </button>
+              <div id="copiedToast" class="copied-toast">
+                <i class="las la-lg la-check-circle"></i> Copied to clipboard!
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-primary-a">
+            
+            <a href="http://localhost:1313/achievements/academy/" class="back-link">
+              <i class="las la-lg la-long-arrow-alt-left"></i> Back to Academy Honors
+            </a>
+            
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="related-achievements mt-5 pt-5 border-top">
+      <div class="section-header mb-4">
+        <span class="meta-label text-primary">Keep Exploring</span>
+        <h3 class="fw-bold">
+          
+            More in Coaching Excellence
+          
+        </h3>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/reliance-jr-nba-best-coach-2017/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
   
   
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/reliance-jr-nba-best-coach-2017-ib-sports-academy_hu_f6c5886d26ae4dec.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Best Coach - Reliance Foundation Jr. NBA"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/reliance-jr-nba-best-coach-2017-ib-sports-academy_hu_f1d7535763fc34fc.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2017</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>Best Coach - Reliance Foundation Jr. NBA</h4>
+                <small class="achievement-preview">
+                  Selected as Best Coach and invited for an NBA experience trip to Shanghai, China.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/best-preceptor-award-2021/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/best-preceptor-award-2021-ib-sports-academy_hu_cd8b318b845f6cef.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Best Preceptor Award (2021-22)"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/best-preceptor-award-2021-ib-sports-academy_hu_6820cfb5c3f4929d.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2021</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>Best Preceptor Award (2021-22)</h4>
+                <small class="achievement-preview">
+                  Honored as the BEST PRECEPTOR by the Directorate of Education at the annual sports activities.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/outstanding-pe-teacher-award-2017/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/outstanding-pe-teacher-award-2017-ib-sports-academy_hu_8dc3dd778d9c5044.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Outstanding Physical Education Teacher Award"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/outstanding-pe-teacher-award-2017-ib-sports-academy_hu_1c869742da04ae77.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2017</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>Outstanding Physical Education Teacher Award</h4>
+                <small class="achievement-preview">
+                  Recognized for uplifting the standard of sports among students across India.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+  </div>
+</section>
 
     </main>
 

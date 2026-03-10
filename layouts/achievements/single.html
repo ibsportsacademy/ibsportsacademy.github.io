@@ -1,0 +1,129 @@
+{{ define "main" }}
+{{ partial "components/page-header.html" . }}
+
+<section class="section-sm achievement-section achievement-single">
+  <div class="container">
+    <div class="row align-items-center p-lg-0 p-2">
+      {{/* The Hero Image */}}
+      <div class="col-12 col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="achievement-hero-frame expand-image">
+          {{ partial "image.html" (dict
+            "Src" .Params.image
+            "Alt" (.Params.image_alt | default .Title)
+            "Size" "1200x q90"
+            "Class" "img-fluid achievement-main-img") }}
+        </div>
+      </div>
+
+      {{/* The Content Sidebar */}}
+      <div class="col-12 col-lg-5" data-aos="fade-left">
+        <div class="expand-text">
+          <h3 class="achievement-title">{{ .Title | markdownify }}</h3>
+          <div class="achievement-year">{{ .Params.year }}</div>
+
+          <p class="description-text">
+            {{ .Params.description | markdownify }}
+          </p>
+
+          {{/* Meta Details Grid */}}
+          <div class="drawer-meta meta-grid gap-4 border-top pt-3">
+            <div class="meta-item">
+              <small class="meta-label">Category</small>
+              <span class="meta-value">{{ .Params.category }}</span>
+            </div>
+            <div class="meta-item">
+              <small class="meta-label">Location</small>
+              <span class="meta-value">{{ .Params.location }}</span>
+            </div>
+          </div>
+
+          {{/* The Ultra-Premium Share Bar */}}
+          <div class="drawer-share border-top pt-3 mt-3">
+            <small class="meta-label d-block mb-2">Share Achievement</small>
+            <div class="share-row d-flex gap-2 align-items-center">
+              <div class="share-url-wrap flex-grow-1 position-relative">
+                <i class="las la-lg la-link share-url-icon"></i>
+                <input id="drawerShareUrl" type="text" class="form-control form-control-sm share-url-input" readonly value="{{ .Permalink | absURL }}">
+              </div>
+              <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()">
+                <i class="las la-lg la-copy" id="copyIcon"></i>
+              </button>
+              <div id="copiedToast" class="copied-toast">
+                <i class="las la-lg la-check-circle"></i> Copied to clipboard!
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-primary-a">
+            {{ with .Parent }}
+            <a href="{{ .Permalink }}" class="back-link">
+              <i class="las la-lg la-long-arrow-alt-left"></i> Back to {{ .Title }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/* 1. Get siblings in the same category */}}
+    {{ $related := where .Parent.RegularPages "Params.category" .Params.category }}
+    {{ $related = where $related "Permalink" "ne" .Permalink }}
+
+    {{/* 2. If less than 3, fill the gap with other siblings from the same parent */}}
+    {{ if lt (len $related) 3 }}
+        {{ $others := where .Parent.RegularPages "Permalink" "ne" .Permalink }}
+        {{/* Exclude the ones we already have to avoid duplicates */}}
+        {{ range $related }}
+            {{ $others = where $others "Permalink" "ne" .Permalink }}
+        {{ end }}
+
+        {{/* Merge them together */}}
+        {{ $related = $related | append $others }}
+    {{ end }}
+
+    {{/* 3. Limit to exactly 3 for the UI */}}
+    {{ $related = first 3 $related }}
+
+    {{ if gt (len $related) 0 }}
+    <div class="related-achievements mt-5 pt-5 border-top">
+      <div class="section-header mb-4">
+        <span class="meta-label text-primary">Keep Exploring</span>
+        <h3 class="fw-bold">
+          {{ if ge (where .Parent.RegularPages "Params.category" .Params.category | len) 3 }}
+            More in {{ .Params.category }}
+          {{ else }}
+            More Achievements
+          {{ end }}
+        </h3>
+      </div>
+
+      <div class="row g-4">
+        {{ range first 3 $related }}
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="{{ .Permalink }}" class="text-decoration-none">
+              <div class="achievement-image">
+                {{ partial "image.html" (dict "Src" .Params.image "Alt" .Title "Class" "img-fluid" "Size" "600x") }}
+                <span class="achievement-year-badge">{{ .Params.year }}</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>{{ .Title }}</h4>
+                <small class="achievement-preview">
+                  {{ .Params.summary | default (.Params.description | truncate 80) | markdownify }}
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

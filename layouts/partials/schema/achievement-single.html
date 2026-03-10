@@ -1,0 +1,62 @@
+<!-- Json+LD for Single Achievements Page  -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink | absURL }}#webpage",
+          "url": "{{ .Permalink | absURL }}",
+          "name": {{ .Title | plainify }},
+          "description": {{ .Params.summary | default .Params.description | plainify }},
+          "breadcrumb": { "@id": "{{ .Permalink | absURL }}#breadcrumb" },
+          "inLanguage": "en-US",
+          "potentialAction": [{ "@type": "ReadAction", "target": ["{{ .Permalink | absURL }}"] }]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "{{ .Permalink | absURL }}#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ibsportsacademy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Achievements",
+              "item": "https://ibsportsacademy.com/achievements/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": {{ .Parent.Title | plainify }},
+              "item": "{{ .Parent.Permalink | absURL }}"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": {{ .Title | plainify }},
+              "item": "{{ .Permalink | absURL }}"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ibsportsacademy.com/#person",
+          "name": "Ishwar Bhati",
+          "url": "https://ibsportsacademy.com/about/ishwar-bhati/",
+          "award": {{ .Title | plainify }},
+          "worksFor": { "@id": "https://ibsportsacademy.com/#organization" }
+        },
+        {
+          "@type": ["SportsOrganization", "LocalBusiness"],
+          "@id": "https://ibsportsacademy.com/#organization",
+          "name": "IB Sports Academy",
+          "url": "https://ibsportsacademy.com"
+        }
+      ]
+    }
+</script>

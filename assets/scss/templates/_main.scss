@@ -3055,6 +3055,21 @@ a {
 }
 
 /* --- Achievement Academy & Students Section Styles --- */
+.achievement-single {
+  background: #fff !important;
+
+  /* ── HERO IMAGE FRAME ── */
+  .achievement-hero-frame {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+  .achievement-main-img {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .achievement-hero-frame:hover .achievement-main-img {
+    transform: scale(1.03);
+  }
+}
+
 .achievement-section {
   padding: 60px 0;
   background-color: #fcfcfc;
@@ -3079,6 +3094,7 @@ a {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
   }
 
   .achievement-card:hover {
@@ -3130,6 +3146,20 @@ a {
     font-size: 14px;
     margin-bottom: 8px;
     display: block;
+  }
+
+  .achievement-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FE6019;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 2;
+    transform: none;
   }
 
   .achievement-preview {
@@ -3230,9 +3260,23 @@ a {
   .meta-value {
     color: #FE6019;
   }
+  /* ── META GRID ── */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .meta-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
   /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
   .drawer-share {
-    border-top: 1px solid rgba(0,0,0,0.04);
     padding-top: 1.5rem;
   }
 

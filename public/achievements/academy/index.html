@@ -172,6 +172,7 @@
 
 
 
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21976,6 +21977,16 @@ a {
     transform: rotate(-10deg) scale(1.1); }
 
 /* --- Achievement Academy & Students Section Styles --- */
+.achievement-single {
+  background: #fff !important;
+  /* ── HERO IMAGE FRAME ── */ }
+  .achievement-single .achievement-hero-frame {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); }
+  .achievement-single .achievement-main-img {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
+  .achievement-single .achievement-hero-frame:hover .achievement-main-img {
+    transform: scale(1.03); }
+
 .achievement-section {
   padding: 60px 0;
   background-color: #fcfcfc;
@@ -21986,6 +21997,7 @@ a {
   /* A state for when we are swapping content */
   /* Inner Layout of Drawer */
   /* Close Button */
+  /* ── META GRID ── */
   /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
   /* ── URL WRAP: Aligned & Refined ── */
   /* ── THE URL WINDOW ── */
@@ -22013,7 +22025,8 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative; }
   .achievement-section .achievement-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(254, 96, 25, 0.2);
@@ -22048,6 +22061,18 @@ a {
     font-size: 14px;
     margin-bottom: 8px;
     display: block; }
+  .achievement-section .achievement-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FE6019;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 2;
+    transform: none; }
   .achievement-section .achievement-preview {
     font-size: 13px;
     color: #666;
@@ -22118,8 +22143,18 @@ a {
     color: #FE6019; }
   .achievement-section .meta-value {
     color: #FE6019; }
+  .achievement-section .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .achievement-section .meta-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-weight: 700; }
   .achievement-section .drawer-share {
-    border-top: 1px solid rgba(0, 0, 0, 0.04);
     padding-top: 1.5rem; }
   .achievement-section .share-url-wrap {
     display: flex;
@@ -24614,6 +24649,38 @@ iframe.wait-autoplay {
             
             </h1>
 
+            
+              <nav class="breadcrumb-nav mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                  <ol
+                  class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                    
+                    <li class="breadcrumb-item">
+                      <a class="link-primary" href="/"
+                        >Home</a>
+                    </li>
+
+                    
+                    
+                      
+                        
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/" class="link-primary">Our Achievements</a>
+                      </li>
+                      
+                    
+
+                    
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Academy Honors
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+          
           </div>
         </div>
 
@@ -24702,7 +24769,7 @@ iframe.wait-autoplay {
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="National Coach for Delhi Boys Team"
               data-year="2025"
@@ -24832,7 +24899,7 @@ iframe.wait-autoplay {
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Outstanding Sports Academy • Education Excellence Award"
               data-year="2025"
@@ -24964,7 +25031,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="PEFI Dr. Ajmer Singh Best Coach Award"
               data-year="2024"
@@ -25094,7 +25161,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="CBSE Observer for Basketball Cluster 20"
               data-year="2023"
@@ -25224,7 +25291,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Gold Medal at 2nd Khelo Masters Games"
               data-year="2022"
@@ -25354,7 +25421,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Jr. NBA Coach for Delhi Girls Team"
               data-year="2022"
@@ -25484,7 +25551,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="NFPET National Best Coach Award"
               data-year="2022"
@@ -25614,7 +25681,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Best Preceptor Award (2021-22)"
               data-year="2021"
@@ -25744,7 +25811,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Dr. B. R. Ambedkar Khel Ratna Award"
               data-year="2021"
@@ -25874,7 +25941,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Champions of Khelo Masters Games 2019"
               data-year="2019"
@@ -26004,7 +26071,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Best Coach - Reliance Foundation Jr. NBA"
               data-year="2017"
@@ -26134,7 +26201,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
             
           
 
-          <div class="achievement-card" 
+          <div class="achievement-card"
               onclick="handleToggle(this)"
               data-title="Outstanding Physical Education Teacher Award"
               data-year="2017"
@@ -26274,7 +26341,7 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
                 <div id="drawerYear" class="achievement-year mb-3"></div>
                 <p id="drawerDesc"></p>
 
-                <div class="drawer-meta d-flex gap-4 border-top pt-3">
+                <div class="drawer-meta meta-grid border-top pt-3">
                   <div>
                     <small class="meta-label">Category</small>
                     <span id="drawerCat" class="meta-value"></span>
@@ -26295,7 +26362,8 @@ This recognition reflects the collective efforts of our coaches, athletes, and s
                     <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()" title="Copy link">
                       <i class="las la-lg la-copy" id="copyIcon"></i>
                     </button>
-                    <a id="drawerOpenLink" href="#" target="_blank" rel="noopener" class="btn btn-outline-warning btn-share-open" title="Open in new tab">
+                    <a id="drawerOpenLink" href="#" rel="noopener" class="btn btn-outline-warning btn-share-open" title="Expand to Page"
+                    aria-label="Expand achievement to full page">
                       <i class="las la-lg la-external-link-alt"></i>
                     </a>
                   </div>

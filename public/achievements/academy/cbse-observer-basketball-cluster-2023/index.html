@@ -171,26 +171,6 @@
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": 
-      "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/#webpage"
-    ,
-    "name": "CBSE Observer for Basketball Cluster 20",
-    "url": "http://localhost:1313/achievements/academy/cbse-observer-basketball-cluster-2023/",
-    "description": "Mr. Ishwar Bhati was selected as the CBSE Observer for the CBSE Basketball Cluster 20 (U-19 Boys) event held at St. Thomas School, Dwarka. Serving as an observer provided valuable insights into the growth of young athletes and the competitive standards of school-level basketball.",
-    "inLanguage": "en"
-    ,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/"
-    }
-    
-    
-  }
-  </script>
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -256,6 +236,69 @@
 
 
 
+
+  
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/#webpage",
+          "url": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/",
+          "name": "CBSE Observer for Basketball Cluster 20",
+          "description": "Selected as CBSE Observer for the U-19 Boys Basketball Cluster event at St. Thomas School.",
+          "breadcrumb": { "@id": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/#breadcrumb" },
+          "inLanguage": "en-US",
+          "potentialAction": [{ "@type": "ReadAction", "target": ["http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/"] }]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ibsportsacademy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Achievements",
+              "item": "https://ibsportsacademy.com/achievements/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Academy Honors",
+              "item": "http:\/\/localhost:1313\/achievements\/academy\/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "CBSE Observer for Basketball Cluster 20",
+              "item": "http:\/\/localhost:1313\/achievements\/academy\/cbse-observer-basketball-cluster-2023\/"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ibsportsacademy.com/#person",
+          "name": "Ishwar Bhati",
+          "url": "https://ibsportsacademy.com/about/ishwar-bhati/",
+          "award": "CBSE Observer for Basketball Cluster 20",
+          "worksFor": { "@id": "https://ibsportsacademy.com/#organization" }
+        },
+        {
+          "@type": ["SportsOrganization", "LocalBusiness"],
+          "@id": "https://ibsportsacademy.com/#organization",
+          "name": "IB Sports Academy",
+          "url": "https://ibsportsacademy.com"
+        }
+      ]
+    }
+</script>
 
 
 
@@ -21975,6 +22018,16 @@ a {
     transform: rotate(-10deg) scale(1.1); }
 
 /* --- Achievement Academy & Students Section Styles --- */
+.achievement-single {
+  background: #fff !important;
+  /* ── HERO IMAGE FRAME ── */ }
+  .achievement-single .achievement-hero-frame {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); }
+  .achievement-single .achievement-main-img {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
+  .achievement-single .achievement-hero-frame:hover .achievement-main-img {
+    transform: scale(1.03); }
+
 .achievement-section {
   padding: 60px 0;
   background-color: #fcfcfc;
@@ -21985,6 +22038,7 @@ a {
   /* A state for when we are swapping content */
   /* Inner Layout of Drawer */
   /* Close Button */
+  /* ── META GRID ── */
   /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
   /* ── URL WRAP: Aligned & Refined ── */
   /* ── THE URL WINDOW ── */
@@ -22012,7 +22066,8 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative; }
   .achievement-section .achievement-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(254, 96, 25, 0.2);
@@ -22047,6 +22102,18 @@ a {
     font-size: 14px;
     margin-bottom: 8px;
     display: block; }
+  .achievement-section .achievement-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FE6019;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 2;
+    transform: none; }
   .achievement-section .achievement-preview {
     font-size: 13px;
     color: #666;
@@ -22117,8 +22184,18 @@ a {
     color: #FE6019; }
   .achievement-section .meta-value {
     color: #FE6019; }
+  .achievement-section .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .achievement-section .meta-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-weight: 700; }
   .achievement-section .drawer-share {
-    border-top: 1px solid rgba(0, 0, 0, 0.04);
     padding-top: 1.5rem; }
   .achievement-section .share-url-wrap {
     display: flex;
@@ -24587,9 +24664,7 @@ iframe.wait-autoplay {
 
     <main>
       
-  
-  
-    <section class="page-header">
+<section class="page-header">
   <div class="container-xxl position-relative">
     <div class="row">
       <div class="col-lg-12">
@@ -24601,6 +24676,44 @@ iframe.wait-autoplay {
             
             </h1>
 
+            
+              <nav class="breadcrumb-nav mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                  <ol
+                  class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                    
+                    <li class="breadcrumb-item">
+                      <a class="link-primary" href="/"
+                        >Home</a>
+                    </li>
+
+                    
+                    
+                      
+                        
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/" class="link-primary">Our Achievements</a>
+                      </li>
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/academy/" class="link-primary">Academy Honors</a>
+                      </li>
+                      
+                    
+
+                    
+                    <li class="breadcrumb-item active" aria-current="page">
+                      CBSE Observer for Basketball Cluster 20
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+          
           </div>
         </div>
 
@@ -24652,19 +24765,554 @@ iframe.wait-autoplay {
   </div>
 </section>
 
-    <section class="section-sm">
-      <div class="container-xxl">
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-10 mx-auto">
-            <div class="content">
-              
+
+<section class="section-sm achievement-section achievement-single">
+  <div class="container">
+    <div class="row align-items-center p-lg-0 p-2">
+      
+      <div class="col-12 col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="achievement-hero-frame expand-image">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/cbse-observer-cluster-2023-ib-sports-academy_hu_7b3c95878b141a12.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Coach Ishwar Bhati performing duties as CBSE Observer at St. Thomas School"
+          class=" img-fluid achievement-main-img img"
+          width="1200"
+          height="900"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/cbse-observer-cluster-2023-ib-sports-academy_hu_2be9043ebf8405dd.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-lg-5" data-aos="fade-left">
+        <div class="expand-text">
+          <h3 class="achievement-title">CBSE Observer for Basketball Cluster 20</h3>
+          <div class="achievement-year">2023</div>
+
+          <p class="description-text">
+            Mr. Ishwar Bhati was selected as the CBSE Observer for the CBSE Basketball Cluster 20 (U-19 Boys) event held at St. Thomas School, Dwarka. Serving as an observer provided valuable insights into the growth of young athletes and the competitive standards of school-level basketball.
+          </p>
+
+          
+          <div class="drawer-meta meta-grid gap-4 border-top pt-3">
+            <div class="meta-item">
+              <small class="meta-label">Category</small>
+              <span class="meta-value">Official Appointment</span>
             </div>
+            <div class="meta-item">
+              <small class="meta-label">Location</small>
+              <span class="meta-value">Delhi, India</span>
+            </div>
+          </div>
+
+          
+          <div class="drawer-share border-top pt-3 mt-3">
+            <small class="meta-label d-block mb-2">Share Achievement</small>
+            <div class="share-row d-flex gap-2 align-items-center">
+              <div class="share-url-wrap flex-grow-1 position-relative">
+                <i class="las la-lg la-link share-url-icon"></i>
+                <input id="drawerShareUrl" type="text" class="form-control form-control-sm share-url-input" readonly value="http://localhost:1313/achievements/academy/cbse-observer-basketball-cluster-2023/">
+              </div>
+              <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()">
+                <i class="las la-lg la-copy" id="copyIcon"></i>
+              </button>
+              <div id="copiedToast" class="copied-toast">
+                <i class="las la-lg la-check-circle"></i> Copied to clipboard!
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-primary-a">
+            
+            <a href="http://localhost:1313/achievements/academy/" class="back-link">
+              <i class="las la-lg la-long-arrow-alt-left"></i> Back to Academy Honors
+            </a>
+            
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            
+        
+            
+        
+        
+        
+        
+    
+    
+    
+    
+
+    
+    <div class="related-achievements mt-5 pt-5 border-top">
+      <div class="section-header mb-4">
+        <span class="meta-label text-primary">Keep Exploring</span>
+        <h3 class="fw-bold">
+          
+            More in Official Appointment
+          
+        </h3>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/jr-nba-coach-delhi-girls-2022/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
   
   
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/jr-nba-coach-delhi-2022-ib-sports-academy_hu_4d578a6cada078f5.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Jr. NBA Coach for Delhi Girls Team"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/jr-nba-coach-delhi-2022-ib-sports-academy_hu_1447f27daf55686a.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2022</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>Jr. NBA Coach for Delhi Girls Team</h4>
+                <small class="achievement-preview">
+                  Leading the Delhi Girls team at the International Regional Junior NBA edition.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/national-coach-delhi-boys-2025/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/national-coach-delhi-boys-2025-ib-sports-academy_hu_9bed35042050f777.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="National Coach for Delhi Boys Team"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/national-coach-delhi-boys-2025-ib-sports-academy_hu_b02fd8e37c030419.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2025</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>National Coach for Delhi Boys Team</h4>
+                <small class="achievement-preview">
+                  Coach Ishwar Bhati led the Delhi Boys&rsquo; Team to a strong 4th place finish at the 40th Youth National Basketball Championship.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/academy/reliance-jr-nba-best-coach-2017/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/academy/reliance-jr-nba-best-coach-2017-ib-sports-academy_hu_f6c5886d26ae4dec.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Best Coach - Reliance Foundation Jr. NBA"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/academy\/reliance-jr-nba-best-coach-2017-ib-sports-academy_hu_f1d7535763fc34fc.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2017</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>Best Coach - Reliance Foundation Jr. NBA</h4>
+                <small class="achievement-preview">
+                  Selected as Best Coach and invited for an NBA experience trip to Shanghai, China.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+  </div>
+</section>
 
     </main>
 

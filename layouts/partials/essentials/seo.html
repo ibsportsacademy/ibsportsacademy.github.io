@@ -137,7 +137,8 @@
 <!-- {{ $excludedLayouts := slice "ishwar_bhati" }} -->
 <!-- more layouts to exclude then -->
 {{ $excludedLayouts := slice "ishwar_bhati" "about" }}
-{{ if not (in $excludedLayouts .Layout) }}
+{{ $isAchievementSingle := and (eq .Section "achievements") (not .IsSection) }}
+{{ if and (not (in $excludedLayouts .Layout)) (not $isAchievementSingle) }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",

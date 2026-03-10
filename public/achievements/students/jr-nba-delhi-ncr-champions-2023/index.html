@@ -171,26 +171,6 @@
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": 
-      "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/#webpage"
-    ,
-    "name": "Jr. NBA Delhi NCR Champions",
-    "url": "http://localhost:1313/achievements/students/jr-nba-delhi-ncr-champions-2023/",
-    "description": "A historic moment for our young champions! **IB Sports Academy** thrilled the crowds by clinching **1st Place in the Jr. NBA Delhi NCR Tournament**. Our Under-12 stars—**Ishaan, Aditya, Atharav, and Rizwan**—made us incredibly proud by being the **only team representing Delhi** in their category. The journey took them from the prestigious Delhi Public School (DPS), Vasant Kunj, to the national stage at JayPee Greens, Greater Noida, where they competed against the best teams from across the country. Under the expert mentorship of **Head Coach Ishwar Bhati**, these young athletes proved that dedication and teamwork lead straight to the podium. This victory at such a prestigious international platform as the Jr. NBA marks a new milestone for youth basketball at IB Sports Academy. **Congratulations to Team IB!** 🥇🏀",
-    "inLanguage": "en"
-    ,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/"
-    }
-    
-    
-  }
-  </script>
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -256,6 +236,69 @@
 
 
 
+
+  
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/#webpage",
+          "url": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/",
+          "name": "Jr. NBA Delhi NCR Champions",
+          "description": "Team IB clinches 1st place in the Jr. NBA Delhi NCR Tournament and represents Delhi at the National level.",
+          "breadcrumb": { "@id": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/#breadcrumb" },
+          "inLanguage": "en-US",
+          "potentialAction": [{ "@type": "ReadAction", "target": ["http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/"] }]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ibsportsacademy.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Achievements",
+              "item": "https://ibsportsacademy.com/achievements/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Student Success",
+              "item": "http:\/\/localhost:1313\/achievements\/students\/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Jr. NBA Delhi NCR Champions",
+              "item": "http:\/\/localhost:1313\/achievements\/students\/jr-nba-delhi-ncr-champions-2023\/"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ibsportsacademy.com/#person",
+          "name": "Ishwar Bhati",
+          "url": "https://ibsportsacademy.com/about/ishwar-bhati/",
+          "award": "Jr. NBA Delhi NCR Champions",
+          "worksFor": { "@id": "https://ibsportsacademy.com/#organization" }
+        },
+        {
+          "@type": ["SportsOrganization", "LocalBusiness"],
+          "@id": "https://ibsportsacademy.com/#organization",
+          "name": "IB Sports Academy",
+          "url": "https://ibsportsacademy.com"
+        }
+      ]
+    }
+</script>
 
 
 
@@ -21975,6 +22018,16 @@ a {
     transform: rotate(-10deg) scale(1.1); }
 
 /* --- Achievement Academy & Students Section Styles --- */
+.achievement-single {
+  background: #fff !important;
+  /* ── HERO IMAGE FRAME ── */ }
+  .achievement-single .achievement-hero-frame {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); }
+  .achievement-single .achievement-main-img {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
+  .achievement-single .achievement-hero-frame:hover .achievement-main-img {
+    transform: scale(1.03); }
+
 .achievement-section {
   padding: 60px 0;
   background-color: #fcfcfc;
@@ -21985,6 +22038,7 @@ a {
   /* A state for when we are swapping content */
   /* Inner Layout of Drawer */
   /* Close Button */
+  /* ── META GRID ── */
   /* ── ULTRA-PREMIUM MINIMALIST SHARE ── */
   /* ── URL WRAP: Aligned & Refined ── */
   /* ── THE URL WINDOW ── */
@@ -22012,7 +22066,8 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative; }
   .achievement-section .achievement-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(254, 96, 25, 0.2);
@@ -22047,6 +22102,18 @@ a {
     font-size: 14px;
     margin-bottom: 8px;
     display: block; }
+  .achievement-section .achievement-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FE6019;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 2;
+    transform: none; }
   .achievement-section .achievement-preview {
     font-size: 13px;
     color: #666;
@@ -22117,8 +22184,18 @@ a {
     color: #FE6019; }
   .achievement-section .meta-value {
     color: #FE6019; }
+  .achievement-section .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .achievement-section .meta-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-weight: 700; }
   .achievement-section .drawer-share {
-    border-top: 1px solid rgba(0, 0, 0, 0.04);
     padding-top: 1.5rem; }
   .achievement-section .share-url-wrap {
     display: flex;
@@ -24587,9 +24664,7 @@ iframe.wait-autoplay {
 
     <main>
       
-  
-  
-    <section class="page-header">
+<section class="page-header">
   <div class="container-xxl position-relative">
     <div class="row">
       <div class="col-lg-12">
@@ -24601,6 +24676,44 @@ iframe.wait-autoplay {
             
             </h1>
 
+            
+              <nav class="breadcrumb-nav mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                  <ol
+                  class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                    
+                    <li class="breadcrumb-item">
+                      <a class="link-primary" href="/"
+                        >Home</a>
+                    </li>
+
+                    
+                    
+                      
+                        
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/" class="link-primary">Our Achievements</a>
+                      </li>
+                      
+                    
+                      
+                      <li class="breadcrumb-item">
+                        <a href="http://localhost:1313/achievements/students/" class="link-primary">Student Success</a>
+                      </li>
+                      
+                    
+
+                    
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Jr. NBA Delhi NCR Champions
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+          
           </div>
         </div>
 
@@ -24652,19 +24765,552 @@ iframe.wait-autoplay {
   </div>
 </section>
 
-    <section class="section-sm">
-      <div class="container-xxl">
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-10 mx-auto">
-            <div class="content">
-              
+
+<section class="section-sm achievement-section achievement-single">
+  <div class="container">
+    <div class="row align-items-center p-lg-0 p-2">
+      
+      <div class="col-12 col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="achievement-hero-frame expand-image">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/students/jr-nba-champions-ib-sports-academy_hu_e3e3a26539a6dad6.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="IB Sports Academy U-12 team celebrating their Jr. NBA 1st place win"
+          class=" img-fluid achievement-main-img img"
+          width="1200"
+          height="900"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/students\/jr-nba-champions-ib-sports-academy_hu_b2630c1a56058131.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-lg-5" data-aos="fade-left">
+        <div class="expand-text">
+          <h3 class="achievement-title">Jr. NBA Delhi NCR Champions</h3>
+          <div class="achievement-year">2023</div>
+
+          <p class="description-text">
+            A historic moment for our young champions! <strong>IB Sports Academy</strong> thrilled the crowds by clinching <strong>1st Place in the Jr. NBA Delhi NCR Tournament</strong>. <br><br> Our Under-12 stars—<strong>Ishaan, Aditya, Atharav, and Rizwan</strong>—made us incredibly proud by being the <strong>only team representing Delhi</strong> in their category. The journey took them from the prestigious Delhi Public School (DPS), Vasant Kunj, to the national stage at JayPee Greens, Greater Noida, where they competed against the best teams from across the country. <br><br> Under the expert mentorship of <strong>Head Coach Ishwar Bhati</strong>, these young athletes proved that dedication and teamwork lead straight to the podium. This victory at such a prestigious international platform as the Jr. NBA marks a new milestone for youth basketball at IB Sports Academy. <strong>Congratulations to Team IB!</strong> 🥇🏀
+          </p>
+
+          
+          <div class="drawer-meta meta-grid gap-4 border-top pt-3">
+            <div class="meta-item">
+              <small class="meta-label">Category</small>
+              <span class="meta-value">National Tournament</span>
             </div>
+            <div class="meta-item">
+              <small class="meta-label">Location</small>
+              <span class="meta-value">Delhi NCR / Greater Noida</span>
+            </div>
+          </div>
+
+          
+          <div class="drawer-share border-top pt-3 mt-3">
+            <small class="meta-label d-block mb-2">Share Achievement</small>
+            <div class="share-row d-flex gap-2 align-items-center">
+              <div class="share-url-wrap flex-grow-1 position-relative">
+                <i class="las la-lg la-link share-url-icon"></i>
+                <input id="drawerShareUrl" type="text" class="form-control form-control-sm share-url-input" readonly value="http://localhost:1313/achievements/students/jr-nba-delhi-ncr-champions-2023/">
+              </div>
+              <button class="btn btn-primary btn-share-copy" onclick="copyShareUrl()">
+                <i class="las la-lg la-copy" id="copyIcon"></i>
+              </button>
+              <div id="copiedToast" class="copied-toast">
+                <i class="las la-lg la-check-circle"></i> Copied to clipboard!
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-primary-a">
+            
+            <a href="http://localhost:1313/achievements/students/" class="back-link">
+              <i class="las la-lg la-long-arrow-alt-left"></i> Back to Student Success
+            </a>
+            
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            
+        
+        
+        
+        
+    
+    
+    
+    
+
+    
+    <div class="related-achievements mt-5 pt-5 border-top">
+      <div class="section-header mb-4">
+        <span class="meta-label text-primary">Keep Exploring</span>
+        <h3 class="fw-bold">
+          
+            More Achievements
+          
+        </h3>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/students/thakur-memorial-trophy-2025/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
   
   
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/students/itl-thakur-memorial-punjab-2025-ib-sports-academy_hu_335208de24673505.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="All-India Podium: Thakur Memorial Trophy"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/students\/itl-thakur-memorial-punjab-2025-ib-sports-academy_hu_ec478f6f513a566b.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2025</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>All-India Podium: Thakur Memorial Trophy</h4>
+                <small class="achievement-preview">
+                  Team ITL, guided by IB Sports Academy, finishes as 2nd Runners-Up at the 6th Thakur Memorial Trophy.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/students/shaurya-jindal-nationals-2026/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/students/shaurya-jindal-national-bronze-ib-sports-academy_hu_47e9e47218a0e3ee.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="National Bronze for Shaurya Jindal"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/students\/shaurya-jindal-national-bronze-ib-sports-academy_hu_5fb9d5505c0c3758.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2026</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>National Bronze for Shaurya Jindal</h4>
+                <small class="achievement-preview">
+                  Shaurya Jindal secures 3rd Place at the Nationals, representing ITL Public School and IB Sports Academy.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4" data-aos="fade-up">
+          <div class="achievement-card">
+            <a href="http://localhost:1313/achievements/students/naunit-goyat-nationals-2026/" class="text-decoration-none">
+              <div class="achievement-image">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images2/achievements/students/naunit-goyat-national-silver-ib-sports-academy_hu_218ac31944a441ef.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="National Silver for Naunit Goyat"
+          class=" img-fluid img"
+          width="600"
+          height="450"
+          onerror="this.onerror='null';
+          this.src='\/images2\/achievements\/students\/naunit-goyat-national-silver-ib-sports-academy_hu_e864a465967269c.png';" />
+
+        
+      
+      
+    
+    
+  
+
+
+  
+
+
+                <span class="achievement-year-badge">2026</span>
+              </div>
+
+              <div class="achievement-content">
+                <h4>National Silver for Naunit Goyat</h4>
+                <small class="achievement-preview">
+                  Naunit Goyat secures the Silver Medal at the Under-14 National Basketball Championship.
+                  <div class="more">
+                    Explore Achievement <i class="las la-lg la-external-link-alt"></i>
+                  </div>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+  </div>
+</section>
 
     </main>
 

@@ -58,4 +58,6 @@
   {{ partial "schema/ishwar-bhati.html" . }}
 {{ else if eq .Layout "about" }}
   {{ partial "schema/our-story.html" . }}
+{{ else if and (eq .Section "achievements") (not .IsSection) }}
+  {{ partial "schema/achievement-single.html" . }}
 {{ end }}

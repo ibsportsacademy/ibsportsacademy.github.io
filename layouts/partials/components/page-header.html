@@ -11,22 +11,37 @@
               {{ $.Title | safeHTML }}
             {{ end }}
             </h1>
-<!--             <nav
-              aria-label="breadcrumb"
-              data-aos="fade-up"
-              data-aos-delay="200">
-              <ol
-                class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
-                <li class="breadcrumb-item">
-                  <a class="link-primary" href="{{ site.BaseURL | relLangURL }}"
-                    >Home</a
-                  >
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  {{ .Title }}
-                </li>
-              </ol>
-            </nav> -->
+
+            {{ if or (eq .Section "achievements") (eq .Section "blog") }}
+              <nav class="breadcrumb-nav mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                  <ol
+                  class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
+                    {{/* 1. Start with Home */}}
+                    <li class="breadcrumb-item">
+                      <a class="link-primary" href="{{ site.BaseURL | relLangURL }}"
+                        >Home</a>
+                    </li>
+
+                    {{/* 2. Get all parent pages in reverse order (top-down) */}}
+                    {{ range .Ancestors.Reverse }}
+                      {{ if  .IsHome }}
+                        {{/* Skip home since we manually added it */}}
+                      {{ else }}
+                      <li class="breadcrumb-item">
+                        <a href="{{ .Permalink }}" class="link-primary">{{ .Title }}</a>
+                      </li>
+                      {{ end }}
+                    {{ end }}
+
+                    {{/* 3. The current page */}}
+                    <li class="breadcrumb-item active" aria-current="page">
+                      {{ .Title }}
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+          {{ end }}
           </div>
         </div>
 
