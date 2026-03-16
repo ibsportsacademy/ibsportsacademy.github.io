@@ -206,7 +206,7 @@ how_it_works:
     &nbsp;&nbsp;&nbsp;&nbsp;
     From first-timers to future MVPs — the grind starts here.
 
-    - **30+ Coaches Who Eat, Sleep, & Breathe Hoops** <br />
+    - **12+ Coaches Who Eat, Sleep, & Breathe Hoops** <br />
     &nbsp;&nbsp;&nbsp;&nbsp;
     Real ones. Certified. Court-tested.
 
